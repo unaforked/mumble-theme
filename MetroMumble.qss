@@ -7,6 +7,11 @@
  * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
  */
 
+* {
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+}
+
 QMainWindow, QDialog, QWidget {
 	background-color: #2F3233;
 	color: #FFF;
@@ -196,8 +201,8 @@ QTreeView {
 	alternate-background-color: #262829;
 	background-color: #262829;
 	color: #FFF;
-	font: normal 180% Arial, sans-serif;
-	font-weight: bold;
+	font: normal 180%;
+	font-weight: normal;
 	padding: 10px;
 	border: 0;
 }
@@ -219,12 +224,12 @@ QTreeView::item {
 }
 
 QTreeView::item:hover {
-	background-color: #415B76;
+	background-color: #333333;
 }
 
 QTreeView::item:selected,
 QTreeView::item:selected:active {
-	background-color: #2C3E50;
+	background-color: #444444;
 }
 
 QTreeView::item:selected:!active {
@@ -239,7 +244,7 @@ QTextBrowser {
 	background-color: #262829;
 	color: #FFF;
 	padding: 10px;
-	font-size: 14px;
+	font-size: 12px;
 	border: 0;
 }
 
@@ -281,19 +286,16 @@ QTextBrowser.LogTextBrowser {
  * Scrollbar
  */
 QScrollBar {
-	background-color: #34495E;
-	width: 15px;
-	height: 15px;
+	background: #34495E;
+	width: 4px;
 }
 
-QScrollBar::handle:horizontal,
-QScrollBar::handle:vertical {
-	background-color: #5DADE2;
+QScrollBar::handle {
+	background: #5DADE2;
 }
 
-QScrollBar::handle:hover,
 QScrollBar::handle:hover {
-	background-color: #2C81BA;
+	background: #2C81BA;
 }
 
 QScrollBar::left-arrow,
@@ -305,8 +307,9 @@ QScrollBar::add-line,
 QScrollBar::add-page,
 QScrollBar::sub-page,
 QAbstractScrollArea::corner {
-	background-color: #34495E;
+	background: #34495E;
 }
+
 
 /*
  * Menu bar
@@ -314,16 +317,14 @@ QAbstractScrollArea::corner {
 QMenuBar {
 	border: 0;
 	background-color: #262829;
-	margin-top: 5px;
-	margin-left: 5px;
-	margin-right: 5px;
+	padding: 5px;
 }
 
 QMenuBar::item {
 	background: transparent;
 	color: #FFF;
 	border: 0;
-	padding: 10px;
+	padding: 5px;
 }
 
 QMenuBar::item:selected {
