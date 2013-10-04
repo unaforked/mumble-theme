@@ -229,11 +229,11 @@ QTreeView::item:hover {
 
 QTreeView::item:selected,
 QTreeView::item:selected:active {
-	background-color: #444444;
+	background-color: #313E4B;
 }
 
 QTreeView::item:selected:!active {
-	background-color: #313E4B;
+	background-color: #444444;
 	color: #BBB;
 }
 
