@@ -1,0 +1,341 @@
+/*
+ * MetroMumble Lite Theme by xPoke
+ * GitHub: https://github.com/xPoke
+ *
+ * Based on Flat Mumble Theme by xPaw (xpaw.ru)
+ * GitHub: https://github.com/xPaw
+ *
+ * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
+ */
+
+* {
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+}
+
+DockTitleBar {
+	font-size: 10px;
+	color: #444;
+}
+
+QStyleOptionView::item {
+	margin: 5px;
+}
+
+
+QMainWindow {
+	background-color: #EEE;
+	color: #444;
+	border: 0;
+}
+
+QMainWindow::separator {
+	background: transparent;
+	width: 2px;
+	height: 2px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+QMainWindow::separator:hover {
+	background: #888;
+}
+
+a {
+	color: #2a749e;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2980b9;
+	text-decoration: underline;
+}
+
+/*
+ * Input box
+ */
+QTextEdit {
+	background-color: #FFF;
+	color: #161616;
+	border: 0;
+}
+
+/*
+ * Toolbar
+ */
+QToolBar {
+	background-color: #FAFAFA;
+	spacing: 0;
+	border: 1px solid #DDD;
+}
+
+QToolBar#qtIconToolbar {
+	margin: 0;
+	margin-bottom: 0;
+}
+
+QToolBar::separator {
+	background: #DDD;
+	margin: 5px;
+	padding: 0;
+	border: 0;
+	width: 1px;
+	height: 1px;
+}
+
+QToolBar::handle {
+	padding: 3px;
+}
+
+QToolBar::handle:horizontal {
+	image: url(skin:handle_horizontal.svg);
+	width: 8px;
+}
+
+QToolBar::handle:vertical {
+	image: url(skin:handle_vertical.svg);
+	height: 8px;
+}
+
+QToolButton {
+	background-color: transparent;
+	border: 0;
+	padding: 7px;
+}
+
+QToolButton:hover {
+	background-color: #EEE;
+	border: 0;
+}
+
+QToolButton:on {
+	background-color: transparent;
+	border: 0;
+}
+
+QToolButton:off {
+	background-color: transparent;
+	border: 0;
+}
+
+/*
+ * Server select, channels and users
+ */
+QHeaderView::section {
+	background-color: #FFF;
+	color: #444;
+	border: 0;
+}
+
+QTreeView {
+	alternate-background-color: #FFF;
+	background-color: #FFF;
+	color: #444;
+	selection-background-color #e4f3f7:
+	selection-color: #444;
+	font: normal 180%;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+QTreeView::branch {
+	padding-left: 5px;
+}
+
+ QTreeView::branch:has-siblings:!adjoins-item {
+	border-image: none;
+	image: none;
+ }
+
+ QTreeView::branch:has-siblings:adjoins-item {
+	border-image: none;
+	image: none;
+ }
+
+ QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+	border-image: none;
+	image: none;
+ }
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+	border-image: none;
+	image: url(skin:branch_closed.svg);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings {
+	border-image: none;
+	image: url(skin:branch_open.svg);
+}
+
+QTreeView::item {
+	border-left: 1px solid #FFF;
+}
+
+QTreeView::item:hover {	
+	background-color: #F5F5F5;
+	border-left: 1px solid #F5F5F5;
+}
+
+QTreeView::item:selected,
+QTreeView::item:selected:active {	
+	background-color: #DEF;
+	border: 1px solid #CDE;
+	color: #444;
+}
+
+QTreeView::item:selected:!active {
+	background-color: #FFF;
+	border: 1px solid #FFF;
+}
+
+QTreeView::QIcon {
+	margin: 5px;
+}
+
+
+
+/*
+ * Log window
+ */
+QTextBrowser {
+	background-color: #FFF;
+	color: #444;
+	padding: 1px;
+	margin 0;
+	font-size: 12px;
+	border: 0;
+}
+
+.log-time {
+	color: #95a5a6;
+}
+
+.log-server {
+	color: #F9655D;
+	font-weight: bold;
+}
+
+.log-channel {
+	color: #e67e22;
+	font-weight: bold;
+}
+
+.log-privilege {
+	color: #c0392b;
+	font-weight: bold;
+}
+
+.log-target {
+	color: #27ae60;
+	font-weight: bold;
+}
+
+.log-source {
+	color: #27ae60;
+	font-weight: bold;
+}
+
+QTreeView.UserView,
+QTextBrowser.LogTextBrowser {
+	margin: 1px;
+}
+
+/*
+ * Scrollbar
+ */
+QScrollBar {
+	background: #E0E1E2;
+	width: 16px;
+}
+
+QScrollBar::handle {
+	background: #C4C4C4;
+}
+
+QScrollBar::handle:hover {
+	background: #888;
+}
+
+QScrollBar::left-arrow,
+QScrollBar::right-arrow,
+QScrollBar::up-arrow,
+QScrollBar::down-arrow,
+QScrollBar::sub-line,
+QScrollBar::add-line,
+QScrollBar::add-page,
+QScrollBar::sub-page,
+QAbstractScrollArea::corner {
+	background: #E0E1E2;
+}
+
+
+/*
+ * Menu bar
+ */
+QMenuBar {
+	border: 0;
+	margin: 0;
+	background-color: #EEE;
+	border-bottom: 0;
+}
+
+QMenuBar::item {
+	background: transparent;
+	color: #444;
+	border: 0;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+QMenuBar::item:selected {
+	background: #DDD;
+	color: #444;
+}
+
+QMenuBar::item:pressed {
+	background: #CCC;
+	color: #444;
+}
+
+/*
+ * Menu
+ */
+QMenu {
+	border: 1px solid #DDD;
+	background: #FFF;
+	color: #444;
+	padding: 0;
+}
+
+QMenu::item {
+	background: transparent;
+	color: #444;
+	border: 1px solid #FFF;
+	padding: 0.4em 2em;
+}
+
+QMenu::item:selected {
+	background: #e4f3f7;
+	border: 1px solid #97b5c6;
+	color: #444;
+}
+
+QMenu::item:disabled {
+	color: #bbb;
+}
+
+QMenu::separator {
+	background: #D1DDE5;
+	height: 1px;
+}
+
+QMenu::indicator {
+	width: 25px;
+	height: 20px;
+}

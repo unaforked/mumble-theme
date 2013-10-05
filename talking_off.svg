@@ -3,8 +3,8 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-<g>
-	<circle fill="#E74C3C" cx="262" cy="150.435" r="114.783"/>
-	<ellipse fill="#E74C3C" cx="262" cy="350.186" rx="186.335" ry="134.161"/>
-</g>
+<path opacity="0.75" fill="#FF3E3E" enable-background="new    " d="M256,55.652c63.393,0,114.783,51.39,114.783,114.783
+	S319.393,285.218,256,285.218s-114.783-51.39-114.783-114.783S192.607,55.652,256,55.652z M256,236.025
+	c102.91,0,186.335,60.066,186.335,134.161S358.91,504.347,256,504.347S69.665,444.281,69.665,370.186S153.09,236.025,256,236.025z"
+	/>
 </svg>
