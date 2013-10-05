@@ -25,7 +25,7 @@ QStyleOptionView::item {
 
 QMainWindow {
 	background-color: #2F3233;
-	color: #FFF;
+	color: #EEE;
 	border: 0;
 }
 
@@ -336,3 +336,230 @@ QMenu::indicator {
 	width: 25px;
 	height: 20px;
 }
+
+/*
+ * Buttons
+ */
+QPushButton {
+background-color: #444;
+color: #EEE;
+border: 0;
+font-size: 14px;
+padding: 2px 8px 3px;
+}
+
+QPushButton:hover {
+background-color: #555;
+}
+
+QPushButton:pressed {
+background-color: #28B;
+}
+
+QPushButton:disabled {
+background-color: #333;
+color: #666;
+}
+
+/*
+ * Group boxes, and various input elements
+ */
+QDialog {
+	background-color: #222;
+	color: #EEE;
+	border: 0;
+}
+
+QGroupBox {
+background-color: #292929;
+color: #EEE;
+border: 0;
+padding: 8px;
+padding-top: 16px;
+margin: 5px;
+}
+
+QListView {
+background-color: #292929;
+color: #EEE;
+border: 0;
+padding: 5px;
+min-width: 150px;
+font-size: 16px;
+}
+
+QTabWidget::pane {
+border: 0;
+}
+
+QTabBar::tab {
+background-color: #444;
+color: #EEE;
+border: 0;
+padding: 5px 15px;
+}
+
+QTabBar::tab:selected {
+background-color: #666;
+border: 0;
+}
+
+QTabBar::tab:!selected:hover {
+background-color: #555;
+}
+
+QTabBar::tab:selected:hover {
+background-color: #777;
+}
+
+QLabel, QCheckBox, QRadioButton {
+color: #FFF;
+background-color: transparent;
+border: 0;
+}
+
+QLineEdit, QComboBox {
+border: 0px solid #666;
+background-color: #444;
+color: #EEE;
+font-size: 14px;
+padding: 1px 8px;
+}
+
+QLineEdit:disabled, QComboBox:disabled, QSpinBox:disabled {
+background-color: #333;
+color: #666;
+}
+
+QComboBox:on,
+QLineEdit:focus {
+border: 0;
+background-color: #666;
+}
+
+QComboBox:hover, QLineEdit:hover {
+background-color: #555;
+}
+
+QComboBox::drop-down {
+border: 0;
+margin-top: 6px;
+margin-right: 16px;
+}
+
+QComboBox::down-arrow {
+border-left-width: 6px;
+border-right-width: 6px;
+border-top-width: 8px;
+border-style: solid;
+border-bottom-style: none;
+border-bottom-color: #888;
+border-top-color: #888;
+}
+
+QComboBox::down-arrow:disabled {
+border-bottom-color: #555;
+border-top-color: #555;
+}
+
+QComboBox::down-arrow:on {
+border-bottom-color: #EEE;
+border-top-color: #EEE;
+}
+
+QComboBox QAbstractItemView {
+border: 1px solid #666;
+background-color: #555;
+color: #EEE;
+padding: 0;
+}
+
+QCheckBox::indicator {
+	width: 14px;
+	height: 14px;
+	background-color: #444;
+}
+
+ QCheckBox::indicator:checked {
+     image: url(skin:controls/checkbox_check_dark.svg);
+ }
+
+ QRadioButton::indicator {
+	width: 14px;
+	height: 14px;
+	background: #444;
+	border: 0;
+	border-radius: 7px;
+ }
+
+ QRadioButton::indicator:checked {
+     image: url(skin:controls/radio_check_dark.svg);
+ }
+
+ QCheckBox::indicator:hover, QRadioButton::indicator:hover {
+	background-color: #555;
+ }
+
+ QCheckBox::indicator:pressed, QRadioButton::indicator:pressed {
+	background-color: #666;
+ }
+
+ QCheckBox::indicator:indeterminate {
+	background-color: #888;
+ }
+
+ QCheckBox::indicator:indeterminate:hover {
+	background-color: #999;
+ }
+
+ QCheckBox::indicator:indeterminate:pressed {
+	background-color: #AAA;
+ }
+
+ QSlider::groove:horizontal {
+     border: 0;
+     height: 8px;
+     background: #333;
+     margin: 2px 0;
+ }
+
+ QSlider::handle:horizontal {
+     background: #666;
+     border: 0;
+     width: 18px;
+     margin: -2px 0;
+     border-radius: 3px;
+ }
+
+ QSlider::handle:horizontal:hover {
+     background: #777;
+ }
+
+ QSlider::handle:horizontal:pressed {
+     background: #888;
+ }
+
+ QRadioButton::indicator {
+     width: 14px;
+     height: 14px;
+ }
+
+QSpinBox {
+	background: #444;
+	border: 0;
+	color: #eee;
+}
+
+QSpinBox:hover {
+	background: #555;
+}
+
+ QSpinBox::up-button {
+     width: 10px;
+     border-image: url(skin:branch_closed.svg) 1;
+ }
+
+ QSpinBox::down-button {
+     width: 10px;
+     border-image: url(skin:branch_open.svg) 1;
+ }
