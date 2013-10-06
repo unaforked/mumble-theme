@@ -30,7 +30,7 @@ QMainWindow {
 }
 
 QMainWindow::separator {
-	background: #DDD;
+	background: #EEE;
 	width: 5px;
 	height: 5px;
 	margin: 0;
