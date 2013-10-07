@@ -390,6 +390,11 @@ font-size: 16px;
     outline: 0;
 }
 
+
+QComboBox QListView {
+	margin: 0;
+}
+
  QListView::item {
 	padding: 0;
 	padding-top: 5px;
