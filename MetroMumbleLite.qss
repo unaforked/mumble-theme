@@ -110,7 +110,7 @@ QToolButton:on {
 }
 
 QToolButton:hover {
-	background-color: #8Cf;
+	background-color: #4bf;
 	border: 0;
 }
 
@@ -164,7 +164,7 @@ QTreeView::item:hover {
 QTreeView::item:selected {	
 	background-color: #def;
 	border: 1px solid transparent;
-	color: #fff;
+	color: #000;
 }
 
 QTreeView::branch {
