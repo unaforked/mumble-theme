@@ -30,8 +30,8 @@ QMainWindow {
 
 QMainWindow::separator {
 	background: #2b2b2b;
-	width: 3px;
-	height: 3px;
+	width: 5px;
+	height: 5px;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -58,8 +58,6 @@ QTextEdit {
 	background-color: #2b2b2b;
 	color: #999;
 	border: 0;
-	border-left: 3px solid #2b2b2b;
-	border-bottom: 3px solid #2b2b2b;
 }
 
 /*
@@ -283,7 +281,7 @@ QMenuBar {
 	margin: 0;
 	padding: 0;
 	padding-left: 6px;
-	background-color: #1c1c1c;
+	background-color: #444;
 }
 
 QMenuBar::item {
@@ -296,12 +294,12 @@ QMenuBar::item {
 }
 
 QMenuBar::item:selected {
-	background: #333;
+	background: #555;
 	color: #EEE;
 }
 
 QMenuBar::item:pressed {
-	background: #444;
+	background: #555;
 	color: #EEE;
 }
 
