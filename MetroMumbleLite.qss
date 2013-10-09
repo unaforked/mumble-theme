@@ -23,13 +23,13 @@ QStyleOptionView::item {
 }
 
 QMainWindow {
-	background-color: #F6F6F6;
+	background-color: #EEE;
 	color: #222;
 	border: 0;
 }
 
 QMainWindow::separator {
-	background: #F6F6F6;
+	background: #EEE;
 	width: 5px;
 	height: 5px;
 	margin: 0;
@@ -55,8 +55,8 @@ a:hover {
  * Input box
  */
 QTextEdit {
-	background-color: #F6F6F6;
-	color: #888;
+	background-color: #EEE;
+	color: #444;
 	border: 0;
 }
 
@@ -64,7 +64,7 @@ QTextEdit {
  * Toolbar
  */
 QToolBar {
-	background-color: #F6F6F6;
+	background-color: #EEE;
 	spacing: 0;
 	border: 1px solid transparent;
 	border-top: 1px solid transparent;
@@ -162,7 +162,7 @@ QTreeView::item:hover {
 }
 
 QTreeView::item:selected {	
-	background-color: #def;
+	background-color: #cef;
 	border: 1px solid transparent;
 	color: #000;
 }
@@ -278,7 +278,7 @@ QMenuBar {
 	margin: 0;
 	padding: 0;
 	padding-left: 6px;
-	background-color: #F6F6F6;
+	background-color: #EEE;
 }
 
 QMenuBar::item {
@@ -367,7 +367,7 @@ color: #AAA;
  * Group boxes, and various input elements
  */
 QDialog {
-	background-color: #F6F6F6;
+	background-color: #EEE;
 	color: #222;
 	border: 0;
 }
