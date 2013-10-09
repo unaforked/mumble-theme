@@ -162,7 +162,7 @@ QTreeView::item:hover {
 }
 
 QTreeView::item:selected {	
-	background-color: #cef;
+	background-color: #d8e8f8;
 	border: 1px solid transparent;
 	color: #000;
 }
