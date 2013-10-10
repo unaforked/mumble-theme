@@ -391,10 +391,10 @@ background-color: transparent;
 }
 
 QListView {
-background-color: transparent;
+background-color: #2b2b2b;
+border: 1px solid #181818;
 color: #DDD;
 padding: 0;
-border: 0;
 margin: 0;
 margin-top: 14px;
 margin-left: 6px;
@@ -403,6 +403,10 @@ font-size: 16px;
     outline: 0;
 }
 
+QListView#qlwIcons {
+background-color: transparent;
+border: 0;
+}
 
 QComboBox QListView {
 	margin: 0;
@@ -434,14 +438,13 @@ background-color: #292929;
  }
 
 QTabWidget::pane {
-border: 1px solid #666;
+border: 2px solid #666;
 background-color: #444;
-margin: 9px;
-margin-top: -1px;
+margin: -1px;
 }
 
 QTabWidget::tab-bar {
-left: 9px;
+left: 5px;
 }
 
 QTabBar::tab {
@@ -473,7 +476,7 @@ background-color: #666;
 QLabel, QCheckBox, QRadioButton {
 color: #aaa;
 background-color: transparent;
-border: 1px solid #2b2b2b;
+border: 1px solid transparent;
 }
 
 QLineEdit, QComboBox {
@@ -599,13 +602,13 @@ QCheckBox::indicator {
  }
 
 QSpinBox {
-	background: #444;
+	background: #333;
      border: 1px solid transparent;
 	color: #eee;
 }
 
 QSpinBox:hover {
-	background: #555;
+	background: #383838;
 }
 
  QSpinBox::up-button {
@@ -617,3 +620,13 @@ QSpinBox:hover {
      width: 10px;
      border-image: url(skin:controls/spin_down.svg) 1;
  }
+
+#qteRichText {
+	background-color: #2b2b2b;
+     border: 1px solid #2b2b2b;
+	padding: 5px;
+}
+
+#qtbToolBar {
+	border: 1px solid #2b2b2b;
+}

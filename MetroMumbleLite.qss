@@ -34,7 +34,6 @@ QMainWindow::separator {
 	height: 5px;
 	margin: 0;
 	padding: 0;
-	border: 0;
 }
 
 QMainWindow::separator:hover {
@@ -390,16 +389,20 @@ background-color: transparent;
 }
 
 QListView {
-background-color: transparent;
-color: #000;
+background-color: #FDFDFD;
 padding: 0;
-border: 0;
+border: 1px solid #ccc;
 margin: 0;
 margin-top: 14px;
 margin-left: 6px;
 min-width: 150px;
 font-size: 16px;
     outline: 0;
+}
+
+QListView#qlwIcons {
+background-color: transparent;
+border: 0;
 }
 
 QComboBox QListView {
@@ -432,39 +435,43 @@ background-color: #3af;
  }
 
 QTabWidget::pane {
-border: 1px solid #BBB;
-background-color: #EEE;
-margin: 9px;
-margin-top: -1px;
+border: 2px solid #ccc;
+background-color: #FAFAFA;
+margin: -1px;
 }
 
 QTabWidget::tab-bar {
-left: 9px;
+left: 5px;
 }
 
 QTabBar::tab {
-background-color: #EEE;
+background-color: transparent;
 color: #222;
-border: 1px solid #BBB;
+border: 1px solid transparent;
 border-left: 0;
 padding: 5px 20px;
 font-size: 13px;
 }
 
-QTabBar::tab:first {
-border-left: 1px solid #BBB;
-}
-
 QTabBar::tab:!selected:hover {
-background-color: #E8E8E8;
+background-color: #4bf;
+border: 1px solid transparent;
+color: #fff;
 }
 
 QTabBar::tab:selected:hover {
-background-color: #C8D8E8;
+background-color: #4bf;
+border: 1px solid transparent;
+color: #fff;
 }
 
 QTabBar::tab:selected {
-background-color: #E0E8FF;
+background-color: #FEFEFE;
+border: 1px solid #CCC;
+}
+
+QTabBar::tab:first:selected {
+border-left: 1px solid #CCC;
 }
 
 QLabel, QCheckBox, QRadioButton {
@@ -616,3 +623,13 @@ QSpinBox:hover {
      width: 10px;
      border-image: url(skin:controls/spin_down.svg) 1;
  }
+
+#qteRichText {
+	background-color: #FFF;
+	border: 1px solid #CCC;
+	padding: 5px;
+}
+
+#qtbToolBar {
+	border: 1px solid #CCC;
+}
