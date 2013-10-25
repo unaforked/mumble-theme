@@ -2,18 +2,24 @@
 <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
-	 id="svg249" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:docname="text-html.svg" sodipodi:version="0.32" inkscape:version="0.46" sodipodi:docbase="/home/jimmac/src/cvs/tango-icon-theme/scalable/mimetypes"
+	 id="svg249" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:cc="http://creativecommons.org/ns#" xmlns:svg="http://www.w3.org/2000/svg" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:version="0.32" sodipodi:docname="text-html.svg" inkscape:version="0.46" sodipodi:docbase="/home/jimmac/src/cvs/tango-icon-theme/scalable/mimetypes"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
 	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
 <defs>
 	
 	
-		<inkscape:perspective  id="perspective228" inkscape:vp_z="48 : 24 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 24 : 1" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="24 : 16 : 1">
+		<inkscape:perspective  sodipodi:type="inkscape:persp3d" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="48 : 24 : 1" inkscape:vp_x="0 : 24 : 1" id="perspective228" inkscape:persp3d-origin="24 : 16 : 1">
 		</inkscape:perspective>
 </defs>
-<sodipodi:namedview  pagecolor="#ffffff" id="base" bordercolor="#666666" inkscape:zoom="1" borderopacity="1.0" inkscape:cx="35.072186" showgrid="false" inkscape:cy="21.843109" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-width="872" inkscape:grid-bbox="true" inkscape:current-layer="layer6" inkscape:document-units="px" inkscape:window-height="688" inkscape:showpageshadow="false" inkscape:window-x="188" inkscape:window-y="122">
+<sodipodi:namedview  inkscape:zoom="1" inkscape:cx="35.072186" bordercolor="#666666" pagecolor="#ffffff" borderopacity="1.0" showgrid="false" inkscape:cy="21.843109" id="base" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:document-units="px" inkscape:current-layer="layer6" inkscape:window-width="872" inkscape:window-height="688" inkscape:window-x="188" inkscape:window-y="122" inkscape:showpageshadow="false" inkscape:grid-bbox="true">
 	</sodipodi:namedview>
-<path fill="none" stroke="#00B3DD" stroke-width="5" stroke-miterlimit="10" d="M25.962,14.785h9.141
-	c5.09,0,9.215,4.126,9.215,9.215l0,0c0,5.09-4.126,9.215-9.215,9.215h-9.141 M22.186,14.785h-9.29c-5.09,0-9.215,4.126-9.215,9.215
-	l0,0c0,5.09,4.126,9.215,9.215,9.215h9.29 M35.079,24h-22.21"/>
+<g>
+	<path fill="#00B3DD" d="M34.348,35.041h-8.519v-4.904h8.519c3.384,0,6.137-2.753,6.137-6.137c0-3.384-2.753-6.137-6.137-6.137
+		h-8.519v-4.904h8.519c6.088,0,11.041,4.953,11.041,11.041S40.436,35.041,34.348,35.041z"/>
+	<path fill="#00B3DD" d="M22.31,35.041h-8.658C7.564,35.041,2.611,30.088,2.611,24s4.953-11.041,11.041-11.041h8.658v4.904h-8.658
+		c-3.384,0-6.137,2.753-6.137,6.137c0,3.384,2.753,6.137,6.137,6.137h8.658V35.041z"/>
+	<g>
+		<rect x="13.344" y="20.982" fill="#00B3DD" width="21.263" height="6.036"/>
+	</g>
+</g>
 </svg>

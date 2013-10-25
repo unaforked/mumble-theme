@@ -109,7 +109,7 @@ QToolButton:on {
 }
 
 QToolButton:hover {
-	background-color: #4bf;
+	background-color: #DDD;
 	border: 0;
 }
 
@@ -161,8 +161,8 @@ QTreeView::item:hover {
 }
 
 QTreeView::item:selected {	
-	background-color: #d8e8f8;
-	border: 1px solid transparent;
+	background-color: #EEE;
+	border: 1px solid #ccc;
 	color: #000;
 }
 
@@ -276,7 +276,6 @@ QMenuBar {
 	border: 0;
 	margin: 0;
 	padding: 0;
-	padding-left: 6px;
 	background-color: #EEE;
 }
 
@@ -285,17 +284,17 @@ QMenuBar::item {
 	color: #555;
 	border: 0;
 	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
 }
 
 QMenuBar::item:selected {
-	background: #3af;
+	background: #298ce1;
 	color: #fff;
 }
 
 QMenuBar::item:pressed {
-	background: #3af;
+	background: #1979ca;
 	color: #fff;
 }
 
@@ -349,12 +348,12 @@ color: #222;
 }
 
 QPushButton:hover {
-background-color: #3af;
+background-color: #298ce1;
 color: #fff;
 }
 
 QPushButton:pressed {
-background-color: #4bf;
+background-color: #1979ca;
 }
 
 QPushButton:disabled {
@@ -420,17 +419,15 @@ QComboBox QListView {
 }
 
  QListView::item:hover {
-background-color: #3af;
+background-color: #ddd;
 	border: 1px solid transparent;
 	padding-left: 9px;
-	color: #fff;
  }
 
  QListView::item:selected {
-	background-color: #FFF;
+	background-color: #fafafa;
 	border: 1px solid #CCC;
 	font-size: 20px;
-	color: #111;
 	padding-left: 9px;
  }
 
