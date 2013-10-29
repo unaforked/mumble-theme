@@ -172,6 +172,7 @@ QTreeView::branch {
 	padding-left: 3px;
 	margin-top: 1px;
 	margin-right: 3px;
+	margin-left: 3px;
 }
 
  QTreeView::branch:has-siblings:!adjoins-item {
@@ -507,6 +508,7 @@ QComboBox::drop-down {
 border: 0;
 margin-top: 6px;
 margin-right: 16px;
+margin-left: 16px;
 }
 
 QComboBox::down-arrow {
