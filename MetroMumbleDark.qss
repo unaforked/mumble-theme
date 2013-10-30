@@ -11,6 +11,8 @@
 * {
 	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
+ 	selection-color: #EEE;
+	selection-background-color: #1c1c1c;
 }
 
 DockTitleBar {
