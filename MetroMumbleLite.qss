@@ -1,5 +1,5 @@
 /*
- * MetroMumble Theme by xPoke
+ * MetroMumble Lite Theme by xPoke
  * GitHub: https://github.com/xPoke
  *
  * Based on Flat Mumble Theme by xPaw (xpaw.ru)
@@ -147,37 +147,37 @@ QTextBrowser {
 }
 
 .log-time {
-  background-color: white;
+  background-color: transparent;
   color: #95a5a6;
   font-size: 12px;
 }
 
 .log-server {
-  background-color: white;
+  background-color: transparent;
   color: #F9655D;
   font-weight: bold;
 }
 
 .log-channel {
-  background-color: white;
+  background-color: transparent;
   color: #e67e22;
   font-weight: bold;
 }
 
 .log-privilege {
-  background-color: white;
+  background-color: transparent;
   color: #c0392b;
   font-weight: bold;
 }
 
 .log-target {
-  background-color: white;
+  background-color: transparent;
   color: #27ae60;
   font-weight: bold;
 }
 
 .log-source {
-  background-color: white;
+  background-color: transparent;
   color: #27ae60;
   font-weight: bold;
 }

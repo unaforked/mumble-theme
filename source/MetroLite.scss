@@ -1,3 +1,13 @@
+/*
+ * MetroMumble Lite Theme by xPoke
+ * GitHub: https://github.com/xPoke
+ *
+ * Based on Flat Mumble Theme by xPaw (xpaw.ru)
+ * GitHub: https://github.com/xPaw
+ *
+ * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
+ */
+
 $base-bg: #EEE;
 $base-hover: #DDD;
 $base-text: #444;
@@ -22,3 +32,5 @@ $slider-handle-hover: #FEFEFE;
 $radio: url(skin:controls/radio_check_lite.svg);
 $checkbox: url(skin:controls/checkbox_check_lite.svg);
 $link: #2a749e;
+
+@import 'MetroBase'
