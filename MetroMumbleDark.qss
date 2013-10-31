@@ -81,24 +81,26 @@ QHeaderView {
 }
 
 QHeaderView::section {
-  background-color: #1c1c1c;
+  background-color: #2c2c2c;
   border: 0;
   color: #bbbbbb;
   padding: 5px;
 }
 
 QTreeView {
-  alternate-background-color: #1c1c1c;
   background-color: #1c1c1c;
+  alternate-background-color: #1c1c1c;
   border: 1px solid #1c1c1c;
   color: #bbbbbb;
   outline: 0;
   selection-background-color: #1c1c1c;
   selection-color: #bbbbbb;
+  margin: 5px;
 }
 
 QTreeView.UserView, QTextBrowser.LogTextBrowser {
   padding: 1px;
+  margin: 0px;
 }
 
 QTreeView::item {
@@ -183,9 +185,9 @@ QTextBrowser {
 }
 
 QScrollBar {
-  background: #1c1c1c;
-  padding-left: 5px;
-  width: 16px;
+  background: transparent;
+  width: 15px;
+  margin-left: 1px;
 }
 
 QScrollBar::handle {
@@ -264,10 +266,12 @@ QMenu::indicator {
 }
 
 QPushButton {
-  background-color: transparent;
+  background-color: #383838;
+  border: 1px solid #1c1c1c;
   color: #bbbbbb;
   font-size: 18px;
   padding: 2px 8px;
+  outline: 0;
 }
 
 QPushButton:hover {
@@ -309,6 +313,7 @@ QListView {
   background-color: #1c1c1c;
   border: 1px solid #1c1c1c;
   min-width: 160px;
+  padding: 1px;
   outline: 0;
 }
 
@@ -496,4 +501,8 @@ QSlider::handle:horizontal:disabled {
   background-color: #1c1c1c;
   border: 1px solid #1c1c1c;
   padding: 5px;
+}
+
+#qtbToolBar {
+  border: 1px solid #1c1c1c;
 }
