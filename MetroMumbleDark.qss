@@ -457,9 +457,9 @@ QCheckBox::indicator:checked {
 QRadioButton::indicator {
   background: #383838;
   border: 1px solid #1c1c1c;
-  border-radius: 8px;
-  height: 14px;
-  width: 14px;
+  border-radius: 7px;
+  height: 12px;
+  width: 12px;
 }
 
 QRadioButton::indicator:checked {
@@ -471,14 +471,18 @@ QRadioButton::indicator:pressed {
   background-color: #2b2b2b;
 }
 
-QSlider::groove:horizontal {
+QSlider::groove {
   background: #333333;
   border: 1px solid #1c1c1c;
   height: 6px;
 }
 
+QSlider::groove:disabled {
+  border: 1px solid transparent;
+}
+
 QSlider::handle:horizontal {
-  background: #383838;
+  background: #555555;
   border: 1px solid #1c1c1c;
   border-radius: 2px;
   margin: -5px -1px;

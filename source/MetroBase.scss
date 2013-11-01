@@ -523,9 +523,9 @@ QRadioButton::indicator
 {
 	background:$input-bg;
 	border:1px solid $base-border;
-	border-radius:8px;
-	height:14px;
-	width:14px;
+	border-radius:7px;
+	height:12px;
+	width:12px;
 }
 
 QRadioButton::indicator:checked
@@ -539,16 +539,21 @@ QRadioButton::indicator:pressed
 	background-color:$base-bg;
 }
 
-QSlider::groove:horizontal
+QSlider::groove
 {
 	background:$slider-bg;
 	border:1px solid $base-border;
 	height:6px;
 }
 
+QSlider::groove:disabled
+{
+	border:1px solid transparent;
+}
+
 QSlider::handle:horizontal
 {
-	background:$input-bg;
+	background:$slider-handle;
 	border:1px solid $base-border;
 	border-radius:2px;
 	margin:-5px -1px;
