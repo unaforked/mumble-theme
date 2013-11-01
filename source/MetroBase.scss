@@ -304,6 +304,8 @@ QMenu::item:selected
 
 QMenu::item:disabled
 {
+	border:1px solid transparent;
+	background:transparent;
 	color:$sub-text-disabled;
 }
 
