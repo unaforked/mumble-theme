@@ -8,7 +8,7 @@
  * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
  */
 * {
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   margin: 0;
@@ -200,7 +200,6 @@ QTextBrowser {
 QScrollBar {
   background: transparent;
   width: 15px;
-  margin-left: 1px;
 }
 
 QScrollBar::handle {
@@ -459,6 +458,7 @@ QAbstractSpinBox::down-button {
   border-top-width: 5px;
   margin: 3px;
   width: 0;
+  right: 2px;
 }
 
 QSpinBox::up-button,
@@ -472,6 +472,7 @@ QAbstractSpinBox::up-button {
   border-top-style: none;
   margin: 3px;
   width: 0;
+  right: 2px;
 }
 
 QSpinBox::down-button:disabled,
