@@ -121,17 +121,20 @@ QTreeView::item {
   padding: 5px;
 }
 
-QTreeView::item.UserView {
+QTreeView.UserView::item {
   padding: 0;
 }
 
 QTreeView::item:hover {
   background-color: #333333;
+  border-top: 0;
 }
 
 QTreeView::item:selected {
   background-color: #333333;
-  border: 1px solid transparent;
+  border: 1px solid #1c1c1c;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
 }
 
 QTreeView::item:selected.UserView {
