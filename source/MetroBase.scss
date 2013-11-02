@@ -1,6 +1,6 @@
 *
 {
-	border:0px solid transparent;
+	border:0;
 	font-family:"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 	font-size:14px;
 	margin:0;
@@ -454,15 +454,14 @@ RichTextEditor QTabBar::tab
 
 QTabBar::tab:hover
 {
-	background-color:$highlight-bg;
-	color:$highlight-text;
+	background-color:$base-hover;
 	border:0;
 }
 
 QTabBar::tab:selected
 {
 	color:$sub-text;
-	background-color:$median-bg;
+	background-color:$tab-selected;
 	border:1px solid $base-border;
 }
 
@@ -600,7 +599,14 @@ QCheckBox::indicator:checked
 	image:$checkbox;
 }
 
-QRadioButton:disabled
+QCheckBox::indicator:disabled
+{
+	border:1px solid transparent;
+	image:$checkbox-disabled;
+}
+
+QRadioButton:disabled,
+QCheckBox:disabled
 {
 	color:$sub-text-disabled;
 }

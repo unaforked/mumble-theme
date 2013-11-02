@@ -8,7 +8,7 @@
  * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
  */
 * {
-  border: 0px solid transparent;
+  border: 0;
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
   margin: 0;
@@ -396,14 +396,13 @@ RichTextEditor QTabBar::tab {
 }
 
 QTabBar::tab:hover {
-  background-color: #298ce1;
-  color: white;
+  background-color: #555555;
   border: 0;
 }
 
 QTabBar::tab:selected {
   color: #bbbbbb;
-  background-color: #2c2c2c;
+  background-color: #333333;
   border: 1px solid #1c1c1c;
 }
 
@@ -528,7 +527,13 @@ QCheckBox::indicator:checked {
   image: url(skin:controls/checkbox_check_dark.svg);
 }
 
-QRadioButton:disabled {
+QCheckBox::indicator:disabled {
+  border: 1px solid transparent;
+  image: url(skin:controls/checkbox_check_disabled.svg);
+}
+
+QRadioButton:disabled,
+QCheckBox:disabled {
   color: #444444;
 }
 

@@ -30,10 +30,12 @@ $control-icon-disabled: #444;
 $slider-bg: #282828;
 $slider-handle: #383838;
 $slider-handle-hover: #444;
+$tab-selected: #333;
 $button-bg:#383838;
 $button-border:#1c1c1c;
 $radio: url(skin:controls/radio_check_dark.svg);
 $checkbox: url(skin:controls/checkbox_check_dark.svg);
+$checkbox-disabled: url(skin:controls/checkbox_check_disabled.svg);
 $link: #39a5dd;
 
 @import 'MetroBase'
