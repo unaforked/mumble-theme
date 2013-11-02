@@ -88,6 +88,10 @@ QToolButton:hover {
   background-color: #dddddd;
 }
 
+QToolButton:on {
+  background-color: #cccccc;
+}
+
 QHeaderView {
   border: 0;
   border-bottom: 1px solid #cccccc;
