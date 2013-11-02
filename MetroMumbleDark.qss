@@ -71,13 +71,13 @@ QToolBar::handle {
 }
 
 QToolBar::handle:horizontal {
-  image: url(skin:handle_horizontal.svg);
+  image: url(skin:controls/handle_horizontal.svg);
   width: 8px;
 }
 
 QToolBar::handle:vertical {
   height: 8px;
-  image: url(skin:handle_vertical.svg);
+  image: url(skin:controls/handle_vertical.svg);
 }
 
 QToolButton {
@@ -90,6 +90,12 @@ QToolButton:hover {
 
 QToolButton:on {
   background-color: #383838;
+}
+
+QToolButton#qt_toolbar_ext_button {
+  padding: 0;
+  border: 0;
+  qproperty-icon: url(skin:controls/toolbar_ext.svg);
 }
 
 QHeaderView {
@@ -154,11 +160,11 @@ QTreeView::branch {
 }
 
 QTreeView::branch:has-children:closed {
-  image: url(skin:branch_closed.svg);
+  image: url(skin:controls/branch_closed.svg);
 }
 
 QTreeView::branch:has-children:open {
-  image: url(skin:branch_open.svg);
+  image: url(skin:controls/branch_open.svg);
 }
 
 QTextBrowser {
