@@ -89,7 +89,7 @@ QToolButton:hover {
 }
 
 QToolButton:on {
-  background-color: #cccccc;
+  background-color: #dddddd;
 }
 
 QHeaderView {

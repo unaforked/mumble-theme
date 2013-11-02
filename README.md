@@ -16,4 +16,4 @@ Extras:
 
 Variants:
 
-- Make your own variant by editing the SASS CSS files in the "source" folder and compiling them with someting like Prepros http://alphapixels.com/prepros/
+- Make your own variant by editing the Sass CSS files in the "source" folder and compiling them with someting like Prepros http://alphapixels.com/prepros/
