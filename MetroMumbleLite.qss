@@ -253,7 +253,7 @@ QMenuBar::item:pressed {
 }
 
 QMenu {
-  background: white;
+  background: #eeeeee;
   border: 1px solid #cccccc;
   color: #111111;
   padding: 0;
@@ -268,7 +268,7 @@ QMenu::item {
 }
 
 QMenu::item:selected {
-  background: #e4f3f7;
+  background: #b7d1e5;
   border: 1px solid #97b5c6;
 }
 
