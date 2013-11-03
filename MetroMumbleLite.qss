@@ -124,7 +124,8 @@ QTreeView {
   margin: 5px;
 }
 
-QTreeView.UserView, QTextBrowser.LogTextBrowser {
+QTreeView.UserView,
+QTextBrowser.LogTextBrowser {
   padding: 1px;
   margin: 0px;
 }
@@ -216,6 +217,11 @@ QTextBrowser {
 QScrollBar {
   background: transparent;
   width: 15px;
+}
+
+UserView QScrollBar,
+LogTextBrowser QScrollBar {
+  margin-left: 1px;
 }
 
 QScrollBar::handle {
