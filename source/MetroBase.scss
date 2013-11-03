@@ -1,11 +1,11 @@
 *
 {
-	border:0;
 	font-family:"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 	font-size:14px;
 	margin:0;
 	padding:0;
 	outline:0;
+	border:0;
 	selection-background-color:$highlight-bg;
 	selection-color:$highlight-text;
 }
@@ -101,7 +101,11 @@ QToolButton:on
 
 QToolButton#qt_toolbar_ext_button
 {
+	width:10px;
 	padding:0;
+	border: 0px solid $base-border;
+	background: $base-hover;
+	qproperty-icon:url(skin:controls/toolbar_ext.svg);
 }
 
 QHeaderView
@@ -121,7 +125,7 @@ QHeaderView::section
 QTreeView
 {
 	background-color:$sub-bg;
-	alternate-background-color:$sub-bg;
+	alternate-background-color:transparent;
 	border:1px solid $base-border;
 	color:$sub-text;
 	outline:0;
@@ -150,15 +154,15 @@ QTreeView.UserView::item
 QTreeView::item:hover
 {
 	background-color:$sub-hover;
-	border-top:0;
+	border-top:1px transparent;
 }
 
 QTreeView::item:selected
 {
 	background-color:$sub-hover;
 	border:1px solid $base-border;
-	border-left:1px solid transparent;
 	border-right:1px solid transparent;
+	border-left:1px solid transparent;
 }
 
 QTreeView::item:selected.UserView
@@ -248,7 +252,7 @@ QScrollBar::handle
 
 QScrollBar::handle:hover
 {
-	background:$base-hover;
+	background:$scrollbar-hover;
 }
 
 QScrollBar::left-arrow,
