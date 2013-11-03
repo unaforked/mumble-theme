@@ -167,6 +167,11 @@ QTreeView::item:selected
 	border-left:1px solid transparent;
 }
 
+QTreeView#qtwServers::item:selected
+{
+	border-left:1px solid $base-border;
+}
+
 QTreeView::item:selected.UserView
 {
 	border:1px solid $base-border;
