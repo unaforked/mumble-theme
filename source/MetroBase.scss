@@ -35,7 +35,8 @@ QMainWindow::separator:hover
 
 QDialog,
 QWizard *,
-QCalendarWidget *
+QCalendarWidget *,
+#qswPages > QObject
 {
 	background-color:$dialog-bg;
 	color:$sub-text;
