@@ -82,7 +82,7 @@ QToolBar::handle:vertical {
 }
 
 QToolButton {
-  padding: 4px;
+  padding: 6px;
 }
 
 QToolButton:hover {
