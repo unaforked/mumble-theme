@@ -24,8 +24,8 @@ QDockWidget
 QMainWindow::separator
 {
 	background-color:$base-bg;
-	height:5px;
-	width:5px;
+	height:$base-padding;
+	width:$base-padding;
 }
 
 QMainWindow::separator:hover
@@ -64,13 +64,13 @@ QToolBar::separator
 {
 	background:$sub-highlight;
 	height:1px;
-	margin:5px;
+	margin:$base-padding;
 	width:1px;
 }
 
 QToolBar::handle
 {
-	padding:3px;
+	padding:$base-padding;
 }
 
 QToolBar::handle:horizontal
@@ -87,7 +87,7 @@ QToolBar::handle:vertical
 
 QToolButton
 {
-	padding:5px;
+	padding:$base-padding;
 }
 
 QToolButton:hover
@@ -120,7 +120,7 @@ QHeaderView::section
 	background-color:$median-bg;
 	border:0;
 	color:$sub-text;
-	padding:5px;
+	padding:$base-padding;
 }
 
 QTreeView
@@ -132,7 +132,7 @@ QTreeView
 	outline:0;
 	selection-background-color:$sub-bg;
 	selection-color:$sub-text;
-	margin:5px;
+	margin:$base-padding;
 }
 
 QTreeView.UserView,
@@ -145,7 +145,7 @@ QTextBrowser.LogTextBrowser
 QTreeView::item
 {
 	border-left:1px solid transparent;
-	padding:5px;
+	padding:$base-padding;
 }
 
 QTreeView.UserView::item
@@ -292,7 +292,7 @@ QMenuBar::item
 {
 	background-color:transparent;
 	color:$base-text;
-	padding:5px 12px;
+	padding:$base-padding 12px;
 	border:0;
 }
 
@@ -322,7 +322,7 @@ QMenu::item
 	border:1px solid transparent;
 	color:$sub-text;
 	margin:1px;
-	padding:.4em 2em;
+	padding:$base-padding $base-padding * 4;
 }
 
 QMenu::item:selected
@@ -356,7 +356,8 @@ QPushButton
 	border:1px solid $button-border;
 	color:$sub-text;
 	font-size:18px;
-	padding:3px 10px;
+	$button-padding: $base-padding - 2px;
+	padding: $button-padding $base-padding * 2;
 	outline:0;
 }
 
@@ -384,17 +385,17 @@ QGroupBox
 	border:1px solid $base-border;
 	color:$sub-text;
 	font-size:18px;
-	margin:5px;
-	padding:5px;
+	margin:$base-padding;
+	padding:$base-padding;
 	padding-top:30px;
 }
 
 QGroupBox::title
 {
 	background-color:transparent;
-	margin:5px;
-	margin-left:10px;
-	margin-right:10px;
+	margin:$base-padding;
+	margin-left:$base-padding * 2;
+	margin-right:$base-padding * 2;
 }
 
 QListView
@@ -411,15 +412,15 @@ QListView#qlwIcons
 	background-color:transparent;
 	border:0;
 	font-size:16px;
-	margin-left:5px;
+	margin-left:$base-padding;
 	margin-top:15px;
 }
 
 QListView::item
 {
-	border-left:10px solid transparent;
+	border-left:$base-padding * 2 solid transparent;
 	color:$base-text;
-	padding:5px 0;
+	padding:$base-padding 0;
 }
 
 QListView::item:hover
@@ -438,33 +439,33 @@ QListView::item:selected
 	border:1px solid $base-border;
 	border-left:1px solid transparent;
 	border-right:1px solid transparent;
-	padding-left:9px;
+	padding-left:$base-padding * 2 - 1;
 }
 
 QListView#qlwIcons::item:selected
 {
 	background-color:$median-bg;
 	border:1px solid $base-border;
-	padding-left:9px;
+	padding-left:$base-padding * 2 - 1;
 }
 
 QTabWidget::pane
 {
 	background-color:$median-bg;
 	border:1px solid $base-border;
-	margin-left:5px;
+	margin-left:$base-padding;
 }
 
 QTabWidget::tab-bar
 {
-	left:5px;
+	left:$base-padding;
 }
 
 QTabBar::tab
 {
 	background-color:transparent;
 	color:$sub-text;
-	padding:5px 20px;
+	padding:$base-padding $base-padding * 4;
 	margin-bottom:-1px;
 }
 
@@ -495,7 +496,7 @@ QAbstractSpinBox
 	background-color:$input-bg;
 	border:1px solid $base-border;
 	color:$sub-text;
-	padding:5px;
+	padding:$base-padding;
 }
 
 QLineEdit:disabled,
@@ -512,8 +513,8 @@ QAbstractSpinBox::drop-down,
 QSpinBox::drop-down
 {
 	border:0;
-	margin-left:10px;
-	margin-right:20px;
+	margin-left:$base-padding * 2;
+	margin-right:$base-padding * 4;
 	margin-top:5px;
 }
 
@@ -612,8 +613,9 @@ QCheckBox::indicator
 {
 	background-color:$input-bg;
 	border:1px solid $base-border;
-	height:14px;
-	width:14px;
+	height:13px;
+	width:13px;
+	margin-top: 1px;
 }
 
 QCheckBox::indicator:checked
@@ -717,7 +719,7 @@ QSlider::handle:disabled
 	color:$sub-text;
 	background-color:$sub-bg;
 	border:1px solid $base-border;
-	padding:5px;
+	padding:$base-padding;
 }
 
 #qtbToolBar {

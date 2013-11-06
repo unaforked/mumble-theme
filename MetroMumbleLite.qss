@@ -29,8 +29,8 @@ QDockWidget {
 
 QMainWindow::separator {
   background-color: #eeeeee;
-  height: 5px;
-  width: 5px;
+  height: 4px;
+  width: 4px;
 }
 
 QMainWindow::separator:hover {
@@ -63,12 +63,12 @@ QToolBar {
 QToolBar::separator {
   background: #cccccc;
   height: 1px;
-  margin: 5px;
+  margin: 4px;
   width: 1px;
 }
 
 QToolBar::handle {
-  padding: 3px;
+  padding: 4px;
 }
 
 QToolBar::handle:horizontal {
@@ -82,7 +82,7 @@ QToolBar::handle:vertical {
 }
 
 QToolButton {
-  padding: 5px;
+  padding: 4px;
 }
 
 QToolButton:hover {
@@ -110,7 +110,7 @@ QHeaderView::section {
   background-color: #fafafa;
   border: 0;
   color: #111111;
-  padding: 5px;
+  padding: 4px;
 }
 
 QTreeView {
@@ -121,7 +121,7 @@ QTreeView {
   outline: 0;
   selection-background-color: white;
   selection-color: #111111;
-  margin: 5px;
+  margin: 4px;
 }
 
 QTreeView.UserView,
@@ -132,7 +132,7 @@ QTextBrowser.LogTextBrowser {
 
 QTreeView::item {
   border-left: 1px solid transparent;
-  padding: 5px;
+  padding: 4px;
 }
 
 QTreeView.UserView::item {
@@ -257,7 +257,7 @@ QMenuBar {
 QMenuBar::item {
   background-color: transparent;
   color: #444444;
-  padding: 5px 12px;
+  padding: 4px 12px;
   border: 0;
 }
 
@@ -283,7 +283,7 @@ QMenu::item {
   border: 1px solid transparent;
   color: #111111;
   margin: 1px;
-  padding: .4em 2em;
+  padding: 4px 16px;
 }
 
 QMenu::item:selected {
@@ -312,7 +312,7 @@ QPushButton {
   border: 1px solid #cccccc;
   color: #111111;
   font-size: 18px;
-  padding: 3px 10px;
+  padding: 2px 8px;
   outline: 0;
 }
 
@@ -336,16 +336,16 @@ QGroupBox {
   border: 1px solid #cccccc;
   color: #111111;
   font-size: 18px;
-  margin: 5px;
-  padding: 5px;
+  margin: 4px;
+  padding: 4px;
   padding-top: 30px;
 }
 
 QGroupBox::title {
   background-color: transparent;
-  margin: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 4px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 QListView {
@@ -360,14 +360,14 @@ QListView#qlwIcons {
   background-color: transparent;
   border: 0;
   font-size: 16px;
-  margin-left: 5px;
+  margin-left: 4px;
   margin-top: 15px;
 }
 
 QListView::item {
-  border-left: 10px solid transparent;
+  border-left: 8px solid transparent;
   color: #444444;
-  padding: 5px 0;
+  padding: 4px 0;
 }
 
 QListView::item:hover {
@@ -383,29 +383,29 @@ QListView::item:selected {
   border: 1px solid #cccccc;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
-  padding-left: 9px;
+  padding-left: 7px;
 }
 
 QListView#qlwIcons::item:selected {
   background-color: #fafafa;
   border: 1px solid #cccccc;
-  padding-left: 9px;
+  padding-left: 7px;
 }
 
 QTabWidget::pane {
   background-color: #fafafa;
   border: 1px solid #cccccc;
-  margin-left: 5px;
+  margin-left: 4px;
 }
 
 QTabWidget::tab-bar {
-  left: 5px;
+  left: 4px;
 }
 
 QTabBar::tab {
   background-color: transparent;
   color: #111111;
-  padding: 5px 20px;
+  padding: 4px 16px;
   margin-bottom: -1px;
 }
 
@@ -432,7 +432,7 @@ QAbstractSpinBox {
   background-color: white;
   border: 1px solid #cccccc;
   color: #111111;
-  padding: 5px;
+  padding: 4px;
 }
 
 QLineEdit:disabled,
@@ -447,8 +447,8 @@ QComboBox::drop-down,
 QAbstractSpinBox::drop-down,
 QSpinBox::drop-down {
   border: 0;
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-left: 8px;
+  margin-right: 16px;
   margin-top: 5px;
 }
 
@@ -538,8 +538,9 @@ QLabel:disabled {
 QCheckBox::indicator {
   background-color: white;
   border: 1px solid #cccccc;
-  height: 14px;
-  width: 14px;
+  height: 13px;
+  width: 13px;
+  margin-top: 1px;
 }
 
 QCheckBox::indicator:checked {
@@ -626,7 +627,7 @@ QSlider::handle:disabled {
   color: #111111;
   background-color: white;
   border: 1px solid #cccccc;
-  padding: 5px;
+  padding: 4px;
 }
 
 #qtbToolBar {
