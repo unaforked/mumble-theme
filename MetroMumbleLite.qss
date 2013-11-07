@@ -284,6 +284,7 @@ QMenu::item {
   color: #111111;
   margin: 1px;
   padding: 4px 16px;
+  padding-left: 25px;
 }
 
 QMenu::item:selected {

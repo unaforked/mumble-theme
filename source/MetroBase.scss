@@ -323,6 +323,7 @@ QMenu::item
 	color:$sub-text;
 	margin:1px;
 	padding:$base-padding $base-padding * 4;
+	padding-left:25px;
 }
 
 QMenu::item:selected
