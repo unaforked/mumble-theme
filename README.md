@@ -7,7 +7,7 @@ MetroMumble - A simple flat skin for Mumble
 Installation:
 - Unzip files anywhere you'd like
 - Mumble -> Configure -> Settings -> User Interface -> Browse...
-- Pick either MetroMumble.qss or MetroMumble.qss
+- Pick either MetroDark.qss or MetroLite.qss
 - Press OK and restart Mumble
 
 Extras:
