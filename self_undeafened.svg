@@ -3,15 +3,15 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-<g>
+<g opacity="0.9">
 	<polygon fill="#009C58" points="141.382,145.434 141.381,366.564 342.408,462.208 342.41,49.792 	"/>
 </g>
-<g>
+<g opacity="0.9">
 	<rect x="58.814" y="144.93" fill="#009C58" width="56.826" height="222.139"/>
 </g>
 <path fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" d="M121.948,256"/>
-<path fill="#009C58" d="M427.331,403.163l-21.213-21.213c69.449-69.449,69.449-182.452,0.001-251.901l21.213-21.213
+<path opacity="0.9" fill="#009C58" d="M427.331,403.163l-21.213-21.213c69.449-69.449,69.449-182.452,0.001-251.901l21.213-21.213
 	C508.478,189.982,508.478,322.017,427.331,403.163z"/>
-<path fill="#009C58" d="M386.263,359.729l-21.213-21.213c45.498-45.498,45.498-119.53,0.001-165.03l21.213-21.213
+<path opacity="0.9" fill="#009C58" d="M386.263,359.729l-21.213-21.213c45.498-45.498,45.498-119.53,0.001-165.03l21.213-21.213
 	C443.458,209.469,443.458,302.534,386.263,359.729z"/>
 </svg>
