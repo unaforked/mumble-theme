@@ -567,6 +567,10 @@ QCheckBox::indicator:checked {
 
 QCheckBox::indicator:disabled {
   border: 1px solid transparent;
+}
+
+QCheckBox::indicator:checked:disabled {
+  border: 1px solid transparent;
   image: url(skin:controls/checkbox_check_disabled.svg);
 }
 
