@@ -48,6 +48,7 @@ QCalendarWidget *,
 QTextEdit {
   background-color: #eeeeee;
   color: #444444;
+  font-size: 12px;
 }
 
 a {
