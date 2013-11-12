@@ -287,12 +287,18 @@ QScrollBar::down-arrow,
 QScrollBar::sub-line,
 QScrollBar::add-line,
 QScrollBar::add-page,
-QScrollBar::sub-page,
-QAbstractScrollArea::corner
+QScrollBar::sub-page
 {
 	background:$base-bg;
 	height:0;
-	width: 0;
+	width:0;
+}
+
+QAbstractScrollArea::corner
+{
+	background:transparent;
+	height:0;
+	width:0;
 }
 
 QMenuBar
