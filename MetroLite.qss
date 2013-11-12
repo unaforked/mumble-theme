@@ -218,13 +218,23 @@ QTextBrowser {
   font-weight: bold;
 }
 
-QScrollBar {
+QScrollBar:horizontal {
+  background: transparent;
+  height: 15px;
+}
+
+QScrollBar:vertical {
   background: transparent;
   width: 15px;
 }
 
-UserView QScrollBar,
-LogTextBrowser QScrollBar {
+UserView QScrollBar:horizontal,
+LogTextBrowser QScrollBar:horizontal {
+  margin-top: 1px;
+}
+
+UserView QScrollBar:vertical,
+LogTextBrowser QScrollBar:vertical {
   margin-left: 1px;
 }
 
@@ -247,6 +257,7 @@ QScrollBar::sub-page,
 QAbstractScrollArea::corner {
   background: #eeeeee;
   height: 0;
+  width: 0;
 }
 
 QMenuBar {
