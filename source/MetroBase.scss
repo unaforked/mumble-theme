@@ -495,7 +495,8 @@ QTabBar::tab
 	background-color:transparent;
 	color:$sub-text;
 	padding:$base-padding $base-padding * 4;
-	border:1px solid $base-border;
+	border-bottom:1px solid $base-border;
+	border-right:1px solid $base-border;
 	margin-left:-1px;
 	height:18px;
 	subcontrol-position: center bottom;
@@ -503,7 +504,13 @@ QTabBar::tab
 
 QTabBar::tab:first
 {
+	border-left:1px solid transparent;
 	margin:0;
+}
+
+QTabBar::tab:last
+{
+	border-right:1px solid transparent;
 }
 
 QTabBar::tab:hover
@@ -516,6 +523,7 @@ QTabBar::tab:selected
 {
 	height:20px;
 	background-color:$median-bg;
+	border:1px solid $base-border;
 	border-bottom:1px solid transparent;
 	color:$sub-text;
 }
@@ -529,8 +537,8 @@ RichTextEditor::pane
 RichTextEditor QTabBar::tab
 {
 	subcontrol-position: center top;
-	border-top:1px solid transparent;
-	border-bottom:1px solid $base-border;
+	border-top:1px solid $base-border;
+	border-bottom:1px solid transparent;
 }
 
 RichTextEditor QTabBar::tab:selected

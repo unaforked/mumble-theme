@@ -430,14 +430,20 @@ QTabBar::tab {
   background-color: transparent;
   color: #111111;
   padding: 4px 16px;
-  border: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
   margin-left: -1px;
   height: 18px;
   subcontrol-position: center bottom;
 }
 
 QTabBar::tab:first {
+  border-left: 1px solid transparent;
   margin: 0;
+}
+
+QTabBar::tab:last {
+  border-right: 1px solid transparent;
 }
 
 QTabBar::tab:hover {
@@ -448,6 +454,7 @@ QTabBar::tab:hover {
 QTabBar::tab:selected {
   height: 20px;
   background-color: #fafafa;
+  border: 1px solid #cccccc;
   border-bottom: 1px solid transparent;
   color: #111111;
 }
@@ -459,8 +466,8 @@ RichTextEditor::pane {
 
 RichTextEditor QTabBar::tab {
   subcontrol-position: center top;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid transparent;
 }
 
 RichTextEditor QTabBar::tab:selected {
