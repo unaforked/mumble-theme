@@ -100,9 +100,19 @@ QToolButton:hover
 	background-color:$base-hover;
 }
 
+QToolButton:pressed
+{
+	background-color:$base-pressed;
+}
+
 QToolButton:on
 {
 	background-color:$base-hover;
+}
+
+QToolButton:on:pressed
+{
+	background-color:$base-pressed;
 }
 
 QToolButton#qt_toolbar_ext_button
@@ -388,20 +398,13 @@ QPushButton
 
 QPushButton:hover
 {
-	background-color:$highlight-bg;
-	color:$highlight-text;
-	border:1px solid transparent;
+	background-color:$button-hover;
 }
 
 QPushButton:pressed
 {
-	background-color:$highlight-pressed;
-}
-
-QPushButton:disabled
-{
-	background-color:transparent;
-	color:$sub-text-disabled;
+	background-color:$highlight-bg;
+	color:$highlight-text;
 }
 
 QGroupBox
@@ -547,12 +550,14 @@ QAbstractSpinBox
 	padding:$base-padding;
 }
 
+QPushButton:disabled,
 QLineEdit:disabled,
 QComboBox:disabled,
 QSpinBox:disabled,
 QAbstractSpinBox:disabled
 {
-	background-color:transparent;
+	border:0;
+	margin:1px;
 	color:$sub-text-disabled;
 }
 
