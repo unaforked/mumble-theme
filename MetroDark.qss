@@ -414,6 +414,7 @@ QTabWidget::pane {
   background-color: #2c2c2c;
   border: 1px solid #1c1c1c;
   margin-left: 4px;
+  margin-top: -1px;
 }
 
 QTabWidget::tab-bar {
@@ -424,23 +425,42 @@ QTabBar::tab {
   background-color: transparent;
   color: #bbbbbb;
   padding: 4px 16px;
+  border: 1px solid #1c1c1c;
+  margin-left: -1px;
+  height: 18px;
+  subcontrol-position: center bottom;
+}
+
+QTabBar::tab:first {
+  margin: 0;
+}
+
+QTabBar::tab:hover {
+  border: 1px solid #1c1c1c;
+  background-color: #383838;
+}
+
+QTabBar::tab:selected {
+  height: 20px;
+  background-color: #2c2c2c;
+  border-bottom: 1px solid transparent;
+  color: #bbbbbb;
+}
+
+RichTextEditor::pane {
+  margin-top: 0;
   margin-bottom: -1px;
 }
 
 RichTextEditor QTabBar::tab {
-  margin: 0px;
-  margin-top: -1px;
+  subcontrol-position: center top;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #1c1c1c;
 }
 
-QTabBar::tab:hover {
-  background-color: #383838;
-  border: 0;
-}
-
-QTabBar::tab:selected {
-  color: #bbbbbb;
-  background-color: #333333;
-  border: 1px solid #1c1c1c;
+RichTextEditor QTabBar::tab:selected {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #1c1c1c;
 }
 
 QLineEdit,
@@ -566,7 +586,7 @@ QCheckBox::indicator:checked {
 }
 
 QCheckBox::indicator:disabled {
-  border: 1px solid transparent;
+  border: 1px solid #2c2c2c;
 }
 
 QCheckBox::indicator:checked:disabled {
@@ -588,7 +608,7 @@ QRadioButton::indicator {
 }
 
 QRadioButton::indicator:disabled {
-  border: 1px solid transparent;
+  border: 1px solid #2c2c2c;
 }
 
 QRadioButton::indicator:checked {
@@ -639,10 +659,7 @@ QSlider::handle:pressed {
 }
 
 QSlider::handle:disabled {
-  background: transparent;
-  border: 0;
-  border-radius: 0;
-  margin: 0;
+  border: 1px solid #2c2c2c;
 }
 
 #qteRichText, #qptePlainText, #qwMacWarning {

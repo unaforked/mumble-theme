@@ -475,6 +475,7 @@ QTabWidget::pane
 	background-color:$median-bg;
 	border:1px solid $base-border;
 	margin-left:$base-padding;
+	margin-top:-1px;
 }
 
 QTabWidget::tab-bar
@@ -487,26 +488,48 @@ QTabBar::tab
 	background-color:transparent;
 	color:$sub-text;
 	padding:$base-padding $base-padding * 4;
+	border:1px solid $base-border;
+	margin-left:-1px;
+	height:18px;
+	subcontrol-position: center bottom;
+}
+
+QTabBar::tab:first
+{
+	margin:0;
+}
+
+QTabBar::tab:hover
+{
+	border:1px solid $base-border;
+	background-color:$base-hover;
+}
+
+QTabBar::tab:selected
+{
+	height:20px;
+	background-color:$median-bg;
+	border-bottom:1px solid transparent;
+	color:$sub-text;
+}
+
+RichTextEditor::pane
+{
+	margin-top:0;
 	margin-bottom:-1px;
 }
 
 RichTextEditor QTabBar::tab
 {
-	margin:0px;
-	margin-top:-1px;
+	subcontrol-position: center top;
+	border-top:1px solid transparent;
+	border-bottom:1px solid $base-border;
 }
 
-QTabBar::tab:hover
+RichTextEditor QTabBar::tab:selected
 {
-	background-color:$base-hover;
-	border:0;
-}
-
-QTabBar::tab:selected
-{
-	color:$sub-text;
-	background-color:$tab-selected;
-	border:1px solid $base-border;
+	border-top:1px solid transparent;
+	border-bottom:1px solid $base-border;
 }
 
 QLineEdit,
@@ -646,7 +669,7 @@ QCheckBox::indicator:checked
 
 QCheckBox::indicator:disabled
 {
-	border:1px solid transparent;
+	border:1px solid $median-bg;
 }
 
 QCheckBox::indicator:checked:disabled
@@ -672,7 +695,7 @@ QRadioButton::indicator
 
 QRadioButton::indicator:disabled
 {
-	border:1px solid transparent;
+	border:1px solid $median-bg;
 }
 
 QRadioButton::indicator:checked
@@ -734,10 +757,7 @@ QSlider::handle:pressed
 
 QSlider::handle:disabled
 {
-	background:transparent;
-	border:0;
-	border-radius:0;
-	margin:0;
+	border:1px solid $median-bg;
 }
 
 #qteRichText, #qptePlainText, #qwMacWarning
