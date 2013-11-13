@@ -46,6 +46,10 @@ QTextEdit
 {
 	background-color:$base-bg;
 	color:$base-text;
+}
+ 
+#qdwChat QTextEdit
+{
 	font-size:12px;
 }
 
@@ -209,7 +213,7 @@ QTextBrowser
 {
 	background-color:transparent;
 	color:#95a5a6;
-	font-size:12px;
+	font-size:14px;
 }
 
 .log-server

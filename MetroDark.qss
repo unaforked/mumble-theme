@@ -48,6 +48,9 @@ QCalendarWidget *,
 QTextEdit {
   background-color: #2b2b2b;
   color: #bbbbbb;
+}
+
+#qdwChat QTextEdit {
   font-size: 12px;
 }
 
@@ -186,7 +189,7 @@ QTextBrowser {
 .log-time {
   background-color: transparent;
   color: #95a5a6;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .log-server {
