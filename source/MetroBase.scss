@@ -559,6 +559,14 @@ QAbstractSpinBox
 	padding:$base-padding;
 }
 
+
+QSpinBox,
+QAbstractSpinBox
+{
+	min-width: 35px;
+	padding-right: 15px;
+}
+
 QPushButton:disabled,
 QLineEdit:disabled,
 QComboBox:disabled,
@@ -789,4 +797,9 @@ QSlider::handle:disabled
 #qtbToolBar {
         border:1px solid transparent;
 	background:transparent;
+}
+
+QFontDialog {
+	min-width: 600px;
+	min-height: 400px;
 }
