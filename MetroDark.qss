@@ -252,6 +252,8 @@ LogTextBrowser QScrollBar:vertical {
 
 QScrollBar::handle {
   background: #555555;
+  min-width: 10px;
+  min-height: 10px;
 }
 
 QScrollBar::handle:hover {
@@ -447,7 +449,6 @@ QTabBar::tab:last {
 }
 
 QTabBar::tab:hover {
-  border: 1px solid #1c1c1c;
   background-color: #383838;
 }
 
