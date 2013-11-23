@@ -27,6 +27,14 @@ QDockWidget {
   background-color: #eeeeee;
 }
 
+QTreeView.UserView,
+QTextBrowser.LogTextBrowser {
+  min-height: 120px;
+  min-width: 250px;
+  padding: 1px;
+  margin: 0px;
+}
+
 QMainWindow::separator {
   background-color: #eeeeee;
   height: 4px;
@@ -86,7 +94,7 @@ QToolBar::handle:vertical {
 }
 
 QToolButton {
-  padding: 6px;
+  padding: 4px;
 }
 
 QToolButton:hover {
@@ -107,9 +115,8 @@ QToolButton:on:pressed {
 
 QToolButton#qt_toolbar_ext_button {
   width: 10px;
-  padding: 0;
-  border: 0px solid #cccccc;
-  background: #dddddd;
+  padding: 1px;
+  border: 0;
   qproperty-icon: url(skin:controls/toolbar_ext.svg);
 }
 
@@ -123,6 +130,43 @@ QHeaderView::section {
   border: 0;
   color: #111111;
   padding: 4px;
+  padding-left: 8px;
+}
+
+QHeaderView::down-arrow {
+  border-bottom-color: #666666;
+  border-bottom-width: 5px;
+  border-top-color: #666666;
+  border-top-style: none;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-style: solid;
+  margin: 1px;
+  position: absolute;
+  subcontrol-origin: padding;
+  subcontrol-position: center right;
+  right: 12px;
+  top: 1px;
+  width: 0px;
+  height: 0;
+}
+
+QHeaderView::up-arrow {
+  border-bottom-color: #666666;
+  border-bottom-style: none;
+  border-top-color: #666666;
+  border-top-width: 5px;
+  border-left-width: 5px;
+  border-right-width: 5px;
+  border-style: solid;
+  margin: 1px;
+  position: absolute;
+  subcontrol-origin: padding;
+  subcontrol-position: center right;
+  right: 12px;
+  top: 1px;
+  width: 0;
+  height: 0;
 }
 
 QTreeView {
@@ -134,12 +178,6 @@ QTreeView {
   selection-background-color: white;
   selection-color: #111111;
   margin: 4px;
-}
-
-QTreeView.UserView,
-QTextBrowser.LogTextBrowser {
-  padding: 1px;
-  margin: 0px;
 }
 
 QTreeView::item {
@@ -180,11 +218,37 @@ QTreeView::branch {
 }
 
 QTreeView::branch:has-children:closed {
-  image: url(skin:controls/branch_closed.svg);
+  border-left-color: #666666;
+  border-top-width: 5px;
+  border-left-width: 5px;
+  border-bottom-width: 5px;
+  border-style: solid;
+  margin: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 QTreeView::branch:has-children:open {
-  image: url(skin:controls/branch_open.svg);
+  border-right-color: #666666;
+  border-top-width: 5px;
+  border-left-width: 0;
+  border-right-width: 5px;
+  border-bottom-width: 0;
+  border-style: solid;
+  margin: 5px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+
+QTreeView::branch:has-children:closed.UserView {
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+QTreeView::branch:has-children:open.UserView {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 QTextBrowser {
@@ -342,13 +406,13 @@ QPushButton {
   background-color: white;
   border: 1px solid #cccccc;
   color: #111111;
-  font-size: 18px;
-  padding: 2px 8px;
+  font-size: 16px;
+  padding: 4px 20px;
   outline: 0;
 }
 
 QPushButton:hover {
-  background-color: #eeeeee;
+  background-color: #dddddd;
 }
 
 QPushButton:pressed {
@@ -376,14 +440,15 @@ QGroupBox::title {
 QListView {
   background-color: white;
   border: 1px solid #cccccc;
-  min-width: 160px;
-  padding: 0;
   outline: 0;
+  padding-top: -1px;
 }
 
 QListView#qlwIcons {
+  padding: 0;
   background-color: transparent;
   border: 0;
+  min-width: 160px;
   font-size: 16px;
   margin-left: 4px;
   margin-top: 15px;
@@ -393,9 +458,16 @@ QListView::item {
   border-left: 8px solid transparent;
   color: #444444;
   padding: 4px 0;
+  border-top: 1px solid transparent;
+}
+
+QListView#qlwIcons::item {
+  padding: 5px 0;
 }
 
 QListView::item:hover {
+  border-top: 0;
+  margin-top: 1px;
   background-color: whitesmoke;
 }
 
@@ -404,6 +476,7 @@ QListView#qlwIcons::item:hover {
 }
 
 QListView::item:selected {
+  margin-top: 0;
   background-color: whitesmoke;
   border: 1px solid #cccccc;
   border-left: 1px solid transparent;
@@ -412,6 +485,7 @@ QListView::item:selected {
 }
 
 QListView#qlwIcons::item:selected {
+  margin-top: 1px;
   background-color: #fafafa;
   border: 1px solid #cccccc;
   padding-left: 7px;
@@ -425,17 +499,18 @@ QTabWidget::pane {
 }
 
 QTabWidget::tab-bar {
+  background-color: #eeeeee;
   left: 4px;
 }
 
 QTabBar::tab {
-  background-color: transparent;
+  background-color: #eeeeee;
   color: #111111;
-  padding: 4px 16px;
+  padding: 4px 20px;
   border-bottom: 1px solid #cccccc;
   border-right: 1px solid #cccccc;
   margin-left: -1px;
-  height: 18px;
+  height: 20px;
   subcontrol-position: center bottom;
 }
 
@@ -629,7 +704,8 @@ QRadioButton::indicator {
 }
 
 QRadioButton::indicator:disabled {
-  border: 1px solid #fafafa;
+  margin: 1px;
+  border: 1px solid transparent;
 }
 
 QRadioButton::indicator:checked {
