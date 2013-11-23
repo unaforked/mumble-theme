@@ -35,6 +35,10 @@ QTextBrowser.LogTextBrowser {
   margin: 0px;
 }
 
+QTreeView.UserView {
+  min-width: 50px;
+}
+
 QMainWindow::separator {
   background-color: #eeeeee;
   height: 4px;
