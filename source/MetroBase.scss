@@ -246,40 +246,12 @@ QTreeView::branch
 
 QTreeView::branch:has-children:closed
 {
-	border-left-color:$control-icon;
-	border-top-width:5px;
-	border-left-width:5px;
-	border-bottom-width:5px;
-	border-style:solid;
-	margin:5px;
-	margin-left:10px;
-	margin-top:10px;
-	margin-bottom:10px;
+	image:url(skin:controls/branch_closed.svg);
 }
 
 QTreeView::branch:has-children:open
 {
-	border-right-color:$control-icon;
-	border-top-width:5px;
-	border-left-width:0;
-	border-right-width:5px;
-	border-bottom-width:0;
-	border-style:solid;
-	margin:5px;
-	margin-top:13px;
-	margin-bottom:10px;
-}
-
-QTreeView::branch:has-children:closed.UserView
-{
-	margin-top:7px;
-	margin-bottom:5px;
-}
-
-QTreeView::branch:has-children:open.UserView
-{
-	margin-top:10px;
-	margin-bottom:5px;
+	image:url(skin:controls/branch_open.svg);
 }
 
 QTextBrowser
@@ -502,6 +474,7 @@ QGroupBox::title
 QListView
 {
 	background-color:$sub-bg;
+	alternate-background-color:$sub-bg;
 	border:1px solid $base-border;
 	outline:0;
 	padding-top:-1px;
@@ -867,7 +840,8 @@ QSlider::handle:pressed
 
 QSlider::handle:disabled
 {
-	border:1px solid $median-bg;
+	background-color:$slider-bg;
+	border:1px solid $slider-bg;
 }
 
 #qteRichText, #qptePlainText, #qwMacWarning
