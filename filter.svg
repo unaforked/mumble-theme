@@ -2,22 +2,18 @@
 <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-<defs>
-	
-	
-		<inkscape:perspective  sodipodi:type="inkscape:persp3d" id="perspective16505" inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" inkscape:persp3d-origin="372.04724 : 350.78739 : 1">
-		</inkscape:perspective>
-</defs>
-<sodipodi:namedview  inkscape:cx="-823.66963" bordercolor="#666666" inkscape:cy="621.5403" showguides="true" pagecolor="#ffffff" id="base" borderopacity="1.0" showgrid="false" inkscape:zoom="0.24748737" inkscape:guide-bbox="true" inkscape:current-layer="layer1" inkscape:document-units="px" inkscape:pageshadow="2" inkscape:pageopacity="0.0">
-	<sodipodi:guide  orientation="0,1" position="-922.85714,940" id="guide3157"></sodipodi:guide>
-	<sodipodi:guide  orientation="0,1" position="-911.42857,125.71429" id="guide3159"></sodipodi:guide>
-	<sodipodi:guide  orientation="1,0" position="-28.571429,20" id="guide3163"></sodipodi:guide>
-	<sodipodi:guide  orientation="1,0" position="782.85714,11.428571" id="guide3165"></sodipodi:guide>
-	<sodipodi:guide  orientation="0,1" position="330,501.42857" id="guide3171"></sodipodi:guide>
-	<sodipodi:guide  orientation="0,1" position="492.85714,770" id="guide3173"></sodipodi:guide>
-</sodipodi:namedview>
-<path id="path3346_1_" sodipodi:ry="58.57143" sodipodi:type="arc" sodipodi:rx="341.42856" sodipodi:cy="342.36218" sodipodi:cx="387.14285" opacity="0.9" fill="#009C58" d="
-	M459.132,78.969c15.719-16.84-93.691-35.893-209.247-35.891c-115.557,0.001-223.7,14.385-209.221,35.896c0,0.002,0,0.003,0,0.005
-	l0,0.622l153.205,165.461v139.198c34.88,38.58,71.349,59.682,108.557,72.663V245.937L459.132,78.969z"/>
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<g id="layer1" inkscape:label="Ebene 1" inkscape:groupmode="layer" opacity="0.9">
+	<g>
+		<g id="g7561_6_">
+			
+				<g id="path3346_8_" sodipodi:cy="342.36218" sodipodi:ry="58.57143" sodipodi:cx="387.14285" sodipodi:rx="341.42856" sodipodi:type="arc">
+				<path fill="#009C58" d="M36.701,99.418C29.09,79.78,136.213,61.282,258.986,61.28s230.002,18.525,222.313,38.132
+					c-22.345,56.985-151.253,166.565-151.253,166.565c-8.381,7.124-15.238,21.953-15.238,32.953v138.583
+					c0,11-8.794,18.085-19.542,15.745l-76.251-16.603c-10.748-2.34-19.542-13.255-19.542-24.255v-114.4
+					c0-11-6.799-25.897-15.108-33.105C184.364,264.896,58.531,155.744,36.701,99.418z"/>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>
