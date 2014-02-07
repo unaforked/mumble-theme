@@ -382,7 +382,7 @@ QMenu::indicator {
 
 QPushButton {
   background-color: #383838;
-  border: 1px solid #111111;
+  border: 1px solid #222222;
   color: #dddddd;
   font-size: 16px;
   padding: 4px 20px;
@@ -535,7 +535,7 @@ QComboBox,
 QSpinBox,
 QAbstractSpinBox {
   background-color: #383838;
-  border: 1px solid #111111;
+  border: 1px solid #222222;
   color: #dddddd;
   padding: 4px;
 }
@@ -554,6 +554,7 @@ QAbstractSpinBox:disabled {
   border: 0;
   margin: 1px;
   color: #444444;
+  background-color: #282828;
 }
 
 QComboBox::drop-down,
@@ -650,7 +651,7 @@ QLabel:disabled {
 
 QCheckBox::indicator {
   background-color: #383838;
-  border: 1px solid #111111;
+  border: 1px solid #222222;
   height: 13px;
   width: 13px;
   margin-top: 1px;
@@ -662,6 +663,7 @@ QCheckBox::indicator:checked {
 
 QCheckBox::indicator:disabled {
   border: 1px solid #2c2c2c;
+  background-color: #282828;
 }
 
 QCheckBox::indicator:checked:disabled {
@@ -676,7 +678,7 @@ QCheckBox:disabled {
 
 QRadioButton::indicator {
   background: #383838;
-  border: 1px solid #111111;
+  border: 1px solid #222222;
   border-radius: 7px;
   height: 12px;
   width: 12px;
@@ -715,7 +717,7 @@ QSlider::groove:disabled {
 
 QSlider::handle {
   background: #383838;
-  border: 1px solid #111111;
+  border: 1px solid #222222;
   border-radius: 2px;
 }
 

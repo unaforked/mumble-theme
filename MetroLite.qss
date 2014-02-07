@@ -554,6 +554,7 @@ QAbstractSpinBox:disabled {
   border: 0;
   margin: 1px;
   color: #bbbbbb;
+  background-color: #eeeeee;
 }
 
 QComboBox::drop-down,
@@ -662,6 +663,7 @@ QCheckBox::indicator:checked {
 
 QCheckBox::indicator:disabled {
   border: 1px solid #fdfdfd;
+  background-color: #eeeeee;
 }
 
 QCheckBox::indicator:checked:disabled {

@@ -632,6 +632,7 @@ QAbstractSpinBox:disabled
 	border:0;
 	margin:1px;
 	color:$sub-text-disabled;
+	background-color:$control-disabled;
 }
 
 QComboBox::drop-down,
@@ -752,6 +753,7 @@ QCheckBox::indicator:checked
 QCheckBox::indicator:disabled
 {
 	border:1px solid $median-bg;
+	background-color:$control-disabled;
 }
 
 QCheckBox::indicator:checked:disabled
@@ -794,7 +796,7 @@ QRadioButton::indicator:pressed
 
 QSlider::groove
 {
-	background:$slider-bg;
+	background:$control-disabled;
 	border:1px solid $base-border;
 }
 
@@ -840,8 +842,8 @@ QSlider::handle:pressed
 
 QSlider::handle:disabled
 {
-	background-color:$slider-bg;
-	border:1px solid $slider-bg;
+	background-color:$control-disabled;
+	border:1px solid $control-disabled;
 }
 
 #qteRichText, #qptePlainText, #qwMacWarning
