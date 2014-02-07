@@ -610,7 +610,7 @@ QSpinBox,
 QAbstractSpinBox
 {
 	background-color:$input-bg;
-	border:1px solid $base-border;
+	border:1px solid $button-border;
 	color:$sub-text;
 	padding:$base-padding;
 }
@@ -738,7 +738,7 @@ QLabel:disabled
 QCheckBox::indicator
 {
 	background-color:$input-bg;
-	border:1px solid $base-border;
+	border:1px solid $button-border;
 	height:13px;
 	width:13px;
 	margin-top: 1px;
@@ -769,7 +769,7 @@ QCheckBox:disabled
 QRadioButton::indicator
 {
 	background:$input-bg;
-	border:1px solid $base-border;
+	border:1px solid $button-border;
 	border-radius:7px;
 	height:12px;
 	width:12px;
@@ -816,7 +816,7 @@ QSlider::groove:disabled
 QSlider::handle
 {
 	background:$slider-handle;
-	border:1px solid $base-border;
+	border:1px solid $button-border;
 	border-radius:2px;
 }
 

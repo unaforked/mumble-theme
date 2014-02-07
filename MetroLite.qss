@@ -126,7 +126,7 @@ QToolButton#qt_toolbar_ext_button {
 
 QHeaderView {
   border: 0;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #dddddd;
 }
 
 QHeaderView::section {
@@ -176,7 +176,7 @@ QHeaderView::up-arrow {
 QTreeView {
   background-color: white;
   alternate-background-color: transparent;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   color: #111111;
   outline: 0;
   selection-background-color: white;
@@ -200,17 +200,17 @@ QTreeView::item:hover {
 
 QTreeView::item:selected {
   background-color: whitesmoke;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
 }
 
 QTreeView#qtwServers::item:selected {
-  border-left: 1px solid #cccccc;
+  border-left: 1px solid #dddddd;
 }
 
 QTreeView::item:selected.UserView {
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
 }
 
 QTreeView::branch {
@@ -231,7 +231,7 @@ QTreeView::branch:has-children:open {
 
 QTextBrowser {
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   color: #111111;
   padding: 1px;
 }
@@ -345,7 +345,7 @@ QMenuBar::item:pressed {
 
 QMenu {
   background: #eeeeee;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   color: #111111;
   padding: 0;
 }
@@ -400,7 +400,7 @@ QPushButton:pressed {
 
 QGroupBox {
   background-color: #fdfdfd;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   color: #333333;
   font-size: 18px;
   margin: 4px;
@@ -418,7 +418,7 @@ QGroupBox::title {
 QListView {
   background-color: white;
   alternate-background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   outline: 0;
   padding-top: -1px;
 }
@@ -457,7 +457,7 @@ QListView#qlwIcons::item:hover {
 QListView::item:selected {
   margin-top: 0;
   background-color: whitesmoke;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   padding-left: 7px;
@@ -466,13 +466,13 @@ QListView::item:selected {
 QListView#qlwIcons::item:selected {
   margin-top: 1px;
   background-color: #fdfdfd;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   padding-left: 7px;
 }
 
 QTabWidget::pane {
   background-color: #fdfdfd;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   margin-left: 4px;
   margin-top: -1px;
 }
@@ -486,8 +486,8 @@ QTabBar::tab {
   background-color: whitesmoke;
   color: #111111;
   padding: 4px 20px;
-  border-bottom: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
   margin-left: -1px;
   height: 20px;
   subcontrol-position: center bottom;
@@ -509,7 +509,7 @@ QTabBar::tab:hover {
 QTabBar::tab:selected {
   height: 20px;
   background-color: #fdfdfd;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   border-bottom: 1px solid transparent;
   color: #111111;
 }
@@ -521,13 +521,13 @@ RichTextEditor::pane {
 
 RichTextEditor QTabBar::tab {
   subcontrol-position: center top;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #dddddd;
   border-bottom: 1px solid transparent;
 }
 
 RichTextEditor QTabBar::tab:selected {
   border-top: 1px solid transparent;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #dddddd;
 }
 
 QLineEdit,
@@ -632,7 +632,7 @@ QComboBox::down-arrow:disabled {
 
 QComboBox QAbstractItemView {
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   color: #111111;
 }
 
@@ -698,7 +698,7 @@ QRadioButton::indicator:pressed {
 
 QSlider::groove {
   background: #eeeeee;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
 }
 
 QSlider::groove:horizontal {
@@ -742,7 +742,7 @@ QSlider::handle:disabled {
 #qteRichText, #qptePlainText, #qwMacWarning {
   color: #111111;
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   padding: 4px;
 }
 
