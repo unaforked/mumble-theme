@@ -24,7 +24,7 @@ DockTitleBar {
 
 QMainWindow,
 QDockWidget {
-  background-color: #eeeeee;
+  background-color: whitesmoke;
 }
 
 QTreeView.UserView,
@@ -40,26 +40,26 @@ QTreeView.UserView {
 }
 
 QMainWindow::separator {
-  background-color: #eeeeee;
+  background-color: whitesmoke;
   height: 4px;
   width: 4px;
 }
 
 QMainWindow::separator:hover {
-  background: #dddddd;
+  background: #e5e5e5;
 }
 
 QDialog,
 QWizard *,
 QCalendarWidget *,
 #qswPages > QObject {
-  background-color: #eeeeee;
-  color: #111111;
+  background-color: whitesmoke;
+  color: #333333;
 }
 
 QTextEdit {
-  background-color: #eeeeee;
-  color: #444444;
+  background-color: whitesmoke;
+  color: #333333;
 }
 
 #qdwChat QTextEdit {
@@ -72,7 +72,7 @@ a {
 }
 
 QToolBar {
-  background-color: #eeeeee;
+  background-color: whitesmoke;
   spacing: 0;
 }
 
@@ -102,7 +102,7 @@ QToolButton {
 }
 
 QToolButton:hover {
-  background-color: #dddddd;
+  background-color: #e5e5e5;
 }
 
 QToolButton:pressed {
@@ -110,7 +110,7 @@ QToolButton:pressed {
 }
 
 QToolButton:on {
-  background-color: #dddddd;
+  background-color: #e5e5e5;
 }
 
 QToolButton:on:pressed {
@@ -130,7 +130,7 @@ QHeaderView {
 }
 
 QHeaderView::section {
-  background-color: #fafafa;
+  background-color: #fdfdfd;
   border: 0;
   color: #111111;
   padding: 4px;
@@ -310,7 +310,7 @@ QScrollBar::sub-line,
 QScrollBar::add-line,
 QScrollBar::add-page,
 QScrollBar::sub-page {
-  background: #eeeeee;
+  background: whitesmoke;
   height: 0;
   width: 0;
 }
@@ -322,13 +322,13 @@ QAbstractScrollArea::corner {
 }
 
 QMenuBar {
-  background-color: #eeeeee;
+  background-color: whitesmoke;
   border: 0;
 }
 
 QMenuBar::item {
   background-color: transparent;
-  color: #444444;
+  color: #333333;
   padding: 4px 12px;
   border: 0;
 }
@@ -390,7 +390,7 @@ QPushButton {
 }
 
 QPushButton:hover {
-  background-color: #dddddd;
+  background-color: #e5e5e5;
 }
 
 QPushButton:pressed {
@@ -399,9 +399,9 @@ QPushButton:pressed {
 }
 
 QGroupBox {
-  background-color: #fafafa;
+  background-color: #fdfdfd;
   border: 1px solid #cccccc;
-  color: #111111;
+  color: #333333;
   font-size: 18px;
   margin: 4px;
   padding: 4px;
@@ -435,7 +435,7 @@ QListView#qlwIcons {
 
 QListView::item {
   border-left: 8px solid transparent;
-  color: #444444;
+  color: #333333;
   padding: 4px 0;
   border-top: 1px solid transparent;
 }
@@ -451,7 +451,7 @@ QListView::item:hover {
 }
 
 QListView#qlwIcons::item:hover {
-  background-color: #dddddd;
+  background-color: #e5e5e5;
 }
 
 QListView::item:selected {
@@ -465,25 +465,25 @@ QListView::item:selected {
 
 QListView#qlwIcons::item:selected {
   margin-top: 1px;
-  background-color: #fafafa;
+  background-color: #fdfdfd;
   border: 1px solid #cccccc;
   padding-left: 7px;
 }
 
 QTabWidget::pane {
-  background-color: #fafafa;
+  background-color: #fdfdfd;
   border: 1px solid #cccccc;
   margin-left: 4px;
   margin-top: -1px;
 }
 
 QTabWidget::tab-bar {
-  background-color: #eeeeee;
+  background-color: whitesmoke;
   left: 4px;
 }
 
 QTabBar::tab {
-  background-color: #eeeeee;
+  background-color: whitesmoke;
   color: #111111;
   padding: 4px 20px;
   border-bottom: 1px solid #cccccc;
@@ -503,12 +503,12 @@ QTabBar::tab:last {
 }
 
 QTabBar::tab:hover {
-  background-color: #dddddd;
+  background-color: #e5e5e5;
 }
 
 QTabBar::tab:selected {
   height: 20px;
-  background-color: #fafafa;
+  background-color: #fdfdfd;
   border: 1px solid #cccccc;
   border-bottom: 1px solid transparent;
   color: #111111;
@@ -661,7 +661,7 @@ QCheckBox::indicator:checked {
 }
 
 QCheckBox::indicator:disabled {
-  border: 1px solid #fafafa;
+  border: 1px solid #fdfdfd;
 }
 
 QCheckBox::indicator:checked:disabled {
@@ -693,7 +693,7 @@ QRadioButton::indicator:checked {
 
 QCheckBox::indicator:pressed,
 QRadioButton::indicator:pressed {
-  background-color: #eeeeee;
+  background-color: whitesmoke;
 }
 
 QSlider::groove {

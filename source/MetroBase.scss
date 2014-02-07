@@ -53,7 +53,7 @@ QCalendarWidget *,
 #qswPages > QObject
 {
 	background-color:$dialog-bg;
-	color:$sub-text;
+	color:$base-text;
 }
 
 QTextEdit
@@ -456,7 +456,7 @@ QGroupBox
 {
 	background-color:$median-bg;
 	border:1px solid $base-border;
-	color:$sub-text;
+	color:$base-text;
 	font-size:18px;
 	margin:$base-padding;
 	padding:$base-padding;
