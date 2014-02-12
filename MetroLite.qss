@@ -138,39 +138,19 @@ QHeaderView::section {
 }
 
 QHeaderView::down-arrow {
-  border-bottom-color: #666666;
-  border-bottom-width: 5px;
-  border-top-color: #666666;
-  border-top-style: none;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-style: solid;
   margin: 1px;
-  position: absolute;
-  subcontrol-origin: padding;
-  subcontrol-position: center right;
-  right: 12px;
   top: 1px;
-  width: 0px;
-  height: 0;
+  right: 10px;
+  width: 14px;
+  image: url(skin:controls/arrow_down.svg);
 }
 
 QHeaderView::up-arrow {
-  border-bottom-color: #666666;
-  border-bottom-style: none;
-  border-top-color: #666666;
-  border-top-width: 5px;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-style: solid;
   margin: 1px;
-  position: absolute;
-  subcontrol-origin: padding;
-  subcontrol-position: center right;
-  right: 12px;
   top: 1px;
-  width: 0;
-  height: 0;
+  right: 10px;
+  width: 14px;
+  image: url(skin:controls/arrow_up.svg);
 }
 
 QTreeView {
@@ -207,6 +187,7 @@ QTreeView::item:selected {
 
 QTreeView#qtwServers::item:selected {
   border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
 }
 
 QTreeView::item:selected.UserView {
@@ -483,7 +464,7 @@ QTabWidget::tab-bar {
 }
 
 QTabBar::tab {
-  background-color: whitesmoke;
+  background-color: transparent;
   color: #111111;
   padding: 4px 20px;
   border-bottom: 1px solid #dddddd;
@@ -504,6 +485,10 @@ QTabBar::tab:last {
 
 QTabBar::tab:hover {
   background-color: #e5e5e5;
+}
+
+QTabBar::tab:disabled {
+  color: #bbbbbb;
 }
 
 QTabBar::tab:selected {
@@ -569,66 +554,46 @@ QSpinBox::drop-down {
 QComboBox::down-arrow,
 QSpinBox::down-arrow,
 QAbstractSpinBox::down-arrow {
-  border-bottom-color: #666666;
-  border-bottom-style: none;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-style: solid;
-  border-top-color: #666666;
-  border-top-width: 5px;
-  margin: 1px;
+  margin-top: -2px;
+  image: url(skin:controls/arrow_down.svg);
+  width: 14px;
+}
+
+QComboBox::down-arrow:disabled,
+QSpinBox::down-arrow:disabled,
+QAbstractSpinBox::down-arrow:disabled {
+  image: url(skin:controls/arrow_down_disabled.svg);
 }
 
 QSpinBox::down-arrow,
 QAbstractSpinBox::down-arrow {
   subcontrol-origin: border;
   subcontrol-position: center right;
-  right: -15px;
+  right: -50px;
 }
 
 QSpinBox::down-button,
 QAbstractSpinBox::down-button {
-  border-bottom-color: #666666;
-  border-bottom-style: none;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-style: solid;
-  border-top-color: #666666;
-  border-top-width: 5px;
-  margin: 3px;
-  width: 0;
-  right: 2px;
+  margin-right: 4px;
+  image: url(skin:controls/arrow_down.svg);
+  width: 14px;
+}
+
+QSpinBox::down-button:disabled,
+QAbstractSpinBox::down-button:disabled {
+  image: url(skin:controls/arrow_down_disabled.svg);
 }
 
 QSpinBox::up-button,
 QAbstractSpinBox::up-button {
-  border-bottom-color: #666666;
-  border-bottom-width: 5px;
-  border-left-width: 5px;
-  border-right-width: 5px;
-  border-style: solid;
-  border-top-color: #666666;
-  border-top-style: none;
-  margin: 3px;
-  width: 0;
-  right: 2px;
+  margin-right: 4px;
+  image: url(skin:controls/arrow_up.svg);
+  width: 14px;
 }
 
-QSpinBox::down-button:disabled,
-QAbstractSpinBox::down-button:disabled,
 QSpinBox::up-button:disabled,
-QAbstractSpinBox::up-button:disabled,
-QSpinBox::down-button:off,
-QAbstractSpinBox::down-button:off,
-QSpinBox::up-button:off,
-QAbstractSpinBox::up-button:off,
-QSpinBox::down-arrow:disabled,
-QAbstractSpinBox::down-arrow:disabled,
-QSpinBox::up-arrow:disabled,
-QAbstractSpinBox::up-arrow:disabled,
-QComboBox::down-arrow:disabled {
-  border-top-color: #cccccc;
-  border-bottom-color: #cccccc;
+QAbstractSpinBox::up-button:disabled {
+  image: url(skin:controls/arrow_up_disabled.svg);
 }
 
 QComboBox QAbstractItemView {
@@ -685,12 +650,17 @@ QRadioButton::indicator {
 }
 
 QRadioButton::indicator:disabled {
+  background-color: #eeeeee;
   margin: 1px;
   border: 1px solid transparent;
 }
 
 QRadioButton::indicator:checked {
   image: url(skin:controls/radio_check_lite.svg);
+}
+
+QRadioButton::indicator:checked:disabled {
+  image: url(skin:controls/radio_check_disabled.svg);
 }
 
 QCheckBox::indicator:pressed,

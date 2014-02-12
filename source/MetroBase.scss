@@ -153,39 +153,19 @@ QHeaderView::section
 }
 
 QHeaderView::down-arrow {
-	border-bottom-color:$control-icon;
-	border-bottom-width:5px;
-	border-top-color:$control-icon;
-	border-top-style:none;
-	border-left-width:5px;
-	border-right-width:5px;
-	border-style:solid;
 	margin:1px;
-	position:absolute;
-	subcontrol-origin:padding;
-	subcontrol-position:center right;
-	right:$base-padding * 3;
 	top:1px;
-	width:0px;
-	height:0;
+	right:10px;
+	width:14px;
+	image:url(skin:controls/arrow_down.svg);
  }
 
 QHeaderView::up-arrow {
-	border-bottom-color:$control-icon;
-	border-bottom-style:none;
-	border-top-color:$control-icon;
-	border-top-width:5px;
-	border-left-width:5px;
-	border-right-width:5px;
-	border-style:solid;
 	margin:1px;
-	position:absolute;
-	subcontrol-origin:padding;
-	subcontrol-position:center right;
-	right:$base-padding * 3;
 	top:1px;
-	width:0;
-	height:0;
+	right:10px;
+	width:14px;
+	image:url(skin:controls/arrow_up.svg);
  }
 
 QTreeView
@@ -228,6 +208,7 @@ QTreeView::item:selected
 QTreeView#qtwServers::item:selected
 {
 	border-left:1px solid $base-border;
+	border-right:1px solid $base-border;
 }
 
 QTreeView::item:selected.UserView
@@ -550,7 +531,7 @@ QTabWidget::tab-bar
 
 QTabBar::tab
 {
-	background-color:$dialog-bg;
+	background-color:transparent;
 	color:$sub-text;
 	padding:$base-padding $base-padding * 5;
 	border-bottom:1px solid $base-border;
@@ -574,6 +555,11 @@ QTabBar::tab:last
 QTabBar::tab:hover
 {
 	background-color:$base-hover;
+}
+
+QTabBar::tab:disabled
+{
+	color:$sub-text-disabled;
 }
 
 QTabBar::tab:selected
@@ -649,70 +635,53 @@ QComboBox::down-arrow,
 QSpinBox::down-arrow,
 QAbstractSpinBox::down-arrow
 {
-	border-bottom-color:$control-icon;
-	border-bottom-style:none;
-	border-left-width:5px;
-	border-right-width:5px;
-	border-style:solid;
-	border-top-color:$control-icon;
-	border-top-width:5px;
-	margin:1px;
+	margin-top: -2px;
+	image:url(skin:controls/arrow_down.svg);
+	width:14px;
 }
+
+QComboBox::down-arrow:disabled,
+QSpinBox::down-arrow:disabled,
+QAbstractSpinBox::down-arrow:disabled
+{
+	image:url(skin:controls/arrow_down_disabled.svg);
+}
+
 
 QSpinBox::down-arrow,
 QAbstractSpinBox::down-arrow
 {
 	subcontrol-origin:border;
 	subcontrol-position:center right;
-	right:-15px;
+	right:-50px;
 }
 
 QSpinBox::down-button,
 QAbstractSpinBox::down-button,
 {
-	border-bottom-color:$control-icon;
-	border-bottom-style:none;
-	border-left-width:5px;
-	border-right-width:5px;
-	border-style:solid;
-	border-top-color:$control-icon;
-	border-top-width:5px;
-	margin:3px;
-	width:0;
-	right:2px;
+	margin-right: 4px;
+	image:url(skin:controls/arrow_down.svg);
+	width:14px;
+}
+
+QSpinBox::down-button:disabled,
+QAbstractSpinBox::down-button:disabled,
+{
+	image:url(skin:controls/arrow_down_disabled.svg);
 }
 
 QSpinBox::up-button,
 QAbstractSpinBox::up-button
 {
-	border-bottom-color:$control-icon;
-	border-bottom-width:5px;
-	border-left-width:5px;
-	border-right-width:5px;
-	border-style:solid;
-	border-top-color:$control-icon;
-	border-top-style:none;
-	margin:3px;
-	width:0;
-	right:2px;
+	margin-right: 4px;
+	image:url(skin:controls/arrow_up.svg);
+	width:14px;
 }
 
-QSpinBox::down-button:disabled,
-QAbstractSpinBox::down-button:disabled,
 QSpinBox::up-button:disabled,
 QAbstractSpinBox::up-button:disabled,
-QSpinBox::down-button:off,
-QAbstractSpinBox::down-button:off,
-QSpinBox::up-button:off,
-QAbstractSpinBox::up-button:off,
-QSpinBox::down-arrow:disabled,
-QAbstractSpinBox::down-arrow:disabled,
-QSpinBox::up-arrow:disabled,
-QAbstractSpinBox::up-arrow:disabled,
-QComboBox::down-arrow:disabled,
 {
-	border-top-color:$control-icon-disabled;
-	border-bottom-color:$control-icon-disabled;
+	image:url(skin:controls/arrow_up_disabled.svg);
 }
 
 QComboBox QAbstractItemView
@@ -779,6 +748,7 @@ QRadioButton::indicator
 
 QRadioButton::indicator:disabled
 {
+	background-color:$control-disabled;
 	margin:1px;
 	border:1px solid transparent;
 }
@@ -786,6 +756,11 @@ QRadioButton::indicator:disabled
 QRadioButton::indicator:checked
 {
 	image:$radio;
+}
+
+QRadioButton::indicator:checked:disabled
+{
+	image:$radio_disabled;
 }
 
 QCheckBox::indicator:pressed,
