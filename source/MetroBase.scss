@@ -21,6 +21,14 @@ QDockWidget
 	background-color:$base-bg;
 }
 
+QToolTip,
+QWhatsThis
+{
+	border: 1px solid $base-border;
+	background-color:$base-bg;
+	color:$base-text;
+}
+
 QTreeView.UserView,
 QTextBrowser.LogTextBrowser
 {
@@ -60,6 +68,11 @@ QTextEdit
 {
 	background-color:$base-bg;
 	color:$base-text;
+}
+
+QTextEdit:disabled
+{
+	color:$sub-text-disabled;
 }
 
 #qdwChat QTextEdit
@@ -288,12 +301,14 @@ QTextBrowser
 QScrollBar:horizontal
 {
 	background:transparent;
+	margin-top: 1px;
 	height:15px;
 }
 
 QScrollBar:vertical
 {
 	background:transparent;
+	margin-left: 1px;
 	width:15px;
 }
 
@@ -433,7 +448,8 @@ QPushButton:pressed
 	color:$highlight-text;
 }
 
-QGroupBox
+QGroupBox,
+qwWarningContainer
 {
 	background-color:$median-bg;
 	border:1px solid $base-border;
@@ -659,9 +675,10 @@ QAbstractSpinBox::down-arrow
 QSpinBox::down-button,
 QAbstractSpinBox::down-button,
 {
-	margin-right: 4px;
+	padding-right:2px;
 	image:url(skin:controls/arrow_down.svg);
 	width:14px;
+	padding-bottom:2px;
 }
 
 QSpinBox::down-button:disabled,
@@ -673,9 +690,10 @@ QAbstractSpinBox::down-button:disabled,
 QSpinBox::up-button,
 QAbstractSpinBox::up-button
 {
-	margin-right: 4px;
+	padding-right:2px;
 	image:url(skin:controls/arrow_up.svg);
 	width:14px;
+	padding-top:2px;
 }
 
 QSpinBox::up-button:disabled,
@@ -694,6 +712,7 @@ QComboBox QAbstractItemView
 QLabel,
 QCheckBox,
 QAbstractCheckBox,
+QTreeView::indicator,
 QRadioButton
 {
 	color:$sub-text;
@@ -705,7 +724,8 @@ QLabel:disabled
 	color:$sub-text-disabled;
 }
 
-QCheckBox::indicator
+QCheckBox::indicator,
+QTreeView::indicator,
 {
 	background-color:$input-bg;
 	border:1px solid $button-border;
@@ -714,18 +734,28 @@ QCheckBox::indicator
 	margin-top: 1px;
 }
 
-QCheckBox::indicator:checked
+QMenu::indicator
+{
+	width: 12px;
+	left: 6px;
+}
+
+QCheckBox::indicator:checked,
+QMenu::indicator:checked,
+QTreeView::indicator:checked
 {
 	image:$checkbox;
 }
 
-QCheckBox::indicator:disabled
+QCheckBox::indicator:disabled,
+QTreeView::indicator:disabled
 {
 	border:1px solid $median-bg;
 	background-color:$control-disabled;
 }
 
-QCheckBox::indicator:checked:disabled
+QCheckBox::indicator:checked:disabled,
+QTreeView::indicator:checked:disabled
 {
 	border:1px solid transparent;
 	image:$checkbox-disabled;
@@ -837,4 +867,21 @@ QSlider::handle:disabled
 QFontDialog {
 	min-width: 600px;
 	min-height: 400px;
+}
+
+#BanEditor {
+	min-width: 600px;
+}
+
+#GlobalShortcutTarget {
+	min-height: 600px;
+}
+
+ViewCert {
+	min-height: 600px;
+}
+
+QColorLuminancePicker {
+	color:$sub-text;
+	background: transparent;
 }
