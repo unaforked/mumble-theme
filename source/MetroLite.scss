@@ -8,7 +8,7 @@
  * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
  */
 
-$base-padding:4px;
+$base-padding: 4px;
 $base-bg: #F5F5F5;
 $base-hover: #E5E5E5;
 $base-pressed: #CCC;
@@ -29,15 +29,19 @@ $menuitem-hover: #dae8ef;
 $menuitem-border: #97b5c6;
 $scrollbar-hover: #999;
 $input-bg: #FFF;
+$input-hover: #FAFAFA;
 $control-icon: #666;
 $control-icon-disabled: #CCC;
 $control-disabled: #EEE;
+$slider-groove: #EEE;
+$slider-groove-border: #DDD;
 $slider-handle: #FFF;
 $slider-handle-hover: #EEE;
+$slider-handle-border: #CCC;
 $tab-selected: #FFF;
-$button-bg:#FFF;
-$button-hover:#E5E5E5;
-$button-border:#CCC;
+$button-bg: #FFF;
+$button-hover: #F5F5F5;
+$button-border: #CCC;
 $radio: url(skin:controls/radio_check_lite.svg);
 $radio_disabled: url(skin:controls/radio_check_disabled.svg);
 $checkbox: url(skin:controls/checkbox_check_lite.svg);

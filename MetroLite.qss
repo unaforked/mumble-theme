@@ -384,7 +384,7 @@ QPushButton {
 }
 
 QPushButton:hover {
-  background-color: #e5e5e5;
+  background-color: whitesmoke;
 }
 
 QPushButton:pressed {
@@ -529,11 +529,20 @@ RichTextEditor QTabBar::tab:selected {
   border-bottom: 1px solid #dddddd;
 }
 
-QLineEdit,
 QComboBox,
 QSpinBox,
 QAbstractSpinBox {
   background-color: white;
+}
+
+QLineEdit {
+  background-color: white;
+}
+
+QLineEdit,
+QComboBox,
+QSpinBox,
+QAbstractSpinBox {
   border: 1px solid #cccccc;
   color: #111111;
   padding: 4px;
@@ -690,11 +699,6 @@ QRadioButton::indicator:checked:disabled {
   image: url(skin:controls/radio_check_disabled.svg);
 }
 
-QCheckBox::indicator:pressed,
-QRadioButton::indicator:pressed {
-  background-color: whitesmoke;
-}
-
 QSlider::groove {
   background: #eeeeee;
   border: 1px solid #dddddd;
@@ -709,6 +713,7 @@ QSlider::groove:vertical {
 }
 
 QSlider::groove:disabled {
+  background: #eeeeee;
   border: 1px solid transparent;
 }
 
@@ -719,7 +724,7 @@ QSlider::handle {
 }
 
 QSlider::handle:horizontal {
-  margin: -5px -1px;
+  margin: -4px -1px;
   width: 20px;
 }
 
@@ -736,6 +741,21 @@ QSlider::handle:pressed {
 QSlider::handle:disabled {
   background-color: #eeeeee;
   border: 1px solid #eeeeee;
+}
+
+QComboBox::text {
+  background-color: transparent;
+}
+
+QCheckBox::indicator:hover,
+QTreeView::indicator:hover,
+QRadioButton::indicator:hover,
+QComboBox:hover {
+  background-color: #fafafa;
+}
+
+QComboBox:editable:hover {
+  background-color: white;
 }
 
 #qteRichText, #qptePlainText, #qwMacWarning {
