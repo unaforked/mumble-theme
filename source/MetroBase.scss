@@ -628,7 +628,6 @@ QAbstractSpinBox
 	padding:$base-padding;
 }
 
-
 QSpinBox,
 QAbstractSpinBox
 {
@@ -650,17 +649,17 @@ QAbstractSpinBox:disabled
 
 QComboBox::drop-down,
 QAbstractSpinBox::drop-down,
-QSpinBox::drop-down
+QSpinBox::drop-down,
+QDateTimeEdit::drop-down
 {
 	border:0;
-	margin-left:$base-padding * 2;
-	margin-right:$base-padding * 4;
+	margin-left:$base-padding;
+	margin-right:$base-padding * 3;
 	margin-top:5px;
 }
 
 QComboBox::down-arrow,
-QSpinBox::down-arrow,
-QAbstractSpinBox::down-arrow
+QDateTimeEdit::down-arrow
 {
 	margin-top: -2px;
 	image:url(skin:controls/arrow_down.svg);
@@ -668,28 +667,18 @@ QAbstractSpinBox::down-arrow
 }
 
 QComboBox::down-arrow:disabled,
-QSpinBox::down-arrow:disabled,
-QAbstractSpinBox::down-arrow:disabled
+QDateTimeEdit::down-arrow:disabled
 {
 	image:url(skin:controls/arrow_down_disabled.svg);
-}
-
-
-QSpinBox::down-arrow,
-QAbstractSpinBox::down-arrow
-{
-	subcontrol-origin:border;
-	subcontrol-position:center right;
-	right:-50px;
 }
 
 QSpinBox::down-button,
 QAbstractSpinBox::down-button,
 {
-	padding-right:2px;
+	padding-right:4px;
 	image:url(skin:controls/arrow_down.svg);
 	width:14px;
-	padding-bottom:2px;
+	padding-bottom:1px;
 }
 
 QSpinBox::down-button:disabled,
@@ -701,10 +690,10 @@ QAbstractSpinBox::down-button:disabled,
 QSpinBox::up-button,
 QAbstractSpinBox::up-button
 {
-	padding-right:2px;
+	padding-right:4px;
 	image:url(skin:controls/arrow_up.svg);
 	width:14px;
-	padding-top:2px;
+	padding-top:1px;
 }
 
 QSpinBox::up-button:disabled,

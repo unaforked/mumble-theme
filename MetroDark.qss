@@ -567,40 +567,32 @@ QAbstractSpinBox:disabled {
 
 QComboBox::drop-down,
 QAbstractSpinBox::drop-down,
-QSpinBox::drop-down {
+QSpinBox::drop-down,
+QDateTimeEdit::drop-down {
   border: 0;
-  margin-left: 8px;
-  margin-right: 16px;
+  margin-left: 4px;
+  margin-right: 12px;
   margin-top: 5px;
 }
 
 QComboBox::down-arrow,
-QSpinBox::down-arrow,
-QAbstractSpinBox::down-arrow {
+QDateTimeEdit::down-arrow {
   margin-top: -2px;
   image: url(skin:controls/arrow_down.svg);
   width: 14px;
 }
 
 QComboBox::down-arrow:disabled,
-QSpinBox::down-arrow:disabled,
-QAbstractSpinBox::down-arrow:disabled {
+QDateTimeEdit::down-arrow:disabled {
   image: url(skin:controls/arrow_down_disabled.svg);
-}
-
-QSpinBox::down-arrow,
-QAbstractSpinBox::down-arrow {
-  subcontrol-origin: border;
-  subcontrol-position: center right;
-  right: -50px;
 }
 
 QSpinBox::down-button,
 QAbstractSpinBox::down-button {
-  padding-right: 2px;
+  padding-right: 4px;
   image: url(skin:controls/arrow_down.svg);
   width: 14px;
-  padding-bottom: 2px;
+  padding-bottom: 1px;
 }
 
 QSpinBox::down-button:disabled,
@@ -610,10 +602,10 @@ QAbstractSpinBox::down-button:disabled {
 
 QSpinBox::up-button,
 QAbstractSpinBox::up-button {
-  padding-right: 2px;
+  padding-right: 4px;
   image: url(skin:controls/arrow_up.svg);
   width: 14px;
-  padding-top: 2px;
+  padding-top: 1px;
 }
 
 QSpinBox::up-button:disabled,

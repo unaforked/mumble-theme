@@ -2,45 +2,45 @@
 <!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
-	 id="svg1306" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" sodipodi:version="0.32" inkscape:output_extension="org.inkscape.output.svg.inkscape" inkscape:version="0.46" sodipodi:docname="format-text-underline.svg" sodipodi:docbase="/home/jimmac/src/cvs/tango-icon-theme/scalable/actions"
+	 id="svg1306" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" sodipodi:version="0.32" inkscape:version="0.46" inkscape:output_extension="org.inkscape.output.svg.inkscape" sodipodi:docname="format-text-underline.svg" sodipodi:docbase="/home/jimmac/src/cvs/tango-icon-theme/scalable/actions"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
 	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
 <defs>
 	
 	
-		<inkscape:perspective  inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 24 : 1" inkscape:vp_z="48 : 24 : 1" id="perspective61" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="24 : 16 : 1">
+		<inkscape:perspective  inkscape:vp_z="48 : 24 : 1" id="perspective61" inkscape:vp_x="0 : 24 : 1" sodipodi:type="inkscape:persp3d" inkscape:vp_y="0 : 1000 : 0" inkscape:persp3d-origin="24 : 16 : 1">
 		</inkscape:perspective>
 </defs>
-<sodipodi:namedview  stroke="#204a87" fill="#2e3436" showguides="false" pagecolor="#ffffff" borderopacity="0.1372549" bordercolor="#666666" inkscape:zoom="4" inkscape:cx="-18.480348" id="base" inkscape:cy="26.019267" showgrid="false" inkscape:document-units="px" inkscape:current-layer="layer2" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" showborder="true" inkscape:window-width="1041" inkscape:window-height="818" inkscape:window-x="393" inkscape:window-y="30" inkscape:grid-points="true" inkscape:showpageshadow="false" inkscape:grid-bbox="true">
-	<sodipodi:guide  orientation="vertical" position="14.406922" id="guide2257"></sodipodi:guide>
-	<sodipodi:guide  orientation="horizontal" position="41.565351" id="guide2259"></sodipodi:guide>
-	<sodipodi:guide  orientation="vertical" position="29.03324" id="guide2261"></sodipodi:guide>
-	<sodipodi:guide  orientation="vertical" position="19.964923" id="guide2265"></sodipodi:guide>
-	<sodipodi:guide  orientation="horizontal" position="31.739108" id="guide2267"></sodipodi:guide>
-	<sodipodi:guide  orientation="horizontal" position="28.59445" id="guide2269"></sodipodi:guide>
-	<sodipodi:guide  orientation="vertical" position="24.133423" id="guide2271"></sodipodi:guide>
-	<sodipodi:guide  orientation="horizontal" position="6.0450673" id="guide2266"></sodipodi:guide>
+<sodipodi:namedview  fill="#2e3436" stroke="#204a87" showgrid="false" bordercolor="#666666" inkscape:cy="26.019267" inkscape:zoom="4" borderopacity="0.1372549" pagecolor="#ffffff" id="base" inkscape:cx="-18.480348" showguides="false" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:guide-bbox="true" inkscape:current-layer="layer2" inkscape:document-units="px" showborder="true" inkscape:window-y="30" inkscape:window-width="1041" inkscape:window-x="393" inkscape:grid-points="true" inkscape:showpageshadow="false" inkscape:grid-bbox="true" inkscape:window-height="818">
+	<sodipodi:guide  position="14.406922" orientation="vertical" id="guide2257"></sodipodi:guide>
+	<sodipodi:guide  position="41.565351" orientation="horizontal" id="guide2259"></sodipodi:guide>
+	<sodipodi:guide  position="29.03324" orientation="vertical" id="guide2261"></sodipodi:guide>
+	<sodipodi:guide  position="19.964923" orientation="vertical" id="guide2265"></sodipodi:guide>
+	<sodipodi:guide  position="31.739108" orientation="horizontal" id="guide2267"></sodipodi:guide>
+	<sodipodi:guide  position="28.59445" orientation="horizontal" id="guide2269"></sodipodi:guide>
+	<sodipodi:guide  position="24.133423" orientation="vertical" id="guide2271"></sodipodi:guide>
+	<sodipodi:guide  position="6.0450673" orientation="horizontal" id="guide2266"></sodipodi:guide>
 	
-		<inkscape:grid  color="#0000ff" type="xygrid" id="GridFromPre046Settings" spacingy="0.5px" empcolor="#0000ff" originx="0px" opacity="0.2" empspacing="2" empopacity="0.4" spacingx="0.5px" originy="0px">
+		<inkscape:grid  type="xygrid" color="#0000ff" id="GridFromPre046Settings" originx="0px" opacity="0.2" empopacity="0.4" empcolor="#0000ff" spacingy="0.5px" originy="0px" spacingx="0.5px" empspacing="2">
 		</inkscape:grid>
 </sodipodi:namedview>
 <defs>
 	
 	
-		<inkscape:perspective  inkscape:vp_y="0 : 1000 : 0" inkscape:vp_x="0 : 24 : 1" inkscape:vp_z="48 : 24 : 1" id="perspective46" sodipodi:type="inkscape:persp3d" inkscape:persp3d-origin="24 : 16 : 1">
+		<inkscape:perspective  inkscape:vp_z="48 : 24 : 1" id="perspective46" inkscape:vp_x="0 : 24 : 1" sodipodi:type="inkscape:persp3d" inkscape:vp_y="0 : 1000 : 0" inkscape:persp3d-origin="24 : 16 : 1">
 		</inkscape:perspective>
 </defs>
-<sodipodi:namedview  stroke="#204a87" fill="#2e3436" showguides="false" pagecolor="#ffffff" borderopacity="0.18039216" bordercolor="#666666" inkscape:zoom="1" inkscape:cx="-116.87002" id="base" inkscape:cy="47.121576" showgrid="false" inkscape:document-units="px" inkscape:current-layer="layer5" inkscape:guide-bbox="true" inkscape:pageopacity="0.0" inkscape:pageshadow="2" showborder="true" inkscape:window-width="1044" inkscape:window-height="818" inkscape:window-x="390" inkscape:window-y="30" inkscape:grid-points="true" inkscape:showpageshadow="false" inkscape:grid-bbox="true">
-	<sodipodi:guide  orientation="vertical" position="14.406922" id="guide2257"></sodipodi:guide>
-	<sodipodi:guide  orientation="horizontal" position="41.565351" id="guide2259"></sodipodi:guide>
-	<sodipodi:guide  orientation="vertical" position="29.03324" id="guide2261"></sodipodi:guide>
-	<sodipodi:guide  orientation="vertical" position="19.964923" id="guide2265"></sodipodi:guide>
-	<sodipodi:guide  orientation="horizontal" position="31.739108" id="guide2267"></sodipodi:guide>
-	<sodipodi:guide  orientation="horizontal" position="28.59445" id="guide2269"></sodipodi:guide>
-	<sodipodi:guide  orientation="vertical" position="24.133423" id="guide2271"></sodipodi:guide>
-	<sodipodi:guide  orientation="horizontal" position="14.56111" id="guide2266"></sodipodi:guide>
+<sodipodi:namedview  fill="#2e3436" stroke="#204a87" showgrid="false" bordercolor="#666666" inkscape:cy="47.121576" inkscape:zoom="1" borderopacity="0.18039216" pagecolor="#ffffff" id="base" inkscape:cx="-116.87002" showguides="false" inkscape:pageshadow="2" inkscape:pageopacity="0.0" inkscape:guide-bbox="true" inkscape:current-layer="layer5" inkscape:document-units="px" showborder="true" inkscape:window-y="30" inkscape:window-width="1044" inkscape:window-x="390" inkscape:grid-points="true" inkscape:showpageshadow="false" inkscape:grid-bbox="true" inkscape:window-height="818">
+	<sodipodi:guide  position="14.406922" orientation="vertical" id="guide2257"></sodipodi:guide>
+	<sodipodi:guide  position="41.565351" orientation="horizontal" id="guide2259"></sodipodi:guide>
+	<sodipodi:guide  position="29.03324" orientation="vertical" id="guide2261"></sodipodi:guide>
+	<sodipodi:guide  position="19.964923" orientation="vertical" id="guide2265"></sodipodi:guide>
+	<sodipodi:guide  position="31.739108" orientation="horizontal" id="guide2267"></sodipodi:guide>
+	<sodipodi:guide  position="28.59445" orientation="horizontal" id="guide2269"></sodipodi:guide>
+	<sodipodi:guide  position="24.133423" orientation="vertical" id="guide2271"></sodipodi:guide>
+	<sodipodi:guide  position="14.56111" orientation="horizontal" id="guide2266"></sodipodi:guide>
 	
-		<inkscape:grid  color="#0000ff" type="xygrid" id="GridFromPre046Settings" spacingy="0.5px" empcolor="#0000ff" originx="0px" opacity="0.2" empspacing="2" empopacity="0.4" spacingx="0.5px" originy="0px">
+		<inkscape:grid  type="xygrid" color="#0000ff" id="GridFromPre046Settings" originx="0px" opacity="0.2" empopacity="0.4" empcolor="#0000ff" spacingy="0.5px" originy="0px" spacingx="0.5px" empspacing="2">
 		</inkscape:grid>
 </sodipodi:namedview>
 <g>

@@ -9,16 +9,16 @@
  */
 
 $base-padding: 4px;
-$base-bg: #F5F5F5;
+$base-bg: #F0F0F0;
 $base-hover: #E5E5E5;
 $base-pressed: #CCC;
 $base-text: #333;
-$base-border: #DDD;
+$base-border: #D5D5D5;
 $sub-bg: #FFF;
 $sub-hover: #F5F5F5;
 $sub-text: #111;
-$sub-text-disabled: #BBB;
-$sub-highlight: #CCC;
+$sub-text-disabled: #AAA;
+$sub-highlight: #D5D5D5;
 $dialog-bg: $base-bg;
 $median-bg: #FDFDFD;
 $highlight-bg: #298ce1;
@@ -33,7 +33,7 @@ $input-hover: #FAFAFA;
 $control-icon: #666;
 $control-icon-disabled: #CCC;
 $control-disabled: #EEE;
-$slider-groove: #EEE;
+$slider-groove: #F5F5F5;
 $slider-groove-border: #DDD;
 $slider-handle: #FFF;
 $slider-handle-hover: #EEE;
