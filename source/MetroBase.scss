@@ -298,65 +298,6 @@ QTextBrowser
 	font-weight:bold;
 }
 
-QScrollBar:horizontal
-{
-	background:transparent;
-	margin-top: 1px;
-	height:15px;
-}
-
-QScrollBar:vertical
-{
-	background:transparent;
-	margin-left: 1px;
-	width:15px;
-}
-
-UserView QScrollBar:horizontal,
-LogTextBrowser QScrollBar:horizontal
-{
-	margin-top:1px;
-}
-
-UserView QScrollBar:vertical,
-LogTextBrowser QScrollBar:vertical
-{
-	margin-left:1px;
-}
-
-QScrollBar::handle
-{
-	background:$sub-highlight;
-	min-width:10px;
-	min-height:10px;
-}
-
-QScrollBar::handle:hover
-{
-	background:$scrollbar-hover;
-}
-
-QScrollBar::left-arrow,
-QScrollBar::right-arrow,
-QScrollBar::up-arrow,
-QScrollBar::down-arrow,
-QScrollBar::sub-line,
-QScrollBar::add-line,
-QScrollBar::add-page,
-QScrollBar::sub-page
-{
-	background:$base-bg;
-	height:0;
-	width:0;
-}
-
-QAbstractScrollArea::corner
-{
-	background:transparent;
-	height:0;
-	width:0;
-}
-
 QMenuBar
 {
 	background-color:$base-bg;
@@ -523,9 +464,10 @@ QListView::item:selected
 	padding-left:$base-padding * 2 - 1;
 }
 
-QListView::item > QWidget > QWidget,
-QTreeView::item > QWidget > QWidget,
-QTreeView::item > QWidget > QWidget > QWidget
+QListView::item QListWidgetItem,
+QListView::item QLineEdit,
+QTreeView::item QComboBox,
+QTreeView::item QLineEdit
 {
 	margin: 0;
 	padding: 1px;
@@ -879,6 +821,65 @@ QComboBox:hover
 QComboBox:editable:hover
 {
 	background-color:$input-bg;
+}
+
+QScrollBar:horizontal
+{
+	background:transparent;
+	margin-top: 1px;
+	height:15px;
+}
+
+QScrollBar:vertical
+{
+	background:transparent;
+	margin-left: 1px;
+	width:15px;
+}
+
+UserView QScrollBar:horizontal,
+LogTextBrowser QScrollBar:horizontal
+{
+	margin-top:1px;
+}
+
+UserView QScrollBar:vertical,
+LogTextBrowser QScrollBar:vertical
+{
+	margin-left:1px;
+}
+
+QScrollBar::handle
+{
+	background:$sub-highlight;
+	min-width:10px;
+	min-height:10px;
+}
+
+QScrollBar::handle:hover
+{
+	background:$scrollbar-hover;
+}
+
+QScrollBar::left-arrow,
+QScrollBar::right-arrow,
+QScrollBar::up-arrow,
+QScrollBar::down-arrow,
+QScrollBar::sub-line,
+QScrollBar::add-line,
+QScrollBar::add-page,
+QScrollBar::sub-page
+{
+	background:$base-bg;
+	height:0;
+	width:0;
+}
+
+QAbstractScrollArea::corner
+{
+	background:transparent;
+	height:0;
+	width:0;
 }
 
 #qteRichText, #qptePlainText, #qwMacWarning
