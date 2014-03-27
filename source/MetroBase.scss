@@ -5,7 +5,7 @@
 	margin:0;
 	padding:0;
 	outline:0;
-	border:0;
+	border: 0;
 	selection-background-color:$highlight-bg;
 	selection-color:$highlight-text;
 }
@@ -521,6 +521,23 @@ QListView::item:selected
 	border-left:1px solid transparent;
 	border-right:1px solid transparent;
 	padding-left:$base-padding * 2 - 1;
+}
+
+QListView::item > QWidget > QWidget,
+QTreeView::item > QWidget > QWidget,
+QTreeView::item > QWidget > QWidget > QWidget
+{
+	margin: 0;
+	padding: 1px;
+	padding-left: $base-padding;
+	font-size: 12px;
+}
+
+QTreeView::item QHeaderView
+{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
 }
 
 QListView#qlwIcons::item:selected

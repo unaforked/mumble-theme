@@ -458,6 +458,21 @@ QListView::item:selected {
   padding-left: 7px;
 }
 
+QListView::item > QWidget > QWidget,
+QTreeView::item > QWidget > QWidget,
+QTreeView::item > QWidget > QWidget > QWidget {
+  margin: 0;
+  padding: 1px;
+  padding-left: 4px;
+  font-size: 12px;
+}
+
+QTreeView::item QHeaderView {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
 QListView#qlwIcons::item:selected {
   margin-top: 1px;
   background-color: #fdfdfd;
