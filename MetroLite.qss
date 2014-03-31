@@ -29,9 +29,9 @@ QDockWidget {
 
 QToolTip,
 QWhatsThis {
-  border: 1px solid #e0e0e0;
-  background-color: #f0f0f0;
-  color: #333333;
+  border: 1px solid #d8d8d8;
+  background-color: white;
+  color: #111111;
 }
 
 QTreeView.UserView,
@@ -137,7 +137,7 @@ QToolButton#qt_toolbar_ext_button {
 
 QHeaderView {
   border: 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #d8d8d8;
 }
 
 QHeaderView::section {
@@ -167,7 +167,7 @@ QHeaderView::up-arrow {
 QTreeView {
   background-color: white;
   alternate-background-color: transparent;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   color: #111111;
   outline: 0;
   selection-background-color: white;
@@ -191,18 +191,18 @@ QTreeView::item:hover {
 
 QTreeView::item:selected {
   background-color: whitesmoke;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   border-right: 1px solid transparent;
   border-left: 1px solid transparent;
 }
 
 QTreeView#qtwServers::item:selected {
-  border-left: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
 }
 
 QTreeView::item:selected.UserView {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
 }
 
 QTreeView::branch {
@@ -223,7 +223,7 @@ QTreeView::branch:has-children:open {
 
 QTextBrowser {
   background-color: white;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   color: #111111;
   padding: 1px;
 }
@@ -288,7 +288,7 @@ QMenuBar::item:pressed {
 
 QMenu {
   background: #f6f6f6;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   color: #111111;
   padding: 0;
 }
@@ -344,7 +344,7 @@ QPushButton:pressed {
 QGroupBox,
 qwWarningContainer {
   background-color: #fdfdfd;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   color: #333333;
   font-size: 18px;
   margin: 4px;
@@ -362,7 +362,7 @@ QGroupBox::title {
 QListView {
   background-color: white;
   alternate-background-color: white;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   outline: 0;
   padding-top: -1px;
 }
@@ -401,7 +401,7 @@ QListView#qlwIcons::item:hover {
 QListView::item:selected {
   margin-top: 0;
   background-color: whitesmoke;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
   padding-left: 7px;
@@ -426,13 +426,13 @@ QTreeView::item QHeaderView {
 QListView#qlwIcons::item:selected {
   margin-top: 1px;
   background-color: #fdfdfd;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   padding-left: 7px;
 }
 
 QTabWidget::pane {
   background-color: #fdfdfd;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   margin-left: 4px;
   margin-top: -1px;
 }
@@ -446,8 +446,8 @@ QTabBar::tab {
   background-color: transparent;
   color: #111111;
   padding: 4px 20px;
-  border-bottom: 1px solid #e0e0e0;
-  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
   margin-left: -1px;
   height: 20px;
   subcontrol-position: center bottom;
@@ -473,7 +473,7 @@ QTabBar::tab:disabled {
 QTabBar::tab:selected {
   height: 20px;
   background-color: #fdfdfd;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   border-bottom: 1px solid transparent;
   color: #111111;
 }
@@ -485,13 +485,13 @@ RichTextEditor::pane {
 
 RichTextEditor QTabBar::tab {
   subcontrol-position: center top;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #d8d8d8;
   border-bottom: 1px solid transparent;
 }
 
 RichTextEditor QTabBar::tab:selected {
   border-top: 1px solid transparent;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #d8d8d8;
 }
 
 QComboBox,
@@ -580,7 +580,7 @@ QAbstractSpinBox::up-button:disabled {
 
 QComboBox QAbstractItemView {
   background-color: white;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   color: #111111;
 }
 
@@ -769,7 +769,7 @@ QAbstractScrollArea::corner {
 #qteRichText, #qptePlainText, #qwMacWarning {
   color: #111111;
   background-color: white;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #d8d8d8;
   padding: 4px;
 }
 
