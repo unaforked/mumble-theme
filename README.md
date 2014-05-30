@@ -10,6 +10,8 @@ Installation:
  - Pick either MetroDark.qss or MetroLite.qss
  - Press OK and restart Mumble
 
+Note: OS X users should use the "OSX" qss files instead of the regular ones
+
 Extras:
  - mumble.ico - Shortcut icon
  - overlay.mumblelay - An overlay preset (Settings -> Overlay -> Load...)

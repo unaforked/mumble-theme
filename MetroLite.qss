@@ -657,7 +657,7 @@ QRadioButton::indicator:checked:disabled {
 }
 
 QSlider::groove {
-  background: whitesmoke;
+  background: #eeeeee;
   border: 1px solid #dddddd;
 }
 
