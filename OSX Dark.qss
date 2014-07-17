@@ -18,7 +18,7 @@
  */
 * {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -83,7 +83,7 @@ QTextEdit:disabled {
 }
 
 #qdwChat QTextEdit {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 a {
@@ -240,7 +240,7 @@ QTextBrowser {
 .log-time {
   background-color: transparent;
   color: #95a5a6;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .log-server {
@@ -811,7 +811,7 @@ QColorLuminancePicker {
 
 * {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0;
   padding: 0;
   outline: 0;
@@ -876,7 +876,7 @@ QTextEdit:disabled {
 }
 
 #qdwChat QTextEdit {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 a {
@@ -1033,7 +1033,7 @@ QTextBrowser {
 .log-time {
   background-color: transparent;
   color: #95a5a6;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .log-server {
