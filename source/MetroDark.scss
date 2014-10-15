@@ -8,16 +8,17 @@
  * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
  */
 
-$base-padding:4px;
+$base-padding: 4px;
 $base-bg: #2c2c2c;
 $base-hover: #383838;
 $base-pressed: #484848;
-$base-text: #ccc;
+$base-text: #ddd;
+$base-text-disabled: #444;
 $base-border: #1c1c1c;
-$sub-bg: #1c1c1c;
+$base-border-radius: 0px;
+$sub-bg: #202020;
 $sub-hover: #2c2c2c;
-$sub-text: #ddd;
-$sub-text-disabled: #444;
+$sub-text: #ccc;
 $sub-highlight: #555;
 $dialog-bg: #222;
 $median-bg: #2c2c2c;
@@ -27,7 +28,8 @@ $highlight-text: #FFF;
 $menu-bg: #2b2b2b;
 $menuitem-hover: #444;
 $menuitem-border: #444;
-$scrollbar-hover: #888;
+$scrollbar-handle: #666;
+$scrollbar-handle-hover: #888;
 $input-bg: #383838;
 $input-hover: #484848;
 $control-icon: #888;
@@ -35,6 +37,8 @@ $control-icon-disabled: #444;
 $control-disabled: #282828;
 $slider-groove: #333;
 $slider-groove-border: #272727;
+$slider-fill: #444;
+$slider-fill-border: #272727;
 $slider-handle: #666;
 $slider-handle-hover: #777;
 $slider-handle-border: #272727;
