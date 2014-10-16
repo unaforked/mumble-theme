@@ -7,7 +7,7 @@
 *::section
 {
 	font-family:"Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-	font-size:13px;
+	font-size:10pt;
 	margin:0;
 	padding:0;
 	outline:0;
@@ -60,7 +60,7 @@ a
 
 DockTitleBar
 {
-	font-size:11px;
+	font-size:7pt;
 }
 
 QToolTip,
@@ -204,7 +204,7 @@ QPushButton
 	background-color:$button-bg;
 	border:1px solid $button-border;
 	color:$sub-text;
-	font-size:16px;
+	font-size:12pt;
 	padding: $base-padding - 1 $base-padding*4+4;
 }
 
@@ -225,15 +225,15 @@ qwWarningContainer
 	background-color:$median-bg;
 	border:1px solid $base-border;
 	color:$sub-text;
-	font-size:18px;
+	font-size:13pt;
 	padding:$base-padding;
-	padding-top:30px;
+	padding-top:1em;
 }
 
 QGroupBox::title
 {
 	background-color:transparent;
-	margin:$base-padding;
+	margin:$base-padding * 1.5;
 	margin-left:$base-padding + 4;
 	margin-right:$base-padding * 2;
 }
@@ -242,6 +242,8 @@ QListView
 {
 	background-color:$sub-bg;
 	border:1px solid $base-border;
+	padding-top:-1px;
+	min-height:8em;
 }
 
 QListView::item
@@ -250,20 +252,18 @@ QListView::item
 	color:$sub-text;
 	selection-color:$sub-text;
 	padding:$base-padding/2 $base-padding;
-	border-top:1px solid transparent;
 }
 
 QListView::item:hover
 {
-	border-top:0;
-	margin-top:1px;
+	border-top:-1px;
+	margin-top:0;
 	background-color:$sub-hover;
 }
 
 
 QListView::item:selected
 {
-	margin-top:0;
 	background-color:$sub-hover;
 	border:1px solid $base-border;
 	margin-left:-1px;
@@ -387,7 +387,7 @@ QTabBar::tab
 	border-bottom:1px solid $base-border;
 	border-right:1px solid $base-border;
 	margin-left:-1px;
-	height:20px;
+	height:1em;
 	subcontrol-position: center bottom;
 	border-radius:0;
 }
@@ -415,7 +415,6 @@ QTabBar::tab:disabled
 
 QTabBar::tab:selected
 {
-	height:20px;
 	background-color:$median-bg;
 	border:1px solid $base-border;
 	border-bottom:1px solid transparent;
@@ -441,7 +440,8 @@ QScrollBar:vertical
 	margin-left:0;
 	border:1px solid $base-border;
 	border-radius:0;
-	width:15px;
+	font-size:10pt;
+	width:1em;
 }
 
 QScrollBar:horizontal
@@ -450,7 +450,8 @@ QScrollBar:horizontal
 	margin-top:0;
 	border:1px solid $base-border;
 	border-radius:0;
-	height:15px;
+	font-size:10pt;
+	height:1em;
 }
 
 QScrollBar::handle
@@ -497,6 +498,7 @@ QAbstractSpinBox
 	border:1px solid $button-border;
 	color:$sub-text;
 	padding:$base-padding;
+	min-height:1em;
 }
 
 QComboBox,
@@ -514,7 +516,7 @@ QLineEdit
 QSpinBox,
 QAbstractSpinBox
 {
-	min-width: 35px;
+	min-width: 1.5em;
 	padding-right: 15px;
 }
 
@@ -669,16 +671,17 @@ QSlider::groove
 	background:$slider-groove;
 	border:1px solid $slider-groove-border;
 	border-radius:2px;
+	font-size:4pt;
 }
 
 QSlider::groove:horizontal
 {
-	height:6px;
+	height:1em;
 }
 
 QSlider::groove:vertical
 {
-	width:6px;
+	width:1em;
 }
 
 QSlider::groove:disabled,
@@ -701,18 +704,19 @@ QSlider::handle
 	background:$slider-handle;
 	border:1px solid $slider-handle-border;
 	border-radius:2px;
+	font-size:4pt;
 }
 
 QSlider::handle:horizontal
 {
-	margin:-4px -1px;
-	width:22px;
+	margin:-5px -1px;
+	width:4em;
 }
 
 QSlider::handle:vertical
 {
-	margin:-1px -4px;
-	height:22px;
+	margin:-1px -5px;
+	height:4em;
 }
 
 QSlider::handle:hover,
@@ -742,8 +746,8 @@ QComboBox:editable:hover
 
 QFontDialog
 {
-	min-width: 600px;
-	min-height: 400px;
+	min-width: 30em;
+	min-height: 15em;
 }
 
 QColorDialog * 
@@ -773,39 +777,31 @@ LogTextBrowser,
 
 UserView
 {
-	padding:-1px;
 	min-height:120px;
 	min-width:100px;
 }
 
-UserView::item:hover
+UserView::item
 {
-	border:0;
-	margin:1px;
+	padding:0;
+	padding-top:-1px;
 }
 
 UserView::item:selected
 {
-	border:1px solid $base-border;
 	border-radius:$base-border-radius;
-	margin:0;
-}
-
-QTreeView.UserView::item
-{
-	padding:-1px;
 }
 
 #qdwChat *
 {
-	font-size:12px;
+	font-size:10pt;
 }
 
 .log-time
 {
 	background-color:transparent;
 	color:#95a5a6;
-	font-size:13px;
+	font-size:9pt;
 }
 
 .log-server
@@ -848,8 +844,8 @@ QListView#qlwIcons
 	padding:0;
 	background-color:transparent;
 	border:0;
-	min-width:160px;
-	font-size:16px;
+	font-size:12pt;
+	min-width:7.2em;
 	margin-left:$base-padding;
 	margin-top:$base-padding + 8;
 }
@@ -879,6 +875,11 @@ QSlider
 	margin-right:30px;
 }
 
+#qswPages > * > * > QScrollBar
+{
+	margin:0;
+}
+
 #qswPages > * > QWidget
 {
 	margin: $base-padding;	
@@ -898,7 +899,7 @@ QTreeView::item QLineEdit
 {
 	padding: 0px;
 	padding-left: $base-padding;
-	font-size: 12px;
+	font-size: 8pt;
 }
 
 QListView::item QListWidgetItem:hover,
