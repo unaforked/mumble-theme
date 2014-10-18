@@ -8,7 +8,6 @@
  * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
  */
 *,
-*::item,
 *::separator,
 *::handle,
 *::tab-bar,
@@ -23,9 +22,8 @@
   selection-background-color: #298ce1;
   selection-color: white;
   alternate-background-color: transparent;
-  background-color: transparent;
   color: #333333;
-  border-radius: 0px;
+  border-radius: 2px;
 }
 
 QMainWindow,
@@ -92,27 +90,28 @@ QToolBar::separator {
 QToolButton {
   border: 1px solid transparent;
   border-radius: 2px;
-  padding: 2px;
-  margin: 1px;
+  padding: 1px;
+  margin: 2px;
 }
 
 QToolButton:on {
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #d2d2d2;
 }
 
 QToolButton:hover,
 QToolButton:on:hover {
-  background-color: whitesmoke;
-  border: 1px solid #cccccc;
+  background-color: #e5e5e5;
+  border: 1px solid #d2d2d2;
 }
 
 QToolButton:pressed,
 QToolButton:on:pressed {
-  background-color: #cccccc;
+  background-color: #dddddd;
 }
 
 QToolButton#qt_toolbar_ext_button {
+  min-width: 8px;
   width: 8px;
   padding: 1px;
   qproperty-icon: url(skin:controls/toolbar_ext.svg);
@@ -217,8 +216,6 @@ QGroupBox::title {
 QListView {
   background-color: white;
   border: 1px solid #d2d2d2;
-  padding-top: -1px;
-  min-height: 8em;
 }
 
 QListView::item {
@@ -336,11 +333,10 @@ QTabWidget::tab-bar {
 QTabBar::tab {
   background-color: transparent;
   color: #111111;
-  padding: 4px 20px;
+  padding: 6px 16px;
   border-bottom: 1px solid #d2d2d2;
   border-right: 1px solid #d2d2d2;
   margin-left: -1px;
-  height: 1em;
   subcontrol-position: center bottom;
   border-radius: 0;
 }
@@ -381,9 +377,7 @@ QTabBar::tab:bottom:selected {
 }
 
 QScrollBar:vertical {
-  margin: -1px;
-  margin-left: 0;
-  border: 1px solid #d2d2d2;
+  border-left: 1px solid #d2d2d2;
   border-radius: 0;
   font-size: 10pt;
   width: 1em;
@@ -399,14 +393,16 @@ QScrollBar:horizontal {
 }
 
 QScrollBar::handle {
-  background: #dddddd;
-  border-radius: 0px;
+  margin: -1px;
+  background: #d6d6d6;
+  border-radius: 0;
   min-width: 10px;
   min-height: 10px;
+  border: 1px solid #d2d2d2;
 }
 
 QScrollBar::handle:hover {
-  background: #d4d4d4;
+  background: #dddddd;
 }
 
 QScrollBar::left-arrow,
@@ -587,7 +583,7 @@ QSlider::groove {
   background: #f8f8f8;
   border: 1px solid #d8d8d8;
   border-radius: 2px;
-  font-size: 4pt;
+  font-size: 3pt;
 }
 
 QSlider::groove:horizontal {
@@ -651,7 +647,7 @@ QComboBox:editable:hover {
 
 QFontDialog {
   min-width: 30em;
-  min-height: 15em;
+  min-height: 20em;
 }
 
 QColorDialog * {
@@ -671,12 +667,12 @@ QDialogButtonBox {
 LogTextBrowser,
 #qdsChat {
   min-height: 120px;
-  min-width: 100px;
+  min-width: 40px;
 }
 
 UserView {
   min-height: 120px;
-  min-width: 100px;
+  min-width: 40px;
 }
 
 UserView::item {
@@ -685,10 +681,11 @@ UserView::item {
 }
 
 UserView::item:selected {
-  border-radius: 0px;
+  border-radius: 2px;
 }
 
 #qdwChat * {
+  background-color: transparent;
   font-size: 10pt;
 }
 
@@ -733,9 +730,20 @@ QListView#qlwIcons {
   background-color: transparent;
   border: 0;
   font-size: 12pt;
-  min-width: 7.2em;
+  min-width: 165%;
   margin-left: 4px;
   margin-top: 12px;
+}
+
+QListView#qlwIcons::item {
+  border: 1px solid transparent;
+  padding: 5px 7px;
+  border-radius: 2px;
+}
+
+QListView#qlwIcons::item:hover {
+  border: 1px solid #d2d2d2;
+  background-color: #e5e5e5;
 }
 
 QListView#qlwIcons::item:selected {
@@ -743,15 +751,6 @@ QListView#qlwIcons::item:selected {
   margin-top: 1px;
   background-color: #fdfdfd;
   border: 1px solid #d2d2d2;
-  padding-left: 7px;
-}
-
-QListView#qlwIcons::item {
-  padding: 5px 0;
-}
-
-QListView#qlwIcons::item:hover {
-  background-color: #e5e5e5;
 }
 
 QSlider {

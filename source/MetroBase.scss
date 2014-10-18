@@ -1,5 +1,4 @@
 *,
-*::item,
 *::separator,
 *::handle,
 *::tab-bar,
@@ -15,7 +14,6 @@
 	selection-background-color:$highlight-bg;
 	selection-color:$highlight-text;
 	alternate-background-color:transparent;
-	background-color:transparent;
 	color:$base-text;
 	border-radius:$base-border-radius;
 }
@@ -96,31 +94,32 @@ QToolButton
 {
 	border:1px solid transparent;
 	border-radius:2px;
-	padding:$base-padding - 2;
-	margin:1px;
+	padding:$base-padding - 3;
+	margin:2px;
 }
 
 QToolButton:on
 {
-	background-color:$button-bg;
-	border:1px solid $button-border;
+	background-color:$toolbutton-on;
+	border:1px solid $toolbutton-border;
 }
 
 QToolButton:hover,
 QToolButton:on:hover
 {
-	background-color:$button-hover;
-	border:1px solid $button-border;
+	background-color:$toolbutton-hover;
+	border:1px solid $toolbutton-border;
 }
 
 QToolButton:pressed,
 QToolButton:on:pressed
 {
-	background-color:$button-border;
+	background-color:$toolbutton-pressed;
 }
 
 QToolButton#qt_toolbar_ext_button
 {
+	min-width:$base-padding*2;
 	width:$base-padding*2;
 	padding:1px;
 	qproperty-icon:url(skin:controls/toolbar_ext.svg);
@@ -242,8 +241,6 @@ QListView
 {
 	background-color:$sub-bg;
 	border:1px solid $base-border;
-	padding-top:-1px;
-	min-height:8em;
 }
 
 QListView::item
@@ -383,11 +380,10 @@ QTabBar::tab
 {
 	background-color:transparent;
 	color:$sub-text;
-	padding:$base-padding $base-padding * 5;
+	padding:$base-padding * 1.5 $base-padding * 4;
 	border-bottom:1px solid $base-border;
 	border-right:1px solid $base-border;
 	margin-left:-1px;
-	height:1em;
 	subcontrol-position: center bottom;
 	border-radius:0;
 }
@@ -436,9 +432,7 @@ QTabBar::tab:bottom:selected
 
 QScrollBar:vertical
 {
-	margin:-1px;
-	margin-left:0;
-	border:1px solid $base-border;
+	border-left:1px solid $base-border;
 	border-radius:0;
 	font-size:10pt;
 	width:1em;
@@ -456,10 +450,12 @@ QScrollBar:horizontal
 
 QScrollBar::handle
 {
+	margin:-1px;
 	background:$scrollbar-handle;
-	border-radius:$base-border-radius/2;
+	border-radius:0;
 	min-width:10px;
 	min-height:10px;
+	border:1px solid $base-border;
 }
 
 QScrollBar::handle:hover
@@ -671,7 +667,7 @@ QSlider::groove
 	background:$slider-groove;
 	border:1px solid $slider-groove-border;
 	border-radius:2px;
-	font-size:4pt;
+	font-size:3pt;
 }
 
 QSlider::groove:horizontal
@@ -747,7 +743,7 @@ QComboBox:editable:hover
 QFontDialog
 {
 	min-width: 30em;
-	min-height: 15em;
+	min-height: 20em;
 }
 
 QColorDialog * 
@@ -772,13 +768,13 @@ LogTextBrowser,
 #qdsChat
 {
 	min-height:120px;
-	min-width:100px;
+	min-width:40px;
 }
 
 UserView
 {
 	min-height:120px;
-	min-width:100px;
+	min-width:40px;
 }
 
 UserView::item
@@ -794,6 +790,7 @@ UserView::item:selected
 
 #qdwChat *
 {
+	background-color:transparent;
 	font-size:10pt;
 }
 
@@ -845,9 +842,22 @@ QListView#qlwIcons
 	background-color:transparent;
 	border:0;
 	font-size:12pt;
-	min-width:7.2em;
+	min-width:165%;
 	margin-left:$base-padding;
 	margin-top:$base-padding + 8;
+}
+
+QListView#qlwIcons::item
+{
+	border:1px solid transparent;
+	padding:5px $base-padding * 2 - 1;
+	border-radius:$base-border-radius;
+}
+
+QListView#qlwIcons::item:hover
+{
+	border:1px solid $base-border;
+	background-color:$toolbutton-hover;
 }
 
 QListView#qlwIcons::item:selected
@@ -856,17 +866,6 @@ QListView#qlwIcons::item:selected
 	margin-top:1px;
 	background-color:$median-bg;
 	border:1px solid $base-border;
-	padding-left:$base-padding * 2 - 1;
-}
-
-QListView#qlwIcons::item
-{
-	padding:5px 0;
-}
-
-QListView#qlwIcons::item:hover
-{
-	background-color:$base-hover;
 }
 
 QSlider
