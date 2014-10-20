@@ -83,14 +83,6 @@ QToolBar
 	spacing:0;
 }
 
-QToolBar::separator
-{
-	background:$sub-highlight;
-	height:1px;
-	margin:$base-padding;
-	width:1px;
-}
-
 QToolButton
 {
 	border:1px solid transparent;
@@ -116,6 +108,20 @@ QToolButton:pressed,
 QToolButton:on:pressed
 {
 	background-color:$toolbutton-pressed;
+}
+
+QToolBar::separator
+{
+	background:$sub-highlight;
+	height:1px;
+	margin:$base-padding;
+	width:1px;
+}
+
+QToolBar::separator:hover
+{
+	background:$sub-highlight;
+	border:0;
 }
 
 QToolButton#qt_toolbar_ext_button

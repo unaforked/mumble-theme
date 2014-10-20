@@ -90,13 +90,6 @@ QToolBar {
   spacing: 0;
 }
 
-QToolBar::separator {
-  background: #d5d5d5;
-  height: 1px;
-  margin: 4px;
-  width: 1px;
-}
-
 QToolButton {
   border: 1px solid transparent;
   border-radius: 2px;
@@ -118,6 +111,18 @@ QToolButton:on:hover {
 QToolButton:pressed,
 QToolButton:on:pressed {
   background-color: #dddddd;
+}
+
+QToolBar::separator {
+  background: #d5d5d5;
+  height: 1px;
+  margin: 4px;
+  width: 1px;
+}
+
+QToolBar::separator:hover {
+  background: #d5d5d5;
+  border: 0;
 }
 
 QToolButton#qt_toolbar_ext_button {
@@ -612,8 +617,8 @@ QSlider::sub-page:disabled {
 }
 
 QSlider::sub-page {
-  background: #e2e2e2;
-  border: 1px solid #bbbbbb;
+  background: #eaeaea;
+  border: 1px solid #bdbdbd;
   border-radius: 2px;
 }
 

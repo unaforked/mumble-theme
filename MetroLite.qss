@@ -55,7 +55,7 @@ a {
 }
 
 *::separator:hover {
-  background: #e5e5e5;
+  background: rgba(0, 0, 0, 0.05);
 }
 
 DockTitleBar {
@@ -81,13 +81,6 @@ QToolBar {
   spacing: 0;
 }
 
-QToolBar::separator {
-  background: #d5d5d5;
-  height: 1px;
-  margin: 4px;
-  width: 1px;
-}
-
 QToolButton {
   border: 1px solid transparent;
   border-radius: 2px;
@@ -102,13 +95,25 @@ QToolButton:on {
 
 QToolButton:hover,
 QToolButton:on:hover {
-  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.05);
   border: 1px solid #d2d2d2;
 }
 
 QToolButton:pressed,
 QToolButton:on:pressed {
   background-color: #dddddd;
+}
+
+QToolBar::separator {
+  background: #d5d5d5;
+  height: 1px;
+  margin: 4px;
+  width: 1px;
+}
+
+QToolBar::separator:hover {
+  background: #d5d5d5;
+  border: 0;
 }
 
 QToolButton#qt_toolbar_ext_button {
@@ -229,11 +234,11 @@ QListView::item {
 QListView::item:hover {
   border-top: -1px;
   margin-top: 0;
-  background-color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 QListView::item:selected {
-  background-color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.05);
   border: 1px solid #d2d2d2;
   margin-left: -1px;
   margin-right: -1px;
@@ -258,11 +263,11 @@ QTreeView::item {
 }
 
 QTreeView::item:hover {
-  background-color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 QTreeView::item:selected {
-  background-color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.05);
   border: 1px solid #d2d2d2;
   margin-right: -1px;
 }
@@ -352,7 +357,7 @@ QTabBar::tab:last {
 }
 
 QTabBar::tab:hover {
-  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 QTabBar::tab:disabled {
@@ -603,8 +608,8 @@ QSlider::sub-page:disabled {
 }
 
 QSlider::sub-page {
-  background: #e2e2e2;
-  border: 1px solid #bbbbbb;
+  background: #eaeaea;
+  border: 1px solid #bdbdbd;
   border-radius: 2px;
 }
 
@@ -627,7 +632,7 @@ QSlider::handle:vertical {
 
 QSlider::handle:hover,
 QSlider::handle:pressed {
-  background: #eeeeee;
+  background: whitesmoke;
 }
 
 QSlider::handle:disabled {
@@ -745,7 +750,7 @@ QListView#qlwIcons::item {
 
 QListView#qlwIcons::item:hover {
   border: 1px solid #d2d2d2;
-  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 QListView#qlwIcons::item:selected {
