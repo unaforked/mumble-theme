@@ -55,7 +55,7 @@ a {
 }
 
 *::separator:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: #e5e5e5;
 }
 
 DockTitleBar {
@@ -95,7 +95,7 @@ QToolButton:on {
 
 QToolButton:hover,
 QToolButton:on:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #e5e5e5;
   border: 1px solid #d2d2d2;
 }
 
@@ -234,11 +234,11 @@ QListView::item {
 QListView::item:hover {
   border-top: -1px;
   margin-top: 0;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: whitesmoke;
 }
 
 QListView::item:selected {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: whitesmoke;
   border: 1px solid #d2d2d2;
   margin-left: -1px;
   margin-right: -1px;
@@ -263,11 +263,11 @@ QTreeView::item {
 }
 
 QTreeView::item:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: whitesmoke;
 }
 
 QTreeView::item:selected {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: whitesmoke;
   border: 1px solid #d2d2d2;
   margin-right: -1px;
 }
@@ -357,7 +357,7 @@ QTabBar::tab:last {
 }
 
 QTabBar::tab:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #e5e5e5;
 }
 
 QTabBar::tab:disabled {
@@ -750,7 +750,7 @@ QListView#qlwIcons::item {
 
 QListView#qlwIcons::item:hover {
   border: 1px solid #d2d2d2;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #e5e5e5;
 }
 
 QListView#qlwIcons::item:selected {

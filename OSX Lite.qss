@@ -641,7 +641,7 @@ QSlider::handle:vertical {
 
 QSlider::handle:hover,
 QSlider::handle:pressed {
-  background: #eeeeee;
+  background: whitesmoke;
 }
 
 QSlider::handle:disabled {
