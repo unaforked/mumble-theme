@@ -690,7 +690,7 @@ UserView::item:selected {
   border-radius: 2px;
 }
 
-#qdwChat > * {
+#qdwChat > QTextEdit {
   background-color: transparent;
   border: 0;
   font-size: 10pt;
