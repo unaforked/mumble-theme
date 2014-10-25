@@ -615,7 +615,7 @@ QSlider::sub-page:disabled {
 }
 
 QSlider::sub-page {
-  background: #eaeaea;
+  background: #c1dcff;
   border: 1px solid #bdbdbd;
   border-radius: 2px;
 }
