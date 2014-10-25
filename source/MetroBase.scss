@@ -761,6 +761,11 @@ QColorDialog QLabel
 	border: 0;
 }
 
+QColorDialog QColorLuminancePicker
+{
+	background-color:transparent;
+}
+
 QMessageBox,
 QDialogButtonBox
 {

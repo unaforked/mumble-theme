@@ -662,6 +662,10 @@ QColorDialog QLabel {
   border: 0;
 }
 
+QColorDialog QColorLuminancePicker {
+  background-color: transparent;
+}
+
 QMessageBox,
 QDialogButtonBox {
   dialogbuttonbox-buttons-have-icons: 0;
