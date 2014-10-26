@@ -15,9 +15,6 @@ ApplicationPalette {
   qproperty-alternatebase: #2f2f2f;
   qproperty-text: #dddddd;
   qproperty-text_disabled: #444444;
-  qproperty-background: #2f2f2f;
-  qproperty-foreground: #dddddd;
-  qproperty-foreground_disabled: #444444;
   qproperty-tooltipbase: #2f2f2f;
   qproperty-tooltiptext: #dddddd;
   qproperty-tooltiptext_disabled: #444444;
