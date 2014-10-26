@@ -7,6 +7,37 @@
  *
  * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
  */
+ApplicationPalette {
+  qproperty-window: #f2f2f2;
+  qproperty-windowtext: #333333;
+  qproperty-windowtext_disabled: #bbbbbb;
+  qproperty-base: #f2f2f2;
+  qproperty-alternatebase: #f2f2f2;
+  qproperty-text: #333333;
+  qproperty-text_disabled: #bbbbbb;
+  qproperty-background: #f2f2f2;
+  qproperty-foreground: #333333;
+  qproperty-foreground_disabled: #bbbbbb;
+  qproperty-tooltipbase: #f2f2f2;
+  qproperty-tooltiptext: #333333;
+  qproperty-tooltiptext_disabled: #bbbbbb;
+  qproperty-brighttext: white;
+  qproperty-brighttext_disabled: #bbbbbb;
+  qproperty-highlight: #298ce1;
+  qproperty-highlightedtext: white;
+  qproperty-highlightedtext_disabled: #bbbbbb;
+  qproperty-button: white;
+  qproperty-buttontext: #111111;
+  qproperty-buttontext_disabled: #bbbbbb;
+  qproperty-link: #0b8eb2;
+  qproperty-linkvisited: #0b8eb2;
+  qproperty-light: transparent;
+  qproperty-midlight: transparent;
+  qproperty-mid: transparent;
+  qproperty-dark: transparent;
+  qproperty-shadow: transparent;
+}
+
 *,
 *::separator,
 *::handle,

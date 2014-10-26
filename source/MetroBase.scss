@@ -1,3 +1,41 @@
+ApplicationPalette {
+	qproperty-window: $base-bg;
+	qproperty-windowtext: $base-text;
+	qproperty-windowtext_disabled: $base-text-disabled;
+
+	qproperty-base: $base-bg;
+	qproperty-alternatebase: $base-bg;
+	qproperty-text: $base-text;
+	qproperty-text_disabled: $base-text-disabled;
+
+	qproperty-background: $base-bg;
+	qproperty-foreground: $base-text;
+	qproperty-foreground_disabled: $base-text-disabled;
+
+	qproperty-tooltipbase: $base-bg;
+	qproperty-tooltiptext: $base-text;
+	qproperty-tooltiptext_disabled: $base-text-disabled;
+
+	qproperty-brighttext: $highlight-text;
+	qproperty-brighttext_disabled: $base-text-disabled;
+	qproperty-highlight: $highlight-bg;
+	qproperty-highlightedtext: $highlight-text;
+	qproperty-highlightedtext_disabled: $base-text-disabled;
+
+	qproperty-button: $button-bg;
+	qproperty-buttontext: $sub-text;
+	qproperty-buttontext_disabled: $base-text-disabled;
+
+	qproperty-link: $link;
+	qproperty-linkvisited: $link;
+
+	qproperty-light: transparent;
+	qproperty-midlight: transparent;
+	qproperty-mid: transparent;
+	qproperty-dark: transparent;
+	qproperty-shadow: transparent;
+}
+
 *,
 *::separator,
 *::handle,

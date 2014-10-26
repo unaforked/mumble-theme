@@ -7,6 +7,37 @@
  *
  * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
  */
+ApplicationPalette {
+  qproperty-window: #2f2f2f;
+  qproperty-windowtext: #dddddd;
+  qproperty-windowtext_disabled: #444444;
+  qproperty-base: #2f2f2f;
+  qproperty-alternatebase: #2f2f2f;
+  qproperty-text: #dddddd;
+  qproperty-text_disabled: #444444;
+  qproperty-background: #2f2f2f;
+  qproperty-foreground: #dddddd;
+  qproperty-foreground_disabled: #444444;
+  qproperty-tooltipbase: #2f2f2f;
+  qproperty-tooltiptext: #dddddd;
+  qproperty-tooltiptext_disabled: #444444;
+  qproperty-brighttext: white;
+  qproperty-brighttext_disabled: #444444;
+  qproperty-highlight: #298ce1;
+  qproperty-highlightedtext: white;
+  qproperty-highlightedtext_disabled: #444444;
+  qproperty-button: #383838;
+  qproperty-buttontext: #cccccc;
+  qproperty-buttontext_disabled: #444444;
+  qproperty-link: #39a5dd;
+  qproperty-linkvisited: #39a5dd;
+  qproperty-light: transparent;
+  qproperty-midlight: transparent;
+  qproperty-mid: transparent;
+  qproperty-dark: transparent;
+  qproperty-shadow: transparent;
+}
+
 *,
 *::separator,
 *::handle,
@@ -341,7 +372,7 @@ QTabWidget::tab-bar {
 }
 
 QTabBar::tab {
-  color: #aaaaaa;
+  color: #bbbbbb;
   background-color: #222222;
   padding: 6px 16px;
   subcontrol-position: center bottom;
