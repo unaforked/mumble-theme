@@ -370,12 +370,16 @@ QTabWidget::pane
 QTabWidget::pane:top
 {
 	margin-top:-1px;
+	border-radius:$base-border-radius;
+	border-top-left-radius:0;
 }
 
 
 QTabWidget::pane:bottom
 {
 	margin-bottom:-1px;
+	border-radius:$base-border-radius;
+	border-bottom-left-radius:0;
 }
 
 QTabWidget::tab-bar
@@ -385,30 +389,31 @@ QTabWidget::tab-bar
 
 QTabBar::tab
 {
-	background-color:transparent;
-	color:$sub-text;
+	color:$tab-deselected-text;
+	background-color:$tab-deselected;
 	padding:$base-padding * 1.5 $base-padding * 4;
-	border-bottom:1px solid $base-border;
-	border-right:1px solid $base-border;
-	margin-left:-1px;
 	subcontrol-position: center bottom;
 	border-radius:0;
+	border:1px solid transparent;
+	border-right:0;
 }
 
-QTabBar::tab:first
-{
-	border-left:1px solid transparent;
-	margin:0;
-}
-
+QTabBar::tab:middle,
 QTabBar::tab:last
+{
+	border-left-color:$tab-separator;
+}
+
+QTabBar::tab:last,
+QTabBar::tab:only-one
 {
 	border-right:1px solid transparent;
 }
 
+
 QTabBar::tab:hover
 {
-	background-color:$base-hover;
+	background-color:$tab-hover;
 }
 
 QTabBar::tab:disabled
@@ -416,25 +421,65 @@ QTabBar::tab:disabled
 	color:$base-text-disabled;
 }
 
-QTabBar::tab:selected
+QTabBar::tab:selected,
 {
-	background-color:$median-bg;
-	border:1px solid $base-border;
-	border-bottom:1px solid transparent;
 	color:$sub-text;
+	background-color:$median-bg;
+	border-color:$base-border;
+}
+
+QTabBar::tab:previous-selected
+{
+	border-left-color:$base-border;
+}
+
+QTabBar::tab:top
+{
+	border-bottom-color:$base-border;
 }
 
 QTabBar::tab:bottom
 {
-	subcontrol-position: center top;
-	border-top:1px solid $base-border;
-	border-bottom:1px solid transparent;
+	border-top-color:$base-border;
+}
+
+
+QTabBar::tab:top:selected
+{
+	border-top-color:$base-border;
+	border-bottom:0;
+	padding-bottom:$base-padding * 1.5 + 1;
 }
 
 QTabBar::tab:bottom:selected
 {
-	border-top:1px solid transparent;
-	border-bottom:1px solid $base-border;
+	border-bottom-color:$base-border;
+	border-top:0;
+	padding-top:$base-padding * 1.5 + 1;
+}
+
+QTabBar::tab:top:first,
+QTabBar::tab:top:only-one
+{
+	border-top-left-radius:$base-border-radius;
+}
+
+QTabBar::tab:top:last,
+QTabBar::tab:top:only-one
+{
+	border-top-right-radius:$base-border-radius;
+}
+
+QTabBar::tab:bottom:first,
+QTabBar::tab:bottom:only-one
+{
+	border-bottom-left-radius:$base-border-radius;
+}
+
+QTabBar::tab:bottom:last,
+QTabBar::tab:bottom:only-one
+{
+	border-bottom-right-radius:$base-border-radius;
 }
 
 QScrollBar:vertical
