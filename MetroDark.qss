@@ -487,6 +487,25 @@ QDateTimeEdit::down-arrow:disabled {
   image: url(skin:controls/arrow_down_disabled.svg);
 }
 
+QToolButton[popupMode="1"],
+QToolButton[popupMode="2"],
+QPushButton[popupMode="1"],
+QPushButton[popupMode="2"] {
+  padding-right: 14px;
+}
+
+QToolButton::menu-arrow,
+QToolButton::menu-indicator,
+QPushButton::menu-arrow,
+QPushButton::menu-indicator {
+  image: url(skin:controls/arrow_down.svg);
+  subcontrol-origin: padding;
+  subcontrol-position: center right;
+  top: 2px;
+  right: 2px;
+  width: 14px;
+}
+
 QSpinBox::down-button,
 QAbstractSpinBox::down-button {
   padding-right: 4px;
