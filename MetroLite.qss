@@ -12,11 +12,11 @@ ApplicationPalette {
   qproperty-windowtext: #333333;
   qproperty-windowtext_disabled: #bbbbbb;
   qproperty-base: #f2f2f2;
-  qproperty-alternatebase: #f2f2f2;
+  qproperty-alternatebase: #fdfdfd;
   qproperty-text: #333333;
   qproperty-text_disabled: #bbbbbb;
-  qproperty-tooltipbase: #f2f2f2;
-  qproperty-tooltiptext: #333333;
+  qproperty-tooltipbase: white;
+  qproperty-tooltiptext: #111111;
   qproperty-tooltiptext_disabled: #bbbbbb;
   qproperty-brighttext: white;
   qproperty-brighttext_disabled: #bbbbbb;
@@ -28,11 +28,11 @@ ApplicationPalette {
   qproperty-buttontext_disabled: #bbbbbb;
   qproperty-link: #0b8eb2;
   qproperty-linkvisited: #0b8eb2;
-  qproperty-light: transparent;
+  qproperty-light: #d2d2d2;
   qproperty-midlight: transparent;
-  qproperty-mid: transparent;
+  qproperty-mid: #d2d2d2;
   qproperty-dark: transparent;
-  qproperty-shadow: transparent;
+  qproperty-shadow: #d2d2d2;
 }
 
 *,
@@ -689,7 +689,7 @@ QSlider::sub-page:disabled {
 }
 
 QSlider::sub-page {
-  background: #c1dcff;
+  background: #c0deeb;
   border: 1px solid #bdbdbd;
   border-radius: 2px;
 }

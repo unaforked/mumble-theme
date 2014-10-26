@@ -1,15 +1,15 @@
 ApplicationPalette {
-	qproperty-window: $base-bg;
+	qproperty-window: $dialog-bg;
 	qproperty-windowtext: $base-text;
 	qproperty-windowtext_disabled: $base-text-disabled;
 
 	qproperty-base: $base-bg;
-	qproperty-alternatebase: $base-bg;
+	qproperty-alternatebase: $median-bg;
 	qproperty-text: $base-text;
 	qproperty-text_disabled: $base-text-disabled;
 
-	qproperty-tooltipbase: $base-bg;
-	qproperty-tooltiptext: $base-text;
+	qproperty-tooltipbase: $sub-bg;
+	qproperty-tooltiptext: $sub-text;
 	qproperty-tooltiptext_disabled: $base-text-disabled;
 
 	qproperty-brighttext: $highlight-text;
@@ -25,11 +25,11 @@ ApplicationPalette {
 	qproperty-link: $link;
 	qproperty-linkvisited: $link;
 
-	qproperty-light: transparent;
+	qproperty-light: $base-border;
 	qproperty-midlight: transparent;
-	qproperty-mid: transparent;
+	qproperty-mid: $base-border;
 	qproperty-dark: transparent;
-	qproperty-shadow: transparent;
+	qproperty-shadow: $base-border;
 }
 
 *,
