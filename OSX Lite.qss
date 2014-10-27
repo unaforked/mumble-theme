@@ -102,6 +102,7 @@ DockTitleBar {
 QToolTip,
 QWhatsThis {
   border: 1px solid #d2d2d2;
+  border-radius: 0;
   background-color: white;
   color: #111111;
 }
@@ -232,11 +233,11 @@ QPushButton {
 
 QPushButton:focus {
   background-color: #f8f8f8;
-  border: 1px solid #7ea8cc;
+  border-color: #7ea8cc;
 }
 
 QPushButton:hover {
-  background-color: #eeeeee;
+  background-color: #f4f4f4;
 }
 
 QPushButton:pressed {
@@ -525,6 +526,8 @@ QAbstractSpinBox {
 }
 
 QLineEdit,
+QTextEdit,
+QPlainTextEdit,
 QSpinBox,
 QAbstractSpinBox,
 QComboBox:editable {
@@ -540,6 +543,8 @@ QAbstractSpinBox {
 
 QPushButton:disabled,
 QLineEdit:disabled,
+QTextEdit:disabled,
+QPlainTextEdit:disabled,
 QComboBox:disabled,
 QSpinBox:disabled,
 QAbstractSpinBox:disabled {
@@ -736,7 +741,7 @@ QSlider::handle:vertical {
 
 QSlider::handle:focus {
   background-color: #fafafa;
-  border: 1px solid #7ea8cc;
+  border-color: #7ea8cc;
 }
 
 QSlider::handle:hover,
@@ -754,25 +759,29 @@ QTreeView::indicator:focus,
 QRadioButton::indicator:focus,
 QComboBox:focus {
   background-color: #f8f8f8;
-  border: 1px solid #7ea8cc;
+  border-color: #7ea8cc;
 }
 
 QLineEdit:focus,
+QTextEdit:focus,
+QPlainTextEdit:focus,
 QSpinBox:focus,
 QAbstractSpinBox:focus,
 QComboBox:editable:focus {
   background-color: white;
-  border: 1px solid #7ea8cc;
+  border-color: #7ea8cc;
 }
 
 QCheckBox::indicator:hover,
 QTreeView::indicator:hover,
 QRadioButton::indicator:hover,
 QComboBox:hover {
-  background-color: #eeeeee;
+  background-color: #f4f4f4;
 }
 
 QLineEdit:hover,
+QTextEdit:hover,
+QPlainTextEdit:hover,
 QSpinBox:hover,
 QAbstractSpinBox:hover,
 QComboBox:editable:hover {
@@ -895,7 +904,7 @@ QListView#qlwIcons::item:selected {
 
 QListView#qlwIcons::item:focus {
   background-color: #e5e5e5;
-  border: 1px solid #7ea8cc;
+  border-color: #7ea8cc;
 }
 
 QSlider {
@@ -909,12 +918,6 @@ QSlider {
 
 #qswPages > * > QWidget {
   margin: 2px;
-}
-
-#qteRichText, #qptePlainText, #qwMacWarning {
-  color: #111111;
-  background-color: white;
-  border: 1px solid #d2d2d2;
 }
 
 QListView::item QListWidgetItem,
