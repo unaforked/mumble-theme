@@ -1,11 +1,11 @@
 ApplicationPalette {
-	qproperty-window: $dialog-bg;
+	qproperty-window: $base-bg;
 	qproperty-windowtext: $base-text;
 	qproperty-windowtext_disabled: $base-text-disabled;
 
-	qproperty-base: $base-bg;
+	qproperty-base: $sub-bg;
 	qproperty-alternatebase: $median-bg;
-	qproperty-text: $base-text;
+	qproperty-text: $sub-text;
 	qproperty-text_disabled: $base-text-disabled;
 
 	qproperty-tooltipbase: $sub-bg;
@@ -81,8 +81,8 @@ a
 
 *::separator
 {
-	height:$base-padding;
-	width:$base-padding;
+	height:4px;
+	width:4px;
 }
 
 *::separator:hover
@@ -120,7 +120,7 @@ QToolBar
 QToolButton
 {
 	border:1px solid transparent;
-	border-radius:2px;
+	border-radius:$base-border-radius;
 	padding:$base-padding - 3;
 	margin:2px;
 }
@@ -242,10 +242,16 @@ QMenu::indicator
 QPushButton
 {
 	background-color:$button-bg;
-	border:1px solid $button-border;
+	border:$button-border;
 	color:$sub-text;
 	font-size:12pt;
 	padding: $base-padding - 1 $base-padding*4+4;
+}
+
+QPushButton:focus
+{
+	background-color:$button-focus;
+	border:1px solid $base-border-focus;
 }
 
 QPushButton:hover
@@ -299,13 +305,12 @@ QListView::item:hover
 	background-color:$sub-hover;
 }
 
-
 QListView::item:selected
 {
-	background-color:$sub-hover;
-	border:1px solid $base-border;
-	margin-left:-1px;
+	background-color:$item-highlight-bg;
+	border:$item-border;
 	margin-right:-1px;
+	margin-left:-1px;
 	padding-left:$base-padding*3;
 }
 
@@ -335,8 +340,8 @@ QTreeView::item:hover
 
 QTreeView::item:selected
 {
-	background-color:$sub-hover;
-	border:1px solid $base-border;
+	background-color:$item-highlight-bg;
+	border:$item-border;
 	margin-right:-1px;
 }
 
@@ -477,7 +482,6 @@ QTabBar::tab:bottom
 	border-top-color:$base-border;
 }
 
-
 QTabBar::tab:top:selected
 {
 	border-top-color:$base-border;
@@ -516,20 +520,21 @@ QTabBar::tab:bottom:only-one
 	border-bottom-right-radius:$base-border-radius;
 }
 
-QScrollBar:vertical
+QScrollBar
 {
-	border-left:1px solid $scrollbar-border;
 	border-radius:0;
 	font-size:10pt;
 	width:1em;
 }
 
+QScrollBar:vertical
+{
+	border-left:1px solid $scrollbar-border;
+}
+
 QScrollBar:horizontal
 {
 	border-top:1px solid $scrollbar-border;
-	border-radius:0;
-	font-size:10pt;
-	height:1em;
 }
 
 QScrollBar::handle
@@ -575,7 +580,6 @@ QComboBox,
 QSpinBox,
 QAbstractSpinBox
 {
-	border:1px solid $button-border;
 	color:$sub-text;
 	padding:$base-padding;
 	min-height:1em;
@@ -585,11 +589,16 @@ QComboBox,
 QSpinBox,
 QAbstractSpinBox
 {
+	border:$button-border;
 	background-color:$button-bg;
 }
 
-QLineEdit
+QLineEdit,
+QSpinBox,
+QAbstractSpinBox,
+QComboBox:editable
 {
+	border:$input-border;
 	background-color:$input-bg;
 }
 
@@ -615,6 +624,7 @@ QAbstractSpinBox::drop-down,
 QSpinBox::drop-down,
 QDateTimeEdit::drop-down
 {
+	background-color:$sub-bg;
 	border:0;
 	margin-left:$base-padding;
 	margin-right:$base-padding * 3;
@@ -708,7 +718,7 @@ QCheckBox::indicator,
 QTreeView::indicator,
 {
 	background-color:$button-bg;
-	border:1px solid $button-border;
+	border:$button-border;
 	height:13px;
 	width:13px;
 	margin-top: 1px;
@@ -744,10 +754,15 @@ QTreeView::indicator:checked:disabled
 QRadioButton::indicator
 {
 	background:$button-bg;
-	border:1px solid $button-border;
+	border:$button-border;
 	border-radius:7px;
 	height:12px;
 	width:12px;
+}
+
+QTreeView::indicator
+{
+	background:$button-bg;
 }
 
 QRadioButton::indicator:disabled
@@ -820,10 +835,16 @@ QSlider::handle:vertical
 	height:4em;
 }
 
+QSlider::handle:focus
+{
+	background-color:$slider-handle-focus;
+	border:1px solid $base-border-focus;
+}
+
 QSlider::handle:hover,
 QSlider::handle:pressed
 {
-	background:$slider-handle-hover;
+	background-color:$slider-handle-hover;
 }
 
 QSlider::handle:disabled
@@ -832,14 +853,35 @@ QSlider::handle:disabled
 	border:1px solid $control-disabled;
 }
 
+QCheckBox::indicator:focus,
+QTreeView::indicator:focus,
+QRadioButton::indicator:focus,
+QComboBox:focus
+{
+	background-color:$button-focus;
+	border:1px solid $base-border-focus;
+}
+
+QLineEdit:focus,
+QSpinBox:focus,
+QAbstractSpinBox:focus,
+QComboBox:editable:focus
+{
+	background-color:$input-bg;
+	border:1px solid $base-border-focus;
+}
+
 QCheckBox::indicator:hover,
 QTreeView::indicator:hover,
 QRadioButton::indicator:hover,
 QComboBox:hover
 {
-	background-color:$input-hover;
+	background-color:$button-hover;
 }
 
+QLineEdit:hover,
+QSpinBox:hover,
+QAbstractSpinBox:hover,
 QComboBox:editable:hover
 {
 	background-color:$input-bg;
@@ -847,8 +889,8 @@ QComboBox:editable:hover
 
 QFontDialog
 {
-	min-width: 30em;
-	min-height: 20em;
+	min-width: 32em;
+	min-height: 24em;
 }
 
 QColorDialog * 
@@ -883,6 +925,8 @@ LogTextBrowser,
 
 UserView
 {
+	padding-top:1px;
+	padding-left:1px;
 	min-height:120px;
 	min-width:40px;
 }
@@ -967,8 +1011,7 @@ QListView#qlwIcons::item
 
 QListView#qlwIcons::item:hover
 {
-	border:1px solid $base-border;
-	background-color:$toolbutton-hover;
+	background-color:$base-hover;
 }
 
 QListView#qlwIcons::item:selected
@@ -977,6 +1020,12 @@ QListView#qlwIcons::item:selected
 	margin-top:1px;
 	background-color:$median-bg;
 	border:1px solid $base-border;
+}
+
+QListView#qlwIcons::item:focus
+{
+	background-color:$base-hover;
+	border:1px solid $base-border-focus;
 }
 
 QSlider
@@ -992,7 +1041,7 @@ QSlider
 
 #qswPages > * > QWidget
 {
-	margin: $base-padding;	
+	margin: $base-padding / 2;	
 }
 
 #qteRichText, #qptePlainText, #qwMacWarning
@@ -1007,6 +1056,7 @@ QListView::item QLineEdit,
 QTreeView::item QComboBox,
 QTreeView::item QLineEdit
 {
+	background:$button-bg;
 	padding: 0px;
 	padding-left: $base-padding;
 	font-size: 8pt;
@@ -1017,7 +1067,7 @@ QListView::item QLineEdit:hover,
 QTreeView::item QComboBox:hover,
 QTreeView::item QLineEdit:hover
 {
-	background:$sub-bg;
+	background:$button-bg;
 }
 
 AboutDialog > QTextBrowser,
