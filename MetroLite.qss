@@ -536,6 +536,8 @@ QPushButton:disabled,
 QLineEdit:disabled,
 QTextEdit:disabled,
 QPlainTextEdit:disabled,
+QListWidget:disabled,
+QTreeWidget:disabled,
 QComboBox:disabled,
 QSpinBox:disabled,
 QAbstractSpinBox:disabled {
@@ -708,7 +710,7 @@ QSlider::sub-page:disabled {
 }
 
 QSlider::sub-page {
-  background: #c0defb;
+  background: #dddddd;
   border: 1px solid #bdbdbd;
   border-radius: 2px;
 }

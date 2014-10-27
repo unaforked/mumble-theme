@@ -545,6 +545,8 @@ QPushButton:disabled,
 QLineEdit:disabled,
 QTextEdit:disabled,
 QPlainTextEdit:disabled,
+QListWidget:disabled,
+QTreeWidget:disabled,
 QComboBox:disabled,
 QSpinBox:disabled,
 QAbstractSpinBox:disabled {
