@@ -92,6 +92,7 @@ DockTitleBar {
 
 QToolTip,
 QWhatsThis {
+  min-height: 1em;
   border: 1px solid #d2d2d2;
   border-radius: 0;
   background-color: white;
@@ -710,7 +711,7 @@ QSlider::sub-page:disabled {
 }
 
 QSlider::sub-page {
-  background: #dddddd;
+  background: #93cdff;
   border: 1px solid #bdbdbd;
   border-radius: 2px;
 }
@@ -815,6 +816,11 @@ UserView {
   padding-left: 1px;
   min-height: 120px;
   min-width: 40px;
+}
+
+#MainWindow > QTreeView:focus,
+#qdwLog > QTextEdit:focus {
+  border: 1px solid #cccccc;
 }
 
 UserView::item {

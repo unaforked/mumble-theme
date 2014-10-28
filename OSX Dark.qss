@@ -101,6 +101,7 @@ DockTitleBar {
 
 QToolTip,
 QWhatsThis {
+  min-height: 1em;
   border: 1px solid #4e4e4e;
   border-radius: 0;
   background-color: #202020;
@@ -468,11 +469,11 @@ QScrollBar {
 }
 
 QScrollBar:vertical {
-  border-left: 1px solid #2f2f2f;
+  border-left: 1px solid #1c1c1c;
 }
 
 QScrollBar:horizontal {
-  border-top: 1px solid #2f2f2f;
+  border-top: 1px solid #1c1c1c;
 }
 
 QScrollBar::handle {
@@ -481,7 +482,7 @@ QScrollBar::handle {
   border-radius: 0;
   min-width: 10px;
   min-height: 10px;
-  border: 1px solid transparent;
+  border: 1px solid #1c1c1c;
 }
 
 QScrollBar::handle:hover {
@@ -824,6 +825,11 @@ UserView {
   padding-left: 1px;
   min-height: 120px;
   min-width: 40px;
+}
+
+#MainWindow > QTreeView:focus,
+#qdwLog > QTextEdit:focus {
+  border: 1px solid #1c1c1c;
 }
 
 UserView::item {

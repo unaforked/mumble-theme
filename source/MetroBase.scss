@@ -98,6 +98,7 @@ DockTitleBar
 QToolTip,
 QWhatsThis
 {
+	min-height:1em;
 	border: 1px solid $toolbutton-border;
 	border-radius: 0;
 	background-color:$sub-bg;
@@ -449,7 +450,6 @@ QTabBar::tab:only-one
 {
 	border-right:1px solid transparent;
 }
-
 
 QTabBar::tab:hover
 {
@@ -940,6 +940,12 @@ UserView
 	padding-left:1px;
 	min-height:120px;
 	min-width:40px;
+}
+
+#MainWindow > QTreeView:focus,
+#qdwLog > QTextEdit:focus
+{
+	border:$input-border;
 }
 
 UserView::item
