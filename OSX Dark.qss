@@ -532,8 +532,8 @@ QPlainTextEdit,
 QSpinBox,
 QAbstractSpinBox,
 QComboBox:editable {
-  border: 1px solid #1c1c1c;
-  background-color: #222222;
+  border: 1px solid #383838;
+  background-color: #1f1f1f;
 }
 
 QSpinBox,
@@ -766,12 +766,10 @@ QComboBox:focus {
 }
 
 QLineEdit:focus,
-QTextEdit:focus,
-QPlainTextEdit:focus,
 QSpinBox:focus,
 QAbstractSpinBox:focus,
 QComboBox:editable:focus {
-  background-color: #222222;
+  background-color: #1f1f1f;
   border-color: #485d6f;
 }
 
@@ -783,25 +781,15 @@ QComboBox:hover {
 }
 
 QLineEdit:hover,
-QTextEdit:hover,
-QPlainTextEdit:hover,
 QSpinBox:hover,
 QAbstractSpinBox:hover,
 QComboBox:editable:hover {
-  background-color: #222222;
+  background-color: #1f1f1f;
 }
 
 QFontDialog {
   min-width: 32em;
   min-height: 24em;
-}
-
-QColorDialog * {
-  border: 1px solid #1c1c1c;
-}
-
-QColorDialog QLabel {
-  border: 0;
 }
 
 QColorDialog QColorLuminancePicker {
@@ -825,11 +813,6 @@ UserView {
   padding-left: 1px;
   min-height: 120px;
   min-width: 40px;
-}
-
-#MainWindow > QTreeView:focus,
-#qdwLog > QTextEdit:focus {
-  border: 1px solid #1c1c1c;
 }
 
 UserView::item {
