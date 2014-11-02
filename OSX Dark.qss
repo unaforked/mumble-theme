@@ -916,9 +916,16 @@ QListView::item QLineEdit,
 QTreeView::item QComboBox,
 QTreeView::item QLineEdit {
   background: #3f3f3f;
-  padding: 0px;
+  margin: 0;
+  padding-top: -1px;
+  padding-bottom: -1px;
   padding-left: 4px;
-  font-size: 8pt;
+  padding-right: 4px;
+  font-size: 10pt;
+}
+
+#qtwShortcuts::item QComboBox {
+  max-width: 130px;
 }
 
 QListView::item QListWidgetItem:hover,
