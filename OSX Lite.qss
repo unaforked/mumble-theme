@@ -720,8 +720,8 @@ QSlider::sub-page:disabled {
 }
 
 QSlider::sub-page {
-  background: #93cdff;
-  border: 1px solid #bdbdbd;
+  background: #82bcff;
+  border: 1px solid #aaaaaa;
   border-radius: 2px;
 }
 
@@ -893,11 +893,6 @@ QListView#qlwIcons::item:selected {
   border: 1px solid #d2d2d2;
 }
 
-QListView#qlwIcons::item:focus {
-  background-color: #e5e5e5;
-  border-color: #7ea8cc;
-}
-
 QSlider {
   margin-left: 30px;
   margin-right: 30px;
@@ -917,15 +912,11 @@ QTreeView::item QComboBox,
 QTreeView::item QLineEdit {
   background: white;
   margin: 0;
-  padding-top: -1px;
-  padding-bottom: -1px;
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 4px;
   padding-right: 4px;
-  font-size: 10pt;
-}
-
-#qtwShortcuts::item QComboBox {
-  max-width: 130px;
+  font-size: 9pt;
 }
 
 QListView::item QListWidgetItem:hover,

@@ -1019,12 +1019,6 @@ QListView#qlwIcons::item:selected
 	border:1px solid $base-border;
 }
 
-QListView#qlwIcons::item:focus
-{
-	background-color:$base-hover;
-	border-color:$base-border-focus;
-}
-
 QSlider
 {
 	margin-left:30px;
@@ -1048,16 +1042,11 @@ QTreeView::item QLineEdit
 {
 	background:$button-bg;
 	margin: 0;
-	padding-top: -1px;
-	padding-bottom: -1px;
+	padding-top: 0;
+	padding-bottom: 0;
 	padding-left: $base-padding;
 	padding-right: $base-padding;
-	font-size: 10pt;
-}
-
-#qtwShortcuts::item QComboBox
-{
-	max-width: 130px;
+	font-size: 9pt;
 }
 
 QListView::item QListWidgetItem:hover,
