@@ -92,7 +92,8 @@ DockTitleBar {
 
 QToolTip,
 QWhatsThis {
-  min-height: 1em;
+  font-size: 9pt;
+  min-height: 1.3em;
   border: 1px solid #4e4e4e;
   border-radius: 0;
   background-color: #202020;
