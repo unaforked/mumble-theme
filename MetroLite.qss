@@ -92,7 +92,7 @@ DockTitleBar {
 
 QToolTip,
 QWhatsThis {
-  font-size: 9pt;
+  font-size: 8pt;
   min-height: 1.3em;
   border: 1px solid #d2d2d2;
   border-radius: 0;
@@ -218,7 +218,7 @@ QMenu::indicator {
 
 QPushButton {
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #c4c4c4;
   color: #111111;
   font-size: 12pt;
   padding: 3px 20px;
@@ -226,11 +226,15 @@ QPushButton {
 
 QPushButton:focus {
   background-color: #f8f8f8;
-  border-color: #7ea8cc;
 }
 
 QPushButton:hover {
-  background-color: #f4f4f4;
+  background-color: #f8f8f8;
+  border-color: #bbbbbb;
+}
+
+QPushButton:focus {
+  border-color: #7ea8cc;
 }
 
 QPushButton:pressed {
@@ -270,11 +274,11 @@ QListView::item {
 QListView::item:hover {
   border-top: -1px;
   margin-top: 0;
-  background-color: whitesmoke;
+  background-color: #f4f4f4;
 }
 
 QListView::item:selected {
-  background-color: #f4f4f4;
+  background-color: #eeeeee;
   border: 1px solid #d2d2d2;
   margin-right: -1px;
   margin-left: -1px;
@@ -299,11 +303,11 @@ QTreeView::item {
 }
 
 QTreeView::item:hover {
-  background-color: whitesmoke;
+  background-color: #f4f4f4;
 }
 
 QTreeView::item:selected {
-  background-color: #f4f4f4;
+  background-color: #eeeeee;
   border: 1px solid #d2d2d2;
   margin-right: -1px;
 }
@@ -514,7 +518,7 @@ QAbstractSpinBox {
 QComboBox,
 QSpinBox,
 QAbstractSpinBox {
-  border: 1px solid #cccccc;
+  border: 1px solid #c4c4c4;
   background-color: white;
 }
 
@@ -524,7 +528,7 @@ QPlainTextEdit,
 QSpinBox,
 QAbstractSpinBox,
 QComboBox:editable {
-  border: 1px solid #cccccc;
+  border: 1px solid #c4c4c4;
   background-color: white;
 }
 
@@ -634,7 +638,7 @@ QRadioButton {
 QCheckBox::indicator,
 QTreeView::indicator {
   background-color: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #c4c4c4;
   height: 13px;
   width: 13px;
   margin-top: 1px;
@@ -665,7 +669,7 @@ QTreeView::indicator:checked:disabled {
 
 QRadioButton::indicator {
   background: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #c4c4c4;
   border-radius: 7px;
   height: 12px;
   width: 12px;
@@ -754,7 +758,6 @@ QTreeView::indicator:focus,
 QRadioButton::indicator:focus,
 QComboBox:focus {
   background-color: #f8f8f8;
-  border-color: #7ea8cc;
 }
 
 QLineEdit:focus,
@@ -762,14 +765,14 @@ QSpinBox:focus,
 QAbstractSpinBox:focus,
 QComboBox:editable:focus {
   background-color: white;
-  border-color: #7ea8cc;
 }
 
 QCheckBox::indicator:hover,
 QTreeView::indicator:hover,
 QRadioButton::indicator:hover,
 QComboBox:hover {
-  background-color: #f4f4f4;
+  background-color: #f8f8f8;
+  border-color: #bbbbbb;
 }
 
 QLineEdit:hover,
@@ -777,6 +780,17 @@ QSpinBox:hover,
 QAbstractSpinBox:hover,
 QComboBox:editable:hover {
   background-color: white;
+}
+
+QCheckBox::indicator:focus,
+QTreeView::indicator:focus,
+QRadioButton::indicator:focus,
+QComboBox:focus,
+QLineEdit:focus,
+QSpinBox:focus,
+QAbstractSpinBox:focus,
+QComboBox:editable:focus {
+  border-color: #7ea8cc;
 }
 
 QFontDialog {
@@ -798,6 +812,7 @@ LogTextBrowser,
 #qdsChat {
   min-height: 120px;
   min-width: 40px;
+  border-color: #d2d2d2;
 }
 
 UserView {
@@ -875,6 +890,7 @@ QListView#qlwIcons::item {
 }
 
 QListView#qlwIcons::item:hover {
+  border-color: #e5e5e5;
   background-color: #e5e5e5;
 }
 
@@ -882,7 +898,7 @@ QListView#qlwIcons::item:selected {
   margin: 0;
   margin-top: 1px;
   background-color: #fdfdfd;
-  border: 1px solid #d2d2d2;
+  border: 1px solid #c4c4c4;
 }
 
 QSlider {

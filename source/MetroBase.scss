@@ -98,7 +98,7 @@ DockTitleBar
 QToolTip,
 QWhatsThis
 {
-	font-size:9pt;
+	font-size:8pt;
 	min-height:1.3em;
 	border: 1px solid $toolbutton-border;
 	border-radius: 0;
@@ -254,12 +254,17 @@ QPushButton
 QPushButton:focus
 {
 	background-color:$button-focus;
-	border-color:$base-border-focus;
 }
 
 QPushButton:hover
 {
 	background-color:$button-hover;
+	border-color:$button-hover-border;
+}
+
+QPushButton:focus
+{
+	border-color:$base-border-focus;
 }
 
 QPushButton:pressed
@@ -867,7 +872,6 @@ QRadioButton::indicator:focus,
 QComboBox:focus
 {
 	background-color:$button-focus;
-	border-color:$base-border-focus;
 }
 
 QLineEdit:focus,
@@ -876,7 +880,6 @@ QAbstractSpinBox:focus,
 QComboBox:editable:focus
 {
 	background-color:$input-bg;
-	border-color:$base-border-focus;
 }
 
 QCheckBox::indicator:hover,
@@ -885,6 +888,7 @@ QRadioButton::indicator:hover,
 QComboBox:hover
 {
 	background-color:$button-hover;
+	border-color:$button-hover-border;
 }
 
 QLineEdit:hover,
@@ -893,6 +897,18 @@ QAbstractSpinBox:hover,
 QComboBox:editable:hover
 {
 	background-color:$input-bg;
+}
+
+QCheckBox::indicator:focus,
+QTreeView::indicator:focus,
+QRadioButton::indicator:focus,
+QComboBox:focus,
+QLineEdit:focus,
+QSpinBox:focus,
+QAbstractSpinBox:focus,
+QComboBox:editable:focus
+{
+	border-color:$base-border-focus;
 }
 
 QFontDialog
@@ -919,6 +935,7 @@ LogTextBrowser,
 {
 	min-height:120px;
 	min-width:40px;
+	border-color:$base-border;
 }
 
 UserView
@@ -1009,6 +1026,7 @@ QListView#qlwIcons::item
 
 QListView#qlwIcons::item:hover
 {
+	border-color:$base-hover;
 	background-color:$base-hover;
 }
 
@@ -1017,7 +1035,7 @@ QListView#qlwIcons::item:selected
 	margin:0;
 	margin-top:1px;
 	background-color:$median-bg;
-	border:1px solid $base-border;
+	border:$button-border;
 }
 
 QSlider
