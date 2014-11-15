@@ -261,12 +261,19 @@ QPushButton:hover
 	border-color:$button-hover-border;
 }
 
+QPushButton:hover:focus
+{
+	background-color:$button-focus-hover-bg;
+	border-color:$button-focus-hover-border;
+}
+
 QPushButton:focus
 {
 	border-color:$base-border-focus;
 }
 
-QPushButton:pressed
+QPushButton:pressed,
+QPushButton:pressed:focus
 {
 	background-color:$highlight-bg;
 	border-color:$highlight-bg;
@@ -309,9 +316,9 @@ QListView::item
 
 QListView::item:hover
 {
-	border-top:-1px;
 	margin-top:0;
 	background-color:$sub-hover;
+	border:1px solid $sub-hover;
 }
 
 QListView::item:selected
@@ -885,32 +892,37 @@ QSlider::handle
 {
 	background:$slider-handle;
 	border:1px solid $slider-handle-border;
-	border-radius:2px;
+	border-radius:3px;
 	font-size:4pt;
 }
 
 QSlider::handle:horizontal
 {
 	margin:-5px -1px;
-	width:4em;
+	width:4.5em;
 }
 
 QSlider::handle:vertical
 {
 	margin:-1px -5px;
-	height:4em;
+	height:4.5em;
 }
 
 QSlider::handle:focus
 {
 	background-color:$slider-handle-focus;
-	border-color:$base-border-focus;
+	border-color:$slider-handle-focus-border;
 }
 
-QSlider::handle:hover,
-QSlider::handle:pressed
+QSlider::handle:hover
 {
 	background-color:$slider-handle-hover;
+}
+
+QSlider::handle:pressed
+{
+	background-color:$slider-handle-pressed;
+	border-color:$slider-handle-pressed-border;
 }
 
 QSlider::handle:disabled
@@ -926,6 +938,16 @@ QComboBox:focus
 {
 	background-color:$button-focus;
 }
+
+QCheckBox::indicator:focus:hover,
+QTreeView::indicator:focus:hover,
+QRadioButton::indicator:focus:hover,
+QComboBox:focus:hover
+{
+	background-color:$button-focus-hover-bg;
+	border-color:$button-focus-hover-border;
+}
+
 
 QLineEdit:focus,
 QSpinBox:focus,
@@ -1063,24 +1085,30 @@ QListView#qlwIcons
 	margin-top:$base-padding + 8;
 }
 
+
 QListView#qlwIcons::item
 {
 	margin-bottom:1px;
-	border:1px solid transparent;
 	padding:5px $base-padding * 2 - 1;
-	border-radius:$base-border-radius;
 }
+
 
 QListView#qlwIcons::item:hover
 {
-	border-color:$toolbutton-hover-border;
-	background-color:$toolbutton-hover;
+	border-color:$base-hover;
+	background-color:$base-hover;
 }
 
 QListView#qlwIcons::item:selected
 {
 	background-color:$toolbutton-on;
 	border:1px solid $toolbutton-border;
+}
+
+QListView#qlwIcons::item:focus
+{
+	background-color:$item-selected-active-bg;
+	border:$item-selected-active-border;
 }
 
 QSlider
