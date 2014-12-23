@@ -229,7 +229,7 @@ QPushButton:focus {
 
 QPushButton:hover {
   background-color: #f8f8f8;
-  border-color: #bbbbbb;
+  border-color: #aaaaaa;
 }
 
 QPushButton:hover:focus {
@@ -279,7 +279,6 @@ QListView::item {
 }
 
 QListView::item:hover {
-  margin-top: 0;
   background-color: #eeeeee;
   border: 1px solid #eeeeee;
 }
@@ -518,7 +517,6 @@ QScrollBar:horizontal {
 QScrollBar::handle {
   margin: -1px;
   background: #d6d6d6;
-  border-radius: 2px;
   border: 1px solid #d2d2d2;
 }
 
@@ -541,8 +539,7 @@ QScrollBar::down-arrow,
 QScrollBar::sub-line,
 QScrollBar::add-line,
 QScrollBar::add-page,
-QScrollBar::sub-page,
-QAbstractScrollArea::corner {
+QScrollBar::sub-page {
   background: #f2f2f2;
   height: 0;
   width: 0;
@@ -553,7 +550,11 @@ QAbstractScrollArea::corner {
 QAbstractScrollArea::corner {
   border-left: 1px solid #d6d6d6;
   border-top: 1px solid #d6d6d6;
-  margin: 0;
+  height: 0;
+  width: 0;
+  border-radius: 0;
+  border-top: 1px solid #d6d6d6;
+  border-left: 1px solid #d6d6d6;
   background: white;
 }
 
@@ -790,7 +791,7 @@ QSlider::handle:vertical {
 }
 
 QSlider::handle:focus {
-  background-color: #f0faff;
+  background-color: #e0eaff;
   border-color: #7ea8cc;
 }
 
@@ -823,6 +824,14 @@ QComboBox:focus:hover {
   border-color: #7ea8cc;
 }
 
+QCheckBox::indicator:hover,
+QTreeView::indicator:hover,
+QRadioButton::indicator:hover,
+QComboBox:hover {
+  background-color: #f8f8f8;
+  border-color: #aaaaaa;
+}
+
 QLineEdit:focus,
 QSpinBox:focus,
 QAbstractSpinBox:focus,
@@ -830,12 +839,11 @@ QComboBox:editable:focus {
   background-color: white;
 }
 
-QCheckBox::indicator:hover,
-QTreeView::indicator:hover,
-QRadioButton::indicator:hover,
-QComboBox:hover {
-  background-color: #f8f8f8;
-  border-color: #bbbbbb;
+QLineEdit:focus:hover,
+QSpinBox:focus:hover,
+QAbstractSpinBox:focus:hover,
+QComboBox:editable:focus:hover {
+  border-color: #7ea8cc;
 }
 
 QLineEdit:hover,
@@ -843,6 +851,7 @@ QSpinBox:hover,
 QAbstractSpinBox:hover,
 QComboBox:editable:hover {
   background-color: white;
+  border-color: #aaaaaa;
 }
 
 QCheckBox::indicator:focus,
@@ -850,6 +859,8 @@ QTreeView::indicator:focus,
 QRadioButton::indicator:focus,
 QComboBox:focus,
 QLineEdit:focus,
+QTextEdit:focus,
+QPlainTextEdit:focus,
 QSpinBox:focus,
 QAbstractSpinBox:focus,
 QComboBox:editable:focus {

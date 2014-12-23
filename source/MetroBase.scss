@@ -316,7 +316,6 @@ QListView::item
 
 QListView::item:hover
 {
-	margin-top:0;
 	background-color:$sub-hover;
 	border:1px solid $sub-hover;
 }
@@ -598,7 +597,6 @@ QScrollBar::handle
 {
 	margin:-1px;
 	background:$scrollbar-handle;
-	border-radius:$base-border-radius;
 	border:1px solid $scrollbar-handle-border;
 }
 
@@ -624,8 +622,7 @@ QScrollBar::down-arrow,
 QScrollBar::sub-line,
 QScrollBar::add-line,
 QScrollBar::add-page,
-QScrollBar::sub-page,
-QAbstractScrollArea::corner
+QScrollBar::sub-page
 {
 	background:$base-bg;
 	height:0;
@@ -638,7 +635,11 @@ QAbstractScrollArea::corner
 {
 	border-left:1px solid $scrollbar-border;
 	border-top:1px solid $scrollbar-border;
-	margin:0;
+	height:0;
+	width:0;
+	border-radius:0;
+	border-top:1px solid $scrollbar-border;
+	border-left:1px solid $scrollbar-border;
 	background:$sub-bg;
 }
 
@@ -948,15 +949,6 @@ QComboBox:focus:hover
 	border-color:$button-focus-hover-border;
 }
 
-
-QLineEdit:focus,
-QSpinBox:focus,
-QAbstractSpinBox:focus,
-QComboBox:editable:focus
-{
-	background-color:$input-bg;
-}
-
 QCheckBox::indicator:hover,
 QTreeView::indicator:hover,
 QRadioButton::indicator:hover,
@@ -966,12 +958,29 @@ QComboBox:hover
 	border-color:$button-hover-border;
 }
 
+QLineEdit:focus,
+QSpinBox:focus,
+QAbstractSpinBox:focus,
+QComboBox:editable:focus
+{
+	background-color:$input-bg;
+}
+
+QLineEdit:focus:hover,
+QSpinBox:focus:hover,
+QAbstractSpinBox:focus:hover,
+QComboBox:editable:focus:hover
+{
+	border-color:$button-focus-hover-border;
+}
+
 QLineEdit:hover,
 QSpinBox:hover,
 QAbstractSpinBox:hover,
 QComboBox:editable:hover
 {
 	background-color:$input-bg;
+	border-color:$button-hover-border;
 }
 
 QCheckBox::indicator:focus,
@@ -979,6 +988,8 @@ QTreeView::indicator:focus,
 QRadioButton::indicator:focus,
 QComboBox:focus,
 QLineEdit:focus,
+QTextEdit:focus,
+QPlainTextEdit:focus,
 QSpinBox:focus,
 QAbstractSpinBox:focus,
 QComboBox:editable:focus
