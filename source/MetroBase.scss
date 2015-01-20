@@ -369,7 +369,8 @@ QTreeView::item:only-one
 	border-bottom-right-radius:$base-border-radius;
 }
 
-QTreeView::item:hover
+QTreeView::item:hover,
+QTreeView::item:focus
 {
 	background-color:$sub-hover;
 	border-color:$sub-hover;
@@ -447,6 +448,7 @@ QHeaderView::section
 	color:$sub-text;
 	padding:$base-padding;
 	padding-left:$base-padding * 2;
+	padding-right: 20px;
 	border-radius:0;
 }
 
@@ -455,7 +457,7 @@ QHeaderView::up-arrow
 {
 	margin:1px;
 	top:1px;
-	right:10px;
+	right:5px;
 	width:14px;
 }
 
@@ -675,8 +677,8 @@ QComboBox:editable
 QSpinBox,
 QAbstractSpinBox
 {
-	min-width: 1.5em;
-	padding-right: 15px;
+	min-width: 2.5em;
+	padding-right: 10px;
 }
 
 QPushButton:disabled,
