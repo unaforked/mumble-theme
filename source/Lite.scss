@@ -1,13 +1,19 @@
 /*
  * Mumble Lite Theme by xPoke
- * GitHub: https://github.com/xPoke
+ * https://github.com/mumble-voip/mumble-theme
+ * https://github.com/xPoke
  *
  * Based on Flat Mumble Theme by xPaw (xpaw.ru)
  * GitHub: https://github.com/xPaw
  *
  * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
  */
+// This is a file you could modify if you are making your own skin.
+// See README.md
 
+// Add your own custom QSS at the end of this file
+
+// Skin color definitions below
 $base-padding: 4px;
 $base-bg: #F2F2F2;
 $base-hover: #e0e0e0;
@@ -77,4 +83,7 @@ $checkbox: url(skin:controls/checkbox_check_lite.svg);
 $checkbox-disabled: url(skin:controls/checkbox_check_disabled.svg);
 $link: #0b8eb2;
 
-@import 'Base';
+// Import base theme
+@import 'Base/Base';
+
+// Add or import your own custom QSS below
