@@ -1027,6 +1027,7 @@ QDialogButtonBox
 LogTextBrowser,
 #qdsChat
 {
+	margin:0 2px;
 	min-height:120px;
 	min-width:40px;
 	border-color:$base-border;
@@ -1034,6 +1035,7 @@ LogTextBrowser,
 
 UserView
 {
+	margin:0 2px;
 	min-height:120px;
 	min-width:40px;
 }
@@ -1046,8 +1048,9 @@ UserView::item
 
 #qdwChat > QTextEdit
 {
-	background-color:transparent;
-	border:0;
+	padding:-2px;
+	margin:0 2px;
+	margin-bottom:2px;
 	font-size:10pt;
 }
 
