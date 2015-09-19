@@ -1,0 +1,141 @@
+/*
+ * Mumble Solarized Light Theme by Aesen Vismea
+ * https://github.com/mumble-voip/mumble-theme
+ * 
+ * Based on Mumble Dark Theme by xPoke
+ * https://github.com/mumble-voip/mumble-theme
+ * https://github.com/xPoke
+ *
+ * Based on Flat Mumble Theme by xPaw (xpaw.ru)
+ * GitHub: https://github.com/xPaw
+ *
+ * Licensed under The Do What The Fuck You Want To Public License (WTFPL)
+ */
+// This is a file you could modify if you are making your own skin.
+// See README.md
+
+// Add your own custom QSS at the end of this file
+
+// Skin color definitions below
+
+$base3:    #002b36;
+$base2:    #073642;
+$base01:    #586e75;
+$base00:    #657b83;
+$base0:     #839496;
+$base1:     #93a1a1;
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+
+$base-padding: 4px;
+$base-bg: $base3;
+$base-hover: $base2;
+$base-pressed: $base2;
+$base-text: $base0;
+$base-text-disabled: $base2;
+$base-border: $base2;
+$base-border-focus: $base2;
+$base-border-radius: 2px;
+$item-selected-active-bg: $base01;
+$item-selected-active-border: 1px solid $base2;
+$item-selected-inactive-bg: $base2;
+$item-selected-inactive-border: 1px solid $base3;
+$sub-bg: $base-bg;
+$sub-hover: $base-hover;
+$sub-text: $base-text;
+$sub-highlight: $base1;
+$dialog-bg: $base-bg;
+$median-bg: $base-bg;
+$toolbutton-on: $base3;
+$toolbutton-border: $base2;
+$toolbutton-hover: $base2;
+$toolbutton-hover-border: $base01;
+$toolbutton-pressed: $base-pressed;
+$highlight-bg: $blue;
+$highlight-pressed: $blue;
+$highlight-text: $base1;
+$menu-bg: $base-bg;
+$menuitem-hover: $base-hover;
+$menuitem-border: $base-border;
+$scrollbar-border: $base-border;
+$scrollbar-handle: $base0;
+$scrollbar-handle-border: $base-border;
+$scrollbar-handle-hover: $base1;
+$input-bg: $base-bg;
+$input-border: $base-border;
+$input-hover: $base-hover;
+$control-icon: $base00;
+$control-icon-disabled: $base2;
+$control-disabled: $base3;
+$slider-groove: $base2;
+$slider-groove-border: $base3;
+$slider-fill: $base00;
+$slider-fill-border: $base01;
+$slider-handle: $base1;
+$slider-handle-border: $base0;
+$slider-handle-focus: $base2;
+$slider-handle-focus-border: $base3;
+$slider-handle-hover: $base1;
+$slider-handle-pressed: $base1;
+$slider-handle-pressed-border: $base0;
+$tab-selected: $base01;
+$tab-deselected: $base3;
+$tab-deselected-text: $base0;
+$tab-separator: $base3;
+$tab-hover: $base2;
+$button-bg: $base3;
+$button-hover: $base2;
+$button-focus: $base01;
+$button-focus-hover-bg: $base01;
+$button-focus-hover-border: $base2;
+$button-border: $base3;
+$button-hover-border: $base2;
+$radio: url(skin:controls/radio_check_dark.svg);
+$radio_disabled: url(skin:controls/radio_check_disabled.svg);
+$checkbox: url(skin:controls/checkbox_check_dark.svg);
+$checkbox-disabled: url(skin:controls/checkbox_check_disabled.svg);
+$link: $blue;
+
+// Import base theme
+@import 'Base/Base';
+
+// Add or import your own custom QSS below
+
+.log-time
+{
+	color:$base01;
+}
+
+.log-server
+{
+	color:$yellow;
+}
+
+.log-channel
+{
+	color:$orange;
+}
+
+.log-privilege
+{
+	color:$red;
+}
+
+.log-target
+{
+	color:$green;
+}
+
+.log-source
+{
+	color:$cyan;
+}
